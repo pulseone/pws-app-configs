@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>1</version>
+    <bundleId>com.symphony.mobileiron</bundleId>
+    <dict>
+        <string keyName="enable_photo_picker">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>true</value>
+                    <value>false</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="enable_webview">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>true</value>
+                    <value>false</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="enable_sharing">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>true</value>
+                    <value>false</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="enable_crash_reporting">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>true</value>
+                    <value>false</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="enable_analytics">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>true</value>
+                    <value>false</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="enable_addressbook">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>true</value>
+                    <value>false</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="enable_copy">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>true</value>
+                    <value>false</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="enable_network_debugging">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>true</value>
+                    <value>false</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="disable_pin">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>true</value>
+                    <value>false</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="disable_introduction">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>true</value>
+                    <value>false</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="disable_sso">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>true</value>
+                    <value>false</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="pod_domain">
+            <constraint nullable="true"/>
+        </string>
+    </dict>
+    <presentation defaultLocale="en-US">
+        <field keyName="enable_photo_picker" type="select">
+            <label>
+                <language value="en-US">Enable Photo Picker</language>
+            </label>
+            <description>
+                <language value="en-US">Set to disable to prohibit attaching photos from camera roll to messages sent within the application.</language>
+            </description>
+            <options>
+                <option value="true">
+                    <language value="en-US">Enable</language>
+                </option>
+                <option value="false">
+                    <language value="en-US">Disable</language>
+                </option>
+            </options>
+        </field>
+        <field keyName="enable_webview" type="select">
+            <label>
+                <language value="en-US">Enable WebView</language>
+            </label>
+            <description>
+                <language value="en-US">Set to disable to prohibit viewing non-image attachments and URLs sent within the application.</language>
+            </description>
+            <options>
+                <option value="true">
+                    <language value="en-US">Enable</language>
+                </option>
+                <option value="false">
+                    <language value="en-US">Disable</language>
+                </option>
+            </options>
+        </field>
+        <field keyName="enable_sharing" type="select">
+            <label>
+                <language value="en-US">Enable Sharing</language>
+            </label>
+            <description>
+                <language value="en-US">Set to disable to prohibit users from sharing image attachments to other applications through OS installed share extensions.</language>
+            </description>
+            <options>
+                <option value="true">
+                    <language value="en-US">Enable</language>
+                </option>
+                <option value="false">
+                    <language value="en-US">Disable</language>
+                </option>
+            </options>
+        </field>
+        <field keyName="enable_crash_reporting" type="select">
+            <label>
+                <language value="en-US">Enable Crash Reporting</language>
+            </label>
+            <description>
+                <language value="en-US">Set to disable to prohibit the recording of crashes for later analysis.</language>
+            </description>
+            <options>
+                <option value="true">
+                    <language value="en-US">Enable</language>
+                </option>
+                <option value="false">
+                    <language value="en-US">Disable</language>
+                </option>
+            </options>
+        </field>
+        <field keyName="enable_analytics" type="select">
+            <label>
+                <language value="en-US">Enable Analytics</language>
+            </label>
+            <description>
+                <language value="en-US">Set to disable to prohibit recording anonymous usage statistics.</language>
+            </description>
+            <options>
+                <option value="true">
+                    <language value="en-US">Enable</language>
+                </option>
+                <option value="false">
+                    <language value="en-US">Disable</language>
+                </option>
+            </options>
+        </field>
+        <field keyName="enable_addressbook" type="select">
+            <label>
+                <language value="en-US">Enable AddressBook</language>
+            </label>
+            <description>
+                <language value="en-US">Set to disable to prohibit using OS Address Book to invite new contacts to application.</language>
+            </description>
+            <options>
+                <option value="true">
+                    <language value="en-US">Enable</language>
+                </option>
+                <option value="false">
+                    <language value="en-US">Disable</language>
+                </option>
+            </options>
+        </field>
+        <field keyName="enable_copy" type="select">
+            <label>
+                <language value="en-US">Enable Copy</language>
+            </label>
+            <description>
+                <language value="en-US">Set to disable to prohibit users from copying the contents of messages.</language>
+            </description>
+            <options>
+                <option value="true">
+                    <language value="en-US">Enable</language>
+                </option>
+                <option value="false">
+                    <language value="en-US">Disable</language>
+                </option>
+            </options>
+        </field>
+        <field keyName="enable_network_debugging" type="select">
+            <label>
+                <language value="en-US">Enable Network Debugging</language>
+            </label>
+            <description>
+                <language value="en-US">Set to enable to emit logging for debugging network- related issues.</language>
+            </description>
+            <options>
+                <option value="true">
+                    <language value="en-US">Enable</language>
+                </option>
+                <option value="false">
+                    <language value="en-US">Disable</language>
+                </option>
+            </options>
+        </field>
+        <field keyName="disable_pin" type="select">
+            <label>
+                <language value="en-US">Symphony PIN Feature</language>
+            </label>
+            <description>
+                <language value="en-US">The Symphony app can allow the user to provide a PIN to protect the application. If your EMM/MDM already requires a PIN or password, you may want to disable the Symphony PIN feature.</language>
+            </description>
+            <options>
+                <option value="true">
+                    <language value="en-US">Disable Pin Feature</language>
+                </option>
+                <option value="false">
+                    <language value="en-US">Enable Pin Feature</language>
+                </option>
+            </options>
+        </field>
+        <field keyName="disable_introduction" type="select">
+            <label>
+                <language value="en-US">First-Launch Introduction Screens</language>
+            </label>
+            <description>
+                <language value="en-US">You can disable the first-launch introduction screens.</language>
+            </description>
+            <options>
+                <option value="true">
+                    <language value="en-US">Disable Intro Screens</language>
+                </option>
+                <option value="false">
+                    <language value="en-US">Enable Intro Screens</language>
+                </option>
+            </options>
+        </field>
+        <field keyName="disable_sso" type="select">
+            <label>
+                <language value="en-US">SSO</language>
+            </label>
+            <description>
+                <language value="en-US">While debugging connectivity issues, it is sometimes helpful to disable SSO on mobile.</language>
+            </description>
+            <options>
+                <option value="true">
+                    <language value="en-US">Disable SSO for mobile</language>
+                </option>
+                <option value="false">
+                    <language value="en-US">Enable SSO for mobile</language>
+                </option>
+            </options>
+        </field>
+        <field keyName="pod_domain" type="input">
+            <label>
+                <language value="en-US">Pod Domain name (Deprecated as of version 1.43)</language>
+            </label>
+        </field>
+    </presentation>
+</managedAppConfiguration>

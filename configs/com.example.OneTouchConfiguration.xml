@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>1</version>
+    <bundleId>com.example.OneTouchConfiguration</bundleId>
+    <dict>
+        <string keyName="userDisplayName">
+            <defaultValue>
+                <userVariable value="displayName"/>
+            </defaultValue>
+        </string>
+        <string keyName="userEmailAddress">
+            <defaultValue>
+                <userVariable value="emailAddress"/>
+            </defaultValue>
+        </string>
+        <boolean keyName="approvalAllowed">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="serverURL">
+            <defaultValue>
+                <value>https://server.default.mobileiron.com/</value>
+            </defaultValue>
+        </string>
+    </dict>
+    <presentation defaultLocale="en-US">
+        <fieldGroup>
+            <name>
+                <language value="en-US">User</language>
+            </name>
+            <field keyName="userDisplayName" type="input">
+                <label>
+                    <language value="en-US">Display Name</language>
+                </label>
+                <description>
+                    <language value="en-US">The display name of the user. This is automatically populated by default.</language>
+                </description>
+            </field>
+            <field keyName="userDisplayName" type="input">
+                <label>
+                    <language value="en-US">Email Address</language>
+                </label>
+                <description>
+                    <language value="en-US">The email address of the user. This is automatically populated by default.</language>
+                </description>
+            </field>
+            <field keyName="approvalAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">Approval Allowed</language>
+                </label>
+                <description>
+                    <language value="en-US">Is the user allowed to approve expenses?</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Server</language>
+            </name>
+            <field keyName="serverURL" type="input">
+                <label>
+                    <language value="en-US">Server URL</language>
+                </label>
+                <description>
+                    <language value="en-US">The URL of the backend server.</language>
+                </description>
+            </field>
+        </fieldGroup>
+    </presentation>
+</managedAppConfiguration>

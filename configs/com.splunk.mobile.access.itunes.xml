@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>1</version>
+    <bundleId>com.splunk.mobile.access.itunes</bundleId>
+    <dict>
+        <string keyName="loginHost">
+            <constraint nullable="false"/>
+        </string>
+        <string keyName="loginType">
+            <defaultValue>
+                <value>normal</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>normal</value>
+                    <value>sso</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="username">
+            <defaultValue>
+                <userVariable value="emailAddressLocalPart"/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+    </dict>
+    <presentation defaultLocale="en-US">
+        <field keyName="loginHost" type="input">
+            <label>
+                <language value="en-US">Login Host</language>
+            </label>
+            <description>
+                <language value="en-US">The FQDN and port of your Splunk server.</language>
+            </description>
+        </field>
+        <field keyName="loginType" type="select">
+            <label>
+                <language value="en-US">Login Type</language>
+            </label>
+            <description>
+                <language value="en-US">Normal login or Single Sign-On (SSO).</language>
+            </description>
+            <options>
+                <option value="normal">
+                    <language value="en-US">Normal</language>
+                </option>
+                <option value="sso">
+                    <language value="en-US">SSO</language>
+                </option>
+            </options>
+        </field>
+        <field keyName="username" type="input">
+            <label>
+                <language value="en-US">Username</language>
+            </label>
+            <description>
+                <language value="en-US">The Splunk Mobile Access Username.</language>
+            </description>
+        </field>
+    </presentation>
+</managedAppConfiguration>

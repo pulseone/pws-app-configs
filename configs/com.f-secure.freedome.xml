@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>1</version>
+    <bundleId>com.f-secure.freedome</bundleId>
+    <dict>
+        <string keyName="psbRegistrationKey">
+            <constraint max="24"/>
+        </string>
+        <string keyName="psbApiUrl">
+            <constraint pattern="https://([a-zA-Z0-9-]+\.)+[a-zA-Z]+"/>
+        </string>
+        <string keyName="firstName">
+            <defaultValue>
+                <userVariable value="firstName"/>
+            </defaultValue>
+            <constraint nullable="true" max="120"/>
+        </string>
+        <string keyName="lastName">
+            <defaultValue>
+                <userVariable value="lastName"/>
+            </defaultValue>
+            <constraint nullable="true" max="120"/>
+        </string>
+        <string keyName="email">
+            <defaultValue>
+                <userVariable value="emailAddress"/>
+            </defaultValue>
+            <constraint nullable="true" max="200"/>
+        </string>
+        <string keyName="phone">
+            <defaultValue>
+                <deviceVariable value="phoneNumber"/>
+            </defaultValue>
+            <constraint nullable="true" max="20"/>
+        </string>
+        <string keyName="model">
+            <defaultValue>
+                <deviceVariable value="model"/>
+            </defaultValue>
+            <constraint nullable="true" max="100"/>
+        </string>
+        <string keyName="imei">
+            <defaultValue>
+                <deviceVariable value="imei"/>
+            </defaultValue>
+            <constraint nullable="true" max="36"/>
+        </string>
+    </dict>
+    <presentation defaultLocale="en">
+        <field keyName="psbRegistrationKey" type="input">
+            <label>
+                <language value="en">PSB registration key</language>
+                <language value="cs">Registrační klíč PSB</language>
+                <language value="da">PSB-registreringsnøgle</language>
+                <language value="de">PSB-Registrierungsschlüssel</language>
+                <language value="es">Clave de registro de PSB</language>
+                <language value="fi">PSB-rekisteröintitunnus</language>
+                <language value="fr">Clé d\'inscription PSB</language>
+                <language value="fr-CA">Clé d\'inscription de PSB</language>
+                <language value="hu">PSB-regisztrációs kulcs</language>
+                <language value="it">Chiave di registrazione PSB</language>
+                <language value="ja">PSB 登録キーコード</language>
+                <language value="ko">PSB 등록 키</language>
+                <language value="nb">PSB-registreringsnøkkel</language>
+                <language value="nl">PSB-registratiesleutel</language>
+                <language value="pl">Klucz rejestracyjny PSB</language>
+                <language value="pt">Chave de registo PSB</language>
+                <language value="pt-BR">Chave de registro do PSB</language>
+                <language value="ru">Ключ регистрации PSB</language>
+                <language value="sv">PSB registreringsnyckel</language>
+                <language value="zh-HK">PSB 註冊金鑰</language>
+            </label>
+        </field>
+        <field keyName="psbApiUrl" type="input">
+            <label>
+                <language value="en">PSB server address</language>
+                <language value="cs">Adresa serveru PSB</language>
+                <language value="da">PSB-serveradresse</language>
+                <language value="de">PSB-Serveradresse</language>
+                <language value="es">Dirección del servidor de PSB</language>
+                <language value="fi">PSB-palvelimen osoite</language>
+                <language value="fr">Adresse du serveur PSB</language>
+                <language value="fr-CA">Adresse de serveur de PSB</language>
+                <language value="hu">PSB-kiszolgáló címe</language>
+                <language value="it">Indirizzo server PSB</language>
+                <language value="ja">PSB サーバ アドレス</language>
+                <language value="ko">PSB 서버 주소:</language>
+                <language value="nb">PSB-serveradresse</language>
+                <language value="nl">PSB-serveradres</language>
+                <language value="pl">Adres serwera PSB</language>
+                <language value="pt">Endereço de servidor PSB</language>
+                <language value="pt-BR">Endereço do servidor do PSB</language>
+                <language value="ru">Адрес сервера PSB</language>
+                <language value="sv">PSB serveradress</language>
+                <language value="zh-HK">PSB 伺服器位址</language>
+            </label>
+        </field>
+        <field keyName="firstName" type="input">
+            <label>
+                <language value="en">First name (optional)</language>
+                <language value="cs">Jméno (volitelně)</language>
+                <language value="da">Fornavn (valgfrit)</language>
+                <language value="de">Vorname (optional)</language>
+                <language value="es">Nombre (opcional)</language>
+                <language value="fi">Etunimi (valinnainen)</language>
+                <language value="fr">Prénom (facultatif)</language>
+                <language value="fr-CA">Prénom  (facultatif)</language>
+                <language value="hu">Utónév (nem kötelező)</language>
+                <language value="it">Nome (facoltativo)</language>
+                <language value="ja">名前 (名) (任意)</language>
+                <language value="ko">이름(선택 사항)</language>
+                <language value="nb">Fornavn (valgfritt)</language>
+                <language value="nl">Voornaam (optioneel)</language>
+                <language value="pl">Imię (opcjonalnie)</language>
+                <language value="pt">Nome (opcional)</language>
+                <language value="pt-BR">Nome (opcional)</language>
+                <language value="ru">Имя (необязательно)</language>
+                <language value="sv">Förnamn (valfritt)</language>
+                <language value="zh-HK">名字 (可選)</language>
+            </label>
+        </field>
+        <field keyName="lastName" type="input">
+            <label>
+                <language value="en">Last name (optional)</language>
+                <language value="cs">Příjmení (volitelně)</language>
+                <language value="da">Efternavn (valgfrit)</language>
+                <language value="de">Nachname (optional)</language>
+                <language value="es">Apellido (opcional)</language>
+                <language value="fi">Sukunimi (valinnainen)</language>
+                <language value="fr">Nom (facultatif)</language>
+                <language value="fr-CA">Nom de famille (facultatif)</language>
+                <language value="hu">Vezetéknév (nem kötelező)</language>
+                <language value="it">Cognome (facoltativo)</language>
+                <language value="ja">名前 (姓) (任意)</language>
+                <language value="ko">성(선택 사항)</language>
+                <language value="nb">Etternavn (valgfritt)</language>
+                <language value="nl">Achternaam (optioneel)</language>
+                <language value="pl">Nazwisko (opcjonalnie)</language>
+                <language value="pt">Apelido (opcional)</language>
+                <language value="pt-BR">Sobrenome (opcional)</language>
+                <language value="ru">Фамилия (необязательно)</language>
+                <language value="sv">Efternamn (valfritt)</language>
+                <language value="zh-HK">姓氏 (可選)</language>
+            </label>
+        </field>
+        <field keyName="email" type="input">
+            <label>
+                <language value="en">Email address (optional)</language>
+                <language value="cs">E-mailová adresa (volitelně)</language>
+                <language value="da">E-mailadresse (valgfrit)</language>
+                <language value="de">E-Mail-Adresse (optional)</language>
+                <language value="es">Dirección de correo (opcional)</language>
+                <language value="fi">Sähköpostiosoite (valinnainen)</language>
+                <language value="fr">Adresse e-mail (facultative)</language>
+                <language value="fr-CA">Adresse de courriel (faculttif)</language>
+                <language value="hu">E-mail-cím (nem kötelező)</language>
+                <language value="it">Indirizzo e-mail (facoltativo)</language>
+                <language value="ja">メール アドレス (任意)</language>
+                <language value="ko">이메일 주소(선택 사항)</language>
+                <language value="nb">E-postadresse (valgfritt)</language>
+                <language value="nl">E-mailadres (optioneel)</language>
+                <language value="pl">Adres e-mail (opcjonalnie)</language>
+                <language value="pt">Endereço de correio eletrónico (opcional)</language>
+                <language value="pt-BR">Endereço de e-mail (opcional)</language>
+                <language value="ru">Адрес электронной почты (необязательно)</language>
+                <language value="sv">E-postadress (valfritt)</language>
+                <language value="zh-HK">電郵地址 (可選)</language>
+            </label>
+        </field>
+        <field keyName="phone" type="input">
+            <label>
+                <language value="en">Phone number (optional)</language>
+                <language value="cs">Telefonní číslo (volitelně)</language>
+                <language value="da">Telefonnummer (valgfrit)</language>
+                <language value="de">Telefonnummer (optional)</language>
+                <language value="es">Número de teléfono (opcional)</language>
+                <language value="fi">Puhelinnumero (valinnainen)</language>
+                <language value="fr">Numéro de téléphone (facultatif)</language>
+                <language value="fr-CA">Numéro de téléphone (facultatif)</language>
+                <language value="hu">Telefonszám (nem kötelező)</language>
+                <language value="it">Telefono (facoltativo)</language>
+                <language value="ja">電話番号 (任意)</language>
+                <language value="ko">전화번호(선택 사항)</language>
+                <language value="nb">Telefonnummer (valgfritt)</language>
+                <language value="nl">Telefoonnummer (optioneel)</language>
+                <language value="pl">Numer telefonu (opcjonalnie)</language>
+                <language value="pt">Número de telefone (opcional)</language>
+                <language value="pt-BR">Telefone (opcional)</language>
+                <language value="ru">Номер телефона (необязательно)</language>
+                <language value="sv">Telefonnummer (valfritt)</language>
+                <language value="zh-HK">電話號碼 (可選)</language>
+            </label>
+        </field>
+        <field keyName="model" type="input">
+            <label>
+                <language value="en">Device model (optional)</language>
+                <language value="cs">Model zařízení (volitelně)</language>
+                <language value="da">Enhedsmodel (valgfrit)</language>
+                <language value="de">Gerätemodell (optional)</language>
+                <language value="es">Modelo de dispositivo (opcional)</language>
+                <language value="fi">Laitteen malli (valinnainen)</language>
+                <language value="fr">Modèle de l\'appareil (facultatif)</language>
+                <language value="fr-CA">Modèle de l\'appareil (facultatif)</language>
+                <language value="hu">Eszköz típusa (nem kötelező)</language>
+                <language value="it">Modello dispositivo (facoltativo)</language>
+                <language value="ja">デバイスのモデル (任意)</language>
+                <language value="ko">장치 모델(선택 사항)</language>
+                <language value="nb">Modell av enheten (valgfritt)</language>
+                <language value="nl">Apparaatmodel (optioneel)</language>
+                <language value="pl">Model urządzenia (opcjonalnie)</language>
+                <language value="pt">Modelo do dispositivo (opcional)</language>
+                <language value="pt-BR">Modelo do dispositivo (opcional)</language>
+                <language value="ru">Модель устройства (необязательно)</language>
+                <language value="sv">Enhetsmodell (valfritt)</language>
+                <language value="zh-HK">裝置型號 (可選)</language>
+            </label>
+        </field>
+        <field keyName="imei" type="input">
+            <label>
+                <language value="en">Device IMEI (optional)</language>
+                <language value="cs">Identifikace IMEI zařízení (volitelně)</language>
+                <language value="da">Enhedens IMEI (valgfrit)</language>
+                <language value="de">Geräte-IMEI (optional)</language>
+                <language value="es">IMEI del dispositivo (opcional)</language>
+                <language value="fi">Laitteen IMEI-koodi (valinnainen)</language>
+                <language value="fr">Numéro IMEI de l\'appareil (facultatif)</language>
+                <language value="fr-CA">IMEI de l\'appareil (facultatif)</language>
+                <language value="hu">Eszköz IMEI-azonosítója (nem kötelező)</language>
+                <language value="it">IMEI dispositivo (facoltativo)</language>
+                <language value="ja">デバイスの IMEI (任意)</language>
+                <language value="ko">장치 IMEI(선택 사항)</language>
+                <language value="nb">Enhetens IMEI-nummer (valgfritt)</language>
+                <language value="nl">IMEI van apparaat (optioneel)</language>
+                <language value="pl">Numer IMEI urządzenia (opcjonalnie)</language>
+                <language value="pt">IMEI do dispositivo (opcional)</language>
+                <language value="pt-BR">IMEI do dispositivo (opcional)</language>
+                <language value="ru">IMEI устройства (необязательно)</language>
+                <language value="sv">Enhetens IMEI (valfritt)</language>
+                <language value="zh-HK">裝置 IMEI (可選)</language>
+            </label>
+        </field>
+    </presentation>
+</managedAppConfiguration>

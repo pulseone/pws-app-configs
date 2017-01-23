@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>1</version>
+    <bundleId>com.salesforce.chatter</bundleId>
+    <dict>
+        <boolean keyName="RequireCertAuth">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="ManagedAppCertAlias">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <stringArray keyName="AppServiceHosts">
+            <defaultValue>
+                <value>host</value>
+                <value>host2</value>
+            </defaultValue>
+        </stringArray>
+        <stringArray keyName="AppServiceHostLabels">
+            <defaultValue>
+                <value>Production</value>
+                <value>Sandbox</value>
+            </defaultValue>
+        </stringArray>
+        <boolean keyName="OnlyShowAuthorizedHosts">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="ClearClipboardOnBackground">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+    </dict>
+    <presentation defaultLocale="en-US">
+        <fieldGroup>
+            <name>
+                <language value="en-US">Certificate-Based Authentication</language>
+            </name>
+            <field keyName="RequireCertAuth" type="checkbox">
+                <label>
+                    <language value="en-US">Certificate based Authentication</language>
+                </label>
+                <description>
+                    <language value="en-US">If true, the certificate-based authentication flow initiates. Android: Uses the user certificate on the device for authentication inside a webview.  iOS: Redirects the user to Safari for all authentication requests.</language>
+                </description>
+            </field>
+            <field keyName="ManagedAppCertAlias" type="input">
+                <label>
+                    <language value="en-US">Certificate Alias</language>
+                </label>
+                <description>
+                    <language value="en-US">Alias of the certificate deployed on the device picked by the application for user authentication. Required for Android only.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Custom Host Provisioning</language>
+            </name>
+            <field keyName="AppServiceHosts" type="list">
+                <label>
+                    <language value="en-US">Login Hosts</language>
+                </label>
+                <description>
+                    <language value="en-US">First value in the array is the default host. Android: Requires https:// in the host URL. iOS: Doesn't require https:// in the host URL.</language>
+                </description>
+            </field>
+            <field keyName="AppServiceHostLabels" type="list">
+                <label>
+                    <language value="en-US">Labels for the hosts</language>
+                </label>
+                <description>
+                    <language value="en-US">The number of entries must match the number of AppServiceHosts entries.</language>
+                </description>
+            </field>
+            <field keyName="OnlyShowAuthorizedHosts" type="checkbox">
+                <label>
+                    <language value="en-US">Show only authorized hosts</language>
+                </label>
+                <description>
+                    <language value="en-US">If true, prevents users from modifying the list of hosts that Salesforce1 can connect to.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Additional Security Enhancements</language>
+            </name>
+            <field keyName="ClearClipboardOnBackground" type="checkbox">
+                <label>
+                    <language value="en-US">Clear Clipboard</language>
+                </label>
+                <description>
+                    <language value="en-US">If true, the contents of the iOS clipboard are cleared when the mobile app is backgrounded. This prevents the user from accidentally copying and pasting sensitive data outside of the application.</language>
+                </description>
+            </field>
+        </fieldGroup>
+    </presentation>
+</managedAppConfiguration>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/com.mobileiron.onetouch/appconfig/appconfig.xsd">
+	<version>1</version>
+	<bundleId>com.jivesoftware.daily.hosted</bundleId>
+	<dict>
+		<string keyName="communityUrl">
+            <constraint nullable="true"/>
+		</string>
+		<boolean keyName="downloadProtection">
+			<defaultValue>
+				<value>
+					false
+				</value>
+			</defaultValue>
+		</boolean>
+		<boolean keyName="pasteboardProtection">
+			<defaultValue>
+				<value>
+					false
+				</value>
+			</defaultValue>
+		</boolean>		
+		<boolean keyName="openInProtection">
+			<defaultValue>
+				<value>
+					false
+				</value>
+			</defaultValue>
+		</boolean>
+	</dict>
+	<presentation defaultLocale="en-US">
+		<field keyName="communityUrl" type="input">
+			<label>
+				<language value="en-US">
+					Community URL
+				</language>
+			</label>
+			<description>
+				<language value="en-US">
+					If specified, this value is pre-filled into the Community URL field on the login screen
+				</language>
+			</description>
+		</field>
+		<field keyName="downloadProtection" type="checkbox">
+			<label>
+				<language value="en-US">
+					File Download Protection
+				</language>
+			</label>
+			<description>
+				<language value="en-US">
+					Check this value to prevent downloads of files &quot; attachments from the community via this app, even if downloads are allowed via the web or other clients.  (If binary downloads are disabled for the user or community across all clients, they will also be disabled in this app, regardless of this setting.)
+				</language>
+			</description>
+		</field>
+		<field keyName="pasteboardProtection" type="checkbox">
+			<label>
+				<language value="en-US">
+					Copy &quot; Paste Protection
+				</language>
+			</label>
+			<description>
+				<language value="en-US">
+					Check this checkbox to prevent the user from using “copy &quot; paste” in the app.
+				</language>
+			</description>
+		</field>
+		<field keyName="openInProtection" type="checkbox">
+			<label>
+				<language value="en-US">
+					Check this value to prevent sharing data to external apps, for example: Sharing a link to a document with the Mail app.
+				</language>
+			</label>
+			<description>
+				<language value="en-US">
+					Check this checkbox to prevent the user from using “copy &quot; paste” in the app.
+				</language>
+			</description>
+		</field>
+	</presentation>
+</managedAppConfiguration>

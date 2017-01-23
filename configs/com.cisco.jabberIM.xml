@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>1</version>
+    <bundleId>com.cisco.jabberIM</bundleId>
+    <dict>
+        <string keyName="ServicesDomain">
+            <defaultValue>
+                <userVariable value="emailAddressDomain"/>
+            </defaultValue>
+            <constraint nullable="false"/>
+        </string>
+        <string keyName="VoiceServiceDomain">
+            <defaultValue>
+                <userVariable value="emailAddressDomain"/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <stringArray keyName="ServiceDiscoveryExcludedServices">
+            <constraint nullable="true" min="0" max="3"/>
+        </stringArray>
+        <string keyName="ServicesDomainSsoEmailPrompt">
+            <defaultValue>
+                <value>ON</value>
+            </defaultValue>
+            <constraint nullable="false">
+                <values>
+                    <value>ON</value>
+                    <value>OFF</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="InvalidCertificateBehavior">
+            <defaultValue>
+                <value>RejectAndNotify</value>
+            </defaultValue>
+            <constraint nullable="false">
+                <values>
+                    <value>RejectAndNotify</value>
+                    <value>PromptPerSession</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="PRTCertificateUrl">
+            <constraint nullable="true"/>
+        </string>
+    </dict>
+    <presentation defaultLocale="en-US">
+        <field keyName="ServicesDomain" type="input">
+            <label>
+                <language value="en-US">ServicesDomain</language>
+            </label>
+            <description>
+                <language value="en-US">The domain that Cisco Jabber uses for service discovery.</language>
+            </description>
+        </field>
+        <field keyName="VoiceServiceDomain" type="input">
+            <label>
+                <language value="en-US">VoiceServiceDomain</language>
+            </label>
+            <description>
+                <language value="en-US">For a hybrid deployment, the domain that Cisco Jabber uses to retrieve the DNS SRV records can be different from the ServicesDomain that is used to discover the Cisco Jabber domain.</language>
+            </description>
+        </field>
+        <field keyName="ServiceDiscoveryExcludedServices" type="multiselect">
+            <label>
+                <language value="en-US">ServiceDiscoveryExcludedServices</language>
+            </label>
+            <description>
+                <language value="en-US">In certain deployment scenarios, services can be excluded from the service discovery process. Note: selecting all three services will result in users having to manually configure the Cisco Jabber App.</language>
+            </description>
+            <options>
+                <option value="WEBEX">
+                    <language value="en-US">WEBEX</language>
+                </option>
+                <option value="CUCM">
+                    <language value="en-US">CUCM</language>
+                </option>
+                <option value="CUP">
+                    <language value="en-US">CUP</language>
+                </option>
+            </options>
+        </field>
+        <field keyName="ServicesDomainSsoEmailPrompt" type="select">
+            <label>
+                <language value="en-US">ServicesDomainSsoEmailPrompt</language>
+            </label>
+            <description>
+                <language value="en-US">Specifies whether the user is shown the email prompt for the purposes of determining their home cluster.</language>
+            </description>
+            <options>
+                <option value="ON" selected="true">
+                    <language value="en-US">ON</language>
+                </option>
+                <option value="OFF">
+                    <language value="en-US">OFF</language>
+                </option>
+            </options>
+        </field>
+        <field keyName="InvalidCertificateBehavior" type="select">
+            <label>
+                <language value="en-US">InvalidCertifcateBehavior</language>
+            </label>
+            <description>
+                <language value="en-US">Specifies the client behavior for invalid certificates.</language>
+            </description>
+            <options>
+                <option value="RejectAndNotify" selected="true">
+                    <language value="en-US">RejectAndNotify</language>
+                </option>
+                <option value="PromptPerSession">
+                    <language value="en-US">PromptPerSession</language>
+                </option>
+            </options>
+        </field>
+        <field keyName="PRTCertificateUrl" type="input">
+            <label>
+                <language value="en-US">PRTCertificateUrl</language>
+            </label>
+            <description>
+                <language value="en-US">Specifies the name of a certificate with a public key in the trusted root certificate store.</language>
+            </description>
+        </field>
+    </presentation>
+</managedAppConfiguration>

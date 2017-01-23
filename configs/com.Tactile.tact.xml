@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>1</version>
+    <bundleId>com.Tactile.tact</bundleId>
+    <dict>
+        <string keyName="mdm_device_id">
+            <defaultValue>
+                <value>$DEVICE_UUID$</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>$DEVICE_UUID$</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="mdm_user_id">
+            <defaultValue>
+                <value>$USERID$</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>$USERID$</value>
+                </values>
+            </constraint>
+        </string>
+    </dict>
+</managedAppConfiguration>

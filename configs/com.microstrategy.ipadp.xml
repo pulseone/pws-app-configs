@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>1</version>
+    <bundleId>com.microstrategy.ipadp</bundleId>
+    <dict>
+        <boolean keyName="EnableDataLossPrevention">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="DisableEmail">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="DisableScreenshot">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="DisableCopyPaste">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="DisableAnnotation">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="DisableHttpFileStream">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="DisableConfidentialProject">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="DisableSendFile">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="DisableOpenIn">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="DisableCollaboration">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="DisableUsherAuthentication">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="DisablePrint">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="DisableCameraAccess">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="DisableLocationServices">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="DisableCertificateServer">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="DisableSaveToPhotos">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+    </dict>
+    <presentation defaultLocale="en-US">
+        <fieldGroup>
+            <name>
+                <language value="en-US">Security Policies</language>
+            </name>
+            <field keyName="EnableDataLossPrevention" type="checkbox">
+                <label>
+                    <language value="en-US">Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">Data Loss Prevention</language>
+                </description>
+            </field>
+            <field keyName="DisableScreenshot" type="checkbox">
+                <label>
+                    <language value="en-US">Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">Screenshot</language>
+                </description>
+            </field>
+            <field keyName="DisableEmail" type="checkbox">
+                <label>
+                    <language value="en-US">Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">Email</language>
+                </description>
+            </field>
+            <field keyName="DisableAnnotation" type="checkbox">
+                <label>
+                    <language value="en-US">Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">Annotation</language>
+                </description>
+            </field>
+            <field keyName="DisableHttpFileStream" type="checkbox">
+                <label>
+                    <language value="en-US">Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">HTTP File Stream</language>
+                </description>
+            </field>
+            <field keyName="DisableConfidentialProject" type="checkbox">
+                <label>
+                    <language value="en-US">Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">Confidential Project</language>
+                </description>
+            </field>
+            <field keyName="DisableSendFile" type="checkbox">
+                <label>
+                    <language value="en-US">Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">Send File</language>
+                </description>
+            </field>
+            <field keyName="DisableOpenIn" type="checkbox">
+                <label>
+                    <language value="en-US">Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">Open In</language>
+                </description>
+            </field>
+            <field keyName="DisableCollaboration" type="checkbox">
+                <label>
+                    <language value="en-US">Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">Collaboration</language>
+                </description>
+            </field>
+            <field keyName="DisableUsherAuthentication" type="checkbox">
+                <label>
+                    <language value="en-US">Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">Usher Authentication</language>
+                </description>
+            </field>
+            <field keyName="DisablePrint" type="checkbox">
+                <label>
+                    <language value="en-US">Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">Print</language>
+                </description>
+            </field>
+            <field keyName="DisableCopyPaste" type="checkbox">
+                <label>
+                    <language value="en-US">Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">Copy/Paste</language>
+                </description>
+            </field>
+            <field keyName="DisableCameraAccess" type="checkbox">
+                <label>
+                    <language value="en-US">Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">Camera Access</language>
+                </description>
+            </field>
+            <field keyName="DisableLocationServices" type="checkbox">
+                <label>
+                    <language value="en-US">Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">Location Services</language>
+                </description>
+            </field>
+            <field keyName="DisableCertificateServer" type="checkbox">
+                <label>
+                    <language value="en-US">Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">Certificate Server</language>
+                </description>
+            </field>
+            <field keyName="DisableSaveToPhotos" type="checkbox">
+                <label>
+                    <language value="en-US">Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">Save to Photos</language>
+                </description>
+            </field>
+        </fieldGroup>
+    </presentation>
+</managedAppConfiguration>

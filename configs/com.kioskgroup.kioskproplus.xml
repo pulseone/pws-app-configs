@@ -1,0 +1,3777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>1</version>
+    <bundleId>com.kioskgroup.kioskproplus</bundleId>
+    <dict>
+        <!--Admin-->
+        <integer keyName="settingsShowingOption">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                </values>
+            </constraint>
+        </integer>
+        <string keyName="settingsPassCode">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <integer keyName="autonomousSingleAppMode">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                </values>
+            </constraint>
+        </integer>
+        <!--Content-->
+        <string keyName="homePage">
+            <defaultValue>
+                <value>kioskproapp.com/start</value>
+            </defaultValue>
+        </string>
+        <!--Identification-->
+        <string keyName="uniqueiPadID">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="kp_substitutionVariableValue_0">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="kp_substitutionVariableValue_1">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="kp_substitutionVariableValue_2">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="kp_substitutionVariableValue_3">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="kp_substitutionVariableValue_4">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="kp_substitutionVariableValue_5">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <!--Display-->
+        <boolean keyName="showStatusBar">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="showAddressBar">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="showWebBrowserNavigationBarLocal">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="showWebBrowserNavigationBarRemote">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="showPdfFilesNavigationBarLocal">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="showPdfFilesNavigationBarRemote">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="showPresentationFilesNavigationBarLocal">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="showPresentationFilesNavigationBarRemote">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="showDocumentFilesNavigationBarLocal">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="showDocumentFilesNavigationBarRemote">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="showMultimediaFilesNavigationBarLocal">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="showMultimediaFilesNavigationBarRemote">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="navBarIconsColorScheme">
+            <defaultValue>
+                <value>4</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>3</value>
+                    <value>4</value>
+                    <value>5</value>
+                    <value>6</value>
+                    <value>7</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="navBarBackgroundColor">
+            <defaultValue>
+                <value>84,84,84</value>
+            </defaultValue>
+        </string>
+        <boolean keyName="customLinksEnabled">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="clButtonBackgroundColor">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="clButtonTextColor">
+            <defaultValue>
+                <value>255,255,255</value>
+            </defaultValue>
+        </string>
+        <string keyName="clLabel1">
+            <defaultValue>
+                <value>Custom Links</value>
+            </defaultValue>
+        </string>
+        <string keyName="clLink1">
+            <defaultValue>
+                <value>http://docs.kioskproapp.com/article/802-navigation-bar#custom-links</value>
+            </defaultValue>
+        </string>
+        <string keyName="clLabel2">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="clLink2">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="clLabel3">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="clLink3">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="clLabel4">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="clLink4">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="clLabel5">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="clLink5">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="clLabel6">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="clLink6">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <boolean keyName="showLoadingProgress">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="pageReloadBackgroundColor">
+            <defaultValue>
+                <value>255,255,255</value>
+            </defaultValue>
+        </string>
+        <boolean keyName="pdfShowThumbs">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="pdfShowPageNumbers">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="pdfBackgroundImageFile">
+            <defaultValue>
+                <value>0,0,0</value>
+            </defaultValue>
+        </string>
+        <integer keyName="pdfScrollingType">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="pdfInfiniteScrollOrientation">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="pdfSizeToFitOption">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                </values>
+            </constraint>
+        </integer>
+        <!--Interaction-->
+        <boolean keyName="zoomDisabled">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="pdfDisableZoom">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="viewOnly">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableWebViewBouncing">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="textSelection">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <!--Timer Settings-->
+        <integer keyName="idleTime">
+            <defaultValue>
+                <value>30</value>
+            </defaultValue>
+        </integer>
+        <boolean keyName="idleTimeoutWarning">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="idleTimeoutWarningString">
+            <defaultValue>
+                <value>Please touch the screen to continue your session.</value>
+            </defaultValue>
+        </string>
+        <string keyName="refreshTime">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+        </string>
+        <string keyName="pageLoadTime">
+            <defaultValue>
+                <value>30</value>
+            </defaultValue>
+        </string>
+        <!--Navigation-->
+        <string keyName="whiteList">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="blackList">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <boolean keyName="kp_applyRestrictionsToEmbeddedContent">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="showSiteMessage">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="offDomainMessage">
+            <defaultValue>
+                <value>Sorry, this site is not allowed.</value>
+            </defaultValue>
+        </string>
+        <!--Visitor Management-->
+        <boolean keyName="activationMode">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <integer keyName="browseTime">
+            <defaultValue>
+                <value>-1</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>-1</value>
+                    <value>5</value>
+                    <value>10</value>
+                    <value>15</value>
+                    <value>20</value>
+                    <value>30</value>
+                    <value>45</value>
+                    <value>60</value>
+                </values>
+            </constraint>
+        </integer>
+        <string keyName="goodByePage">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <!--Screensaver-->
+        <boolean keyName="sv_screenVideoEnabled">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="sv_url2MovieFile">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="kp_backgroundColorOfScreenSaverSlideShow">
+            <defaultValue>
+                <value>0,0,0</value>
+            </defaultValue>
+        </string>
+        <string keyName="kp_updateIntervalOfScreenSaverSlideShow">
+            <defaultValue>
+                <value>5</value>
+            </defaultValue>
+        </string>
+        <string keyName="kp_fadeDurationOfScreenSaverSlideShow">
+            <defaultValue>
+                <value>1</value>
+            </defaultValue>
+        </string>
+        <string keyName="kp_screenSaverSlideShow_url2OverlayImage">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="kp_screenSaverSlideShow_overlayAlpha">
+            <defaultValue>
+                <value>1</value>
+            </defaultValue>
+        </string>
+        <!--Internet Access & Error Handling-->
+        <boolean keyName="showConnectionProblemPage">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="customConnectionProblemPage">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="kp_customFileNotFoundPageLocation">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <!--Power Management-->
+        <boolean keyName="sleepSchedullerEnabled">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="time_0">
+            <defaultValue>
+                <value>Daily 08:45</value>
+            </defaultValue>
+        </string>
+        <string keyName="time_1">
+            <defaultValue>
+                <value>Daily 19:00</value>
+            </defaultValue>
+        </string>
+        <string keyName="time_2">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="time_3">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="time_4">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="time_5">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="time_6">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="time_7">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="time_8">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="time_9">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="time_10">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="time_11">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="time_12">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="time_13">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="time_14">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="time_15">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="reduceBrightnessTimeInterval">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>30</value>
+                    <value>60</value>
+                    <value>300</value>
+                    <value>600</value>
+                    <value>1800</value>
+                    <value>3600</value>
+                </values>
+            </constraint>
+        </string>
+        <boolean keyName="allowAutoLock">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <!--Browser Engine-->
+        <integer keyName="kp_browserEngine">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                </values>
+            </constraint>
+        </integer>
+        <!--Memory & Privacy-->
+        <boolean keyName="clearCache">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="clearCookies">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <integer keyName="cookieAcceptPolicy">
+            <defaultValue>
+                <value>1</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                </values>
+            </constraint>
+        </integer>
+        <!--Site Customization-->
+        <string keyName="customUserAgentString">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <boolean keyName="injectCSSSnippetForSpecificURLEnabled">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="specificURLPattern1ForCSSFileName1">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="specificCSSFileName1ForURLPattern1">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="specificURLPattern2ForCSSFileName2">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="specificCSSFileName2ForURLPattern2">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="specificURLPattern3ForCSSFileName3">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="specificCSSFileName3ForURLPattern3">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="specificURLPattern4ForCSSFileName4">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="specificCSSFileName4ForURLPattern4">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="specificURLPattern5ForCSSFileName5">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="specificCSSFileName5ForURLPattern5">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="specificURLPattern6ForCSSFileName6">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="specificCSSFileName6ForURLPattern6">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="specificURLPattern7ForCSSFileName7">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="specificCSSFileName7ForURLPattern7">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="specificURLPattern8ForCSSFileName8">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="specificCSSFileName8ForURLPattern8">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="specificURLPattern9ForCSSFileName9">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="specificCSSFileName9ForURLPattern9">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="specificURLPattern10ForCSSFileName10">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="specificCSSFileName10ForURLPattern10">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <integer keyName="kp_insertHomepageURLParametersAsJavaScriptVariables">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                </values>
+            </constraint>
+        </integer>
+        <!--JavaScript API-->
+        <integer keyName="accessJS_API">
+            <defaultValue>
+                <value>1</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                </values>
+            </constraint>
+        </integer>
+        <!--Geolocation & Motion Detection-->
+        <float keyName="locationUpdateFrequency">
+            <defaultValue>
+                <value>1</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0.0</value>
+                    <value>1</value>
+                    <value>2</value>
+                </values>
+            </constraint>
+        </float>
+        <float keyName="shakeSensibility">
+            <defaultValue>
+                <value>0.10000000000000001</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0.059999999999999998</value>
+                    <value>0.10000000000000001</value>
+                    <value>0.20000000000000001</value>
+                    <value>0.40000000000000002</value>
+                    <value>0.59999999999999998</value>
+                </values>
+            </constraint>
+        </float>
+        <integer keyName="motionResetPeriod">
+            <defaultValue>
+                <value>1</value>
+            </defaultValue>
+        </integer>
+        <!--Autofill-->
+        <boolean keyName="autofillingEnabled">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="autofillingURL1">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingLogin1">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingPassword1">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingLoginID1">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingPasswordID1">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingURL2">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingLogin2">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingPassword2">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingLoginID2">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingPasswordID2">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingURL3">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingLogin3">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingPassword3">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingLoginID3">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingPasswordID3">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingURL4">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingLogin4">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingPassword4">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingLoginID4">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingPasswordID4">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingURL5">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingLogin5">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingPassword5">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingLoginID5">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingPasswordID5">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingURL6">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingLogin6">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingPassword6">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingLoginID6">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingPasswordID6">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingURL7">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingLogin7">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingPassword7">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingLoginID7">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingPasswordID7">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingURL8">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingLogin8">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingPassword8">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingLoginID8">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingPasswordID8">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingURL9">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingLogin9">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingPassword9">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingLoginID9">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingPasswordID9">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingURL10">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingLogin10">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingPassword10">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingLoginID10">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="autofillingPasswordID10">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <!--Printing-->
+        <boolean keyName="showPrintIcon">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <!--AirPrint-->
+        <boolean keyName="printEnabled">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <float keyName="airPrint_PrintInfoOutputType">
+            <defaultValue>
+                <value>0.0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0.0</value>
+                    <value>1</value>
+                    <value>2</value>
+                </values>
+            </constraint>
+        </float>
+        <boolean keyName="kp_airPrint_setNumberOfCopiesOption">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="airPrint_pageRangeOption">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <!--Email Notifications-->
+        <boolean keyName="emailOnPower">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="emailOnBatteryDischargeToLowerZone">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="emailOnBatteryChargeToHigherZone">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <integer keyName="lowZoneLevel">
+            <defaultValue>
+                <value>-1</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>-1</value>
+                    <value>90</value>
+                    <value>80</value>
+                    <value>70</value>
+                    <value>60</value>
+                    <value>50</value>
+                    <value>40</value>
+                    <value>30</value>
+                    <value>20</value>
+                    <value>10</value>
+                    <value>0</value>
+                </values>
+            </constraint>
+        </integer>
+        <boolean keyName="emailWhenUnpluggedInNormalZone">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="emailWhenChargingInNormalZone">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <integer keyName="criticalZoneLevel">
+            <defaultValue>
+                <value>-1</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>-1</value>
+                    <value>90</value>
+                    <value>80</value>
+                    <value>70</value>
+                    <value>60</value>
+                    <value>50</value>
+                    <value>40</value>
+                    <value>30</value>
+                    <value>20</value>
+                    <value>10</value>
+                    <value>0</value>
+                </values>
+            </constraint>
+        </integer>
+        <boolean keyName="emailWhenUnpluggedInLowZone">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="emailWhenChargingInLowZone">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="emailWhenUnpluggedInCriticalZone">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="emailWhenChargingInCriticalZone">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="emailOnRemoteSettingsChange">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="emailOnContentUpdate">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="emailOnAccelTrigger">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="emailOnChangeNetworkReachabilityStatus">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <integer keyName="kp_sendEventNotificationsThrough">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                </values>
+            </constraint>
+        </integer>
+        <string keyName="smtpFromEmail">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="smtpToEmail">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="smtpServer">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="smtpPorts">
+            <defaultValue>
+                <value>25; 465; 587</value>
+            </defaultValue>
+        </string>
+        <boolean keyName="smtpRequiresAuth">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="smtpUserName">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="smtpPassword">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <boolean keyName="smtpEnableSSL">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="kp_zapierDefaultZapURL">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <!--Remote Settings Control-->
+        <boolean keyName="remoteSettingsEnabled">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="externalSettingsFile">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="localSettingsUpdatePeriod">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="kp_remoteSettingsUpdatingMessage">
+            <defaultValue>
+                <value>Updating. . .</value>
+            </defaultValue>
+        </string>
+        <!--Remote Update of Local Files-->
+        <boolean keyName="updateOfLocalFilesEnabled">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="localContentUpdateUrl">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="localContentUpdatePeriod">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <boolean keyName="kp_shouldShowProgressIndicatorDuringUpdatingLocalFiles">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="kp_serverRequestTimeoutPeriodForUpdateOfLocalFiles">
+            <defaultValue>
+                <value>300</value>
+            </defaultValue>
+        </string>
+        <!--Dropbox Synchronization-->
+        <boolean keyName="dropboxSyncEnabled">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="dropboxSharedContentFolderPath">
+            <defaultValue>
+                <value>SharedContent</value>
+            </defaultValue>
+        </string>
+        <string keyName="dropboxRestrictedListOfPaths">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <boolean keyName="dropboxLogSyncSessions">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <!--Remote Management Server-->
+        <boolean keyName="enabledKWC">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="KWC_SiteName">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="KWC_KioskName">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="KWC_UnitName">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="KWC_HeartbeatInterval">
+            <defaultValue>
+                <value>30</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>5</value>
+                    <value>10</value>
+                    <value>30</value>
+                    <value>60</value>
+                    <value>120</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="KWC_ServerCommandsInterval">
+            <defaultValue>
+                <value>5</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>5</value>
+                    <value>10</value>
+                    <value>30</value>
+                    <value>60</value>
+                    <value>120</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="KWC_xmlFilenameForRemoteSettingsControl">
+            <defaultValue>
+                <value>settings.xml</value>
+            </defaultValue>
+        </string>
+        <integer keyName="logPowerOn">
+            <defaultValue>
+                <value>4</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>4</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="logPowerOff">
+            <defaultValue>
+                <value>2</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>4</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="logBatteryTriggerPercentage">
+            <defaultValue>
+                <value>50</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>90</value>
+                    <value>80</value>
+                    <value>70</value>
+                    <value>60</value>
+                    <value>50</value>
+                    <value>40</value>
+                    <value>30</value>
+                    <value>20</value>
+                    <value>10</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="logBatteryAboveTriggerPercentage">
+            <defaultValue>
+                <value>4</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>4</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="logBatteryBelowTriggerPercentage">
+            <defaultValue>
+                <value>2</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>4</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="logNightModeDimmedScreen">
+            <defaultValue>
+                <value>4</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>4</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="logNightModeUndimmedScreen">
+            <defaultValue>
+                <value>4</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>4</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="logRestartPlanned">
+            <defaultValue>
+                <value>4</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>4</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="logUpdateSettingsSuccessful">
+            <defaultValue>
+                <value>4</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>4</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="logUpdateSettingsFailed">
+            <defaultValue>
+                <value>1</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>4</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="logUpdateSettingsManual">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>4</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="logContentUpdateDownloadSuccessful">
+            <defaultValue>
+                <value>4</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>4</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="logContentUpdateDownloadFailed">
+            <defaultValue>
+                <value>1</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>4</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="logMotionDetected">
+            <defaultValue>
+                <value>1</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>4</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="logMotionNoLongerDetected">
+            <defaultValue>
+                <value>4</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>4</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="kp_airPrinter_offlineStatusDetected">
+            <defaultValue>
+                <value>2</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>4</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="kp_airPrinter_onlineStatusDetected">
+            <defaultValue>
+                <value>4</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>4</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="logServerVersionIncompatibilityDetected">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>4</value>
+                </values>
+            </constraint>
+        </integer>
+        <!--Screen Brightness-->
+        <float keyName="manualControlOfBrightness">
+            <defaultValue>
+                <value>1.0</value>
+            </defaultValue>
+            <constraint min="0" max="1"/>
+        </float>
+        <!--Advanced Settings-->
+        <boolean keyName="_kp_disableTelLinks_">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="_kp_disableDefaultCalloutShownWhenTouchAndHoldTarget_">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="kp_preloadHomepageBehindScreensaver">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="kp_showKeyboardAutomaticallyOnFocusEvent">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="kp_compensateiOS8RotationIssue">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="kp_enableDropdownsForiOS8">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="kp_transformLinksForGuidedAccess">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="triggerOnChangeEventForAutofilling">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="listOfAllowedAppURLHandlers">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="linksDepth">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <boolean keyName="kp_clearAppDataOnRelaunch">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <integer keyName="kp_cacheSource">
+            <defaultValue>
+                <value>1</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                </values>
+            </constraint>
+        </integer>
+        <boolean keyName="kp_notifyWebViewAboutAllRedirections">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="mps_server_list">
+            <defaultValue>
+                <value>https://w1.mercurypay.com/ws/ws.asmx;https://w2.backuppay.com/ws/ws.asmx</value>
+            </defaultValue>
+        </string>
+        <string keyName="KWC_ServerMinRequiredVersion">
+            <defaultValue>
+                <value>040701</value>
+            </defaultValue>
+        </string>
+        <string keyName="kwc_request_timeout">
+            <defaultValue>
+                <value>300</value>
+            </defaultValue>
+        </string>
+        <boolean keyName="kp_logMode">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="kp_logAllWebKitRequests">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="KWC_LogClientEvents">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="KWC_LogOutcomingXMLDocuments">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+    </dict>
+    <!--LABELS-->
+    <presentation defaultLocale="en-US">
+        <!--Admin-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Admin</language>
+            </name>
+            <field keyName="settingsShowingOption" type="select">
+                <label>
+                    <language value="en-US">Show Settings</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">On App Launch</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Never</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">On Touch Gesture and Passcode</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="settingsPassCode" type="input">
+                <label>
+                    <language value="en-US">Passcode (4 digit string)</language>
+                </label>
+            </field>
+            <field keyName="autonomousSingleAppMode" type="select">
+                <label>
+                    <language value="en-US">Autonomous Single App Mode</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Lock Manually</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Lock On App Launch</language>
+                    </option>
+                </options>
+            </field>
+        </fieldGroup>
+        <!--Content-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Content</language>
+            </name>
+            <field keyName="homePage" type="input">
+                <label>
+                    <language value="en-US">Homepage</language>
+                </label>
+            </field>
+        </fieldGroup>
+        <!--Identification-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Identification</language>
+            </name>
+            <field keyName="uniqueiPadID" type="input">
+                <label>
+                    <language value="en-US">Unique iPad ID</language>
+                </label>
+            </field>
+            <field keyName="kp_substitutionVariableValue_0" type="input">
+                <label>
+                    <language value="en-US">Group ID 1</language>
+                </label>
+            </field>
+            <field keyName="kp_substitutionVariableValue_1" type="input">
+                <label>
+                    <language value="en-US">Group ID 2</language>
+                </label>
+            </field>
+            <field keyName="kp_substitutionVariableValue_2" type="input">
+                <label>
+                    <language value="en-US">Group ID 3</language>
+                </label>
+            </field>
+            <field keyName="kp_substitutionVariableValue_3" type="input">
+                <label>
+                    <language value="en-US">Group ID 4</language>
+                </label>
+            </field>
+            <field keyName="kp_substitutionVariableValue_4" type="input">
+                <label>
+                    <language value="en-US">Group ID 5</language>
+                </label>
+            </field>
+            <field keyName="kp_substitutionVariableValue_5" type="input">
+                <label>
+                    <language value="en-US">Group ID 6</language>
+                </label>
+            </field>
+        </fieldGroup>
+        <!--Display-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Display</language>
+            </name>
+            <field keyName="showStatusBar" type="checkbox">
+                <label>
+                    <language value="en-US">Show iPad Status Bar</language>
+                </label>
+            </field>
+            <field keyName="showAddressBar" type="checkbox">
+                <label>
+                    <language value="en-US">Show Address Bar</language>
+                </label>
+            </field>
+            <field keyName="showWebBrowserNavigationBarLocal" type="checkbox">
+                <label>
+                    <language value="en-US">Show Navigation Bar &gt; With Standard Web Browser &gt; With Local Content</language>
+                </label>
+            </field>
+            <field keyName="showWebBrowserNavigationBarRemote" type="checkbox">
+                <label>
+                    <language value="en-US">Show Navigation Bar &gt; With Standard Web Browser &gt; With Remote Content</language>
+                </label>
+            </field>
+            <field keyName="showPdfFilesNavigationBarLocal" type="checkbox">
+                <label>
+                    <language value="en-US">Show Navigation Bar &gt; With PDF Files &gt; With Local Content</language>
+                </label>
+            </field>
+            <field keyName="showPdfFilesNavigationBarRemote" type="checkbox">
+                <label>
+                    <language value="en-US">Show Navigation Bar &gt; With PDF Files &gt; With Remote Content</language>
+                </label>
+            </field>
+            <field keyName="showPresentationFilesNavigationBarLocal" type="checkbox">
+                <label>
+                    <language value="en-US">Show Navigation Bar &gt; With Presentation Files &gt; With Local Content</language>
+                </label>
+            </field>
+            <field keyName="showPresentationFilesNavigationBarRemote" type="checkbox">
+                <label>
+                    <language value="en-US">Show Navigation Bar &gt; With Presentation Files &gt; With Remote Content</language>
+                </label>
+            </field>
+            <field keyName="showDocumentFilesNavigationBarLocal" type="checkbox">
+                <label>
+                    <language value="en-US">Show Navigation Bar &gt; With Document Files &gt; With Local Content</language>
+                </label>
+            </field>
+            <field keyName="showDocumentFilesNavigationBarRemote" type="checkbox">
+                <label>
+                    <language value="en-US">Show Navigation Bar &gt; With Document Files &gt; With Remote Content</language>
+                </label>
+            </field>
+            <field keyName="showMultimediaFilesNavigationBarLocal" type="checkbox">
+                <label>
+                    <language value="en-US">Show Navigation Bar &gt; With Multimedia Files &gt; With Local Content</language>
+                </label>
+            </field>
+            <field keyName="showMultimediaFilesNavigationBarRemote" type="checkbox">
+                <label>
+                    <language value="en-US">Show Navigation Bar &gt; With Multimedia Files &gt; With Remote Content</language>
+                </label>
+            </field>
+            <field keyName="navBarIconsColorScheme" type="select">
+                <label>
+                    <language value="en-US">Standard Icon Color</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Red</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Yellow</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Green</language>
+                    </option>
+                    <option value="3">
+                        <language value="en-US">Blue</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">Light Grey</language>
+                    </option>
+                    <option value="5">
+                        <language value="en-US">Dark Grey</language>
+                    </option>
+                    <option value="6">
+                        <language value="en-US">Black</language>
+                    </option>
+                    <option value="7">
+                        <language value="en-US">White</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="navBarBackgroundColor" type="input">
+                <label>
+                    <language value="en-US">Standard Bar Background (RGB format)</language>
+                </label>
+            </field>
+            <field keyName="customLinksEnabled" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Custom Links</language>
+                </label>
+            </field>
+            <field keyName="clButtonBackgroundColor" type="input">
+                <label>
+                    <language value="en-US">Custom Link Settings &gt; RGB Button Background Color</language>
+                </label>
+                <description>
+                    <language value="en-US">if blank, no button shape will be shown, only text</language>
+                </description>
+            </field>
+            <field keyName="clButtonTextColor" type="input">
+                <label>
+                    <language value="en-US">Custom Link Settings &gt; RGB Text Color</language>
+                </label>
+            </field>
+            <field keyName="clLabel1" type="input">
+                <label>
+                    <language value="en-US">Custom Link Settings &gt; Label 1</language>
+                </label>
+            </field>
+            <field keyName="clLink1" type="input">
+                <label>
+                    <language value="en-US">Custom Link Settings &gt; Link 1</language>
+                </label>
+            </field>
+            <field keyName="clLabel2" type="input">
+                <label>
+                    <language value="en-US">Custom Link Settings &gt; Label 2</language>
+                </label>
+            </field>
+            <field keyName="clLink2" type="input">
+                <label>
+                    <language value="en-US">Custom Link Settings &gt; Link 2</language>
+                </label>
+            </field>
+            <field keyName="clLabel3" type="input">
+                <label>
+                    <language value="en-US">Custom Link Settings &gt; Label 3</language>
+                </label>
+            </field>
+            <field keyName="clLink3" type="input">
+                <label>
+                    <language value="en-US">Custom Link Settings &gt; Link 3</language>
+                </label>
+            </field>
+            <field keyName="clLabel4" type="input">
+                <label>
+                    <language value="en-US">Custom Link Settings &gt; Label 4</language>
+                </label>
+            </field>
+            <field keyName="clLink4" type="input">
+                <label>
+                    <language value="en-US">Custom Link Settings &gt; Link 4</language>
+                </label>
+            </field>
+            <field keyName="clLabel5" type="input">
+                <label>
+                    <language value="en-US">Custom Link Settings &gt; Label 5</language>
+                </label>
+            </field>
+            <field keyName="clLink5" type="input">
+                <label>
+                    <language value="en-US">Custom Link Settings &gt; Link 5</language>
+                </label>
+            </field>
+            <field keyName="clLabel6" type="input">
+                <label>
+                    <language value="en-US">Custom Link Settings &gt; Label 6</language>
+                </label>
+            </field>
+            <field keyName="clLink6" type="input">
+                <label>
+                    <language value="en-US">Custom Link Settings &gt; Link 6</language>
+                </label>
+            </field>
+            <field keyName="showLoadingProgress" type="checkbox">
+                <label>
+                    <language value="en-US">Show Progress Indicator</language>
+                </label>
+            </field>
+            <field keyName="pageReloadBackgroundColor" type="input">
+                <label>
+                    <language value="en-US">Loading &amp; Default Background Color or Image (color in RGB format)</language>
+                </label>
+            </field>
+            <field keyName="pdfShowThumbs" type="checkbox">
+                <label>
+                    <language value="en-US">PDF Display Settings &gt; Show Thumbnails</language>
+                </label>
+            </field>
+            <field keyName="pdfShowPageNumbers" type="checkbox">
+                <label>
+                    <language value="en-US">PDF Display Settings &gt; Show Page Numbers</language>
+                </label>
+            </field>
+            <field keyName="pdfBackgroundImageFile" type="input">
+                <label>
+                    <language value="en-US">PDF Display Settings &gt; Background Color/Image (RGB format)</language>
+                </label>
+            </field>
+            <field keyName="pdfScrollingType" type="select">
+                <label>
+                    <language value="en-US">PDF Display Settings &gt; Page Transition Style</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Scroll</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Page Turn</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Hyperlink Only</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="pdfInfiniteScrollOrientation" type="select">
+                <label>
+                    <language value="en-US">PDF Display Settings &gt; For Scroll &amp; Hyperlink Only &gt; Scroll Orientation</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Horizontal</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Vertical</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="pdfSizeToFitOption" type="select">
+                <label>
+                    <language value="en-US">PDF Display Settings &gt; For Scroll &amp; Hyperlink Only &gt; Size to Fit</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Horizontal</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Vertical</language>
+                    </option>
+                </options>
+            </field>
+        </fieldGroup>
+        <!--Interaction-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Interaction</language>
+            </name>
+            <field keyName="zoomDisabled" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Zoom &gt; with Standard Web Browser</language>
+                </label>
+            </field>
+            <field keyName="pdfDisableZoom" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Zoom &gt; with PDF Files (displayed in Scroll or Hyperlink Only Mode)</language>
+                </label>
+            </field>
+            <field keyName="viewOnly" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Touch</language>
+                </label>
+            </field>
+            <field keyName="disableWebViewBouncing" type="checkbox">
+                <label>
+                    <language value="en-US">Fix Window to Viewport</language>
+                </label>
+            </field>
+            <field keyName="textSelection" type="checkbox">
+                <label>
+                    <language value="en-US">Allow Text Selection for Accessibility</language>
+                </label>
+            </field>
+        </fieldGroup>
+        <!--Timer Settings-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Timer Settings</language>
+            </name>
+            <field keyName="idleTime" type="input">
+                <label>
+                    <language value="en-US">Idle Time Limit (seconds)</language>
+                </label>
+            </field>
+            <field keyName="idleTimeoutWarning" type="checkbox">
+                <label>
+                    <language value="en-US">Show Idle Time Reset Alert</language>
+                </label>
+            </field>
+            <field keyName="idleTimeoutWarningString" type="input">
+                <label>
+                    <language value="en-US">Idle Time Reset Alert Text</language>
+                </label>
+            </field>
+            <field keyName="refreshTime" type="input">
+                <label>
+                    <language value="en-US">Refresh Homepage (minutes)</language>
+                </label>
+            </field>
+            <field keyName="pageLoadTime" type="input">
+                <label>
+                    <language value="en-US">Page Loading Time Limit (seconds)</language>
+                </label>
+            </field>
+        </fieldGroup>
+        <!--Navigation-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Navigation</language>
+            </name>
+            <field keyName="whiteList" type="input">
+                <label>
+                    <language value="en-US">Allowed Domains</language>
+                </label>
+                <description>
+                    <language value="en-US">separate multiple entries with semicolon ';'</language>
+                </description>
+            </field>
+            <field keyName="blackList" type="input">
+                <label>
+                    <language value="en-US">Restricted Domains</language>
+                </label>
+                <description>
+                    <language value="en-US">separate multiple entries with semicolon ';'</language>
+                </description>
+            </field>
+            <field keyName="kp_applyRestrictionsToEmbeddedContent" type="checkbox">
+                <label>
+                    <language value="en-US">Apply Restrictions to Embedded Content</language>
+                </label>
+            </field>
+            <field keyName="showSiteMessage" type="checkbox">
+                <label>
+                    <language value="en-US">Show Blocked Request Alert</language>
+                </label>
+            </field>
+            <field keyName="offDomainMessage" type="input">
+                <label>
+                    <language value="en-US">Blocked Request Alert Text</language>
+                </label>
+            </field>
+        </fieldGroup>
+        <!--Visitor Management-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Visitor Management</language>
+            </name>
+            <field keyName="activationMode" type="checkbox">
+                <label>
+                    <language value="en-US">Activation Mode</language>
+                </label>
+            </field>
+            <field keyName="browseTime" type="select">
+                <label>
+                    <language value="en-US">Browsing Time Limit</language>
+                </label>
+                <options>
+                    <option value="-1">
+                        <language value="en-US">Forever</language>
+                    </option>
+                    <option value="5">
+                        <language value="en-US">5 minutes</language>
+                    </option>
+                    <option value="10">
+                        <language value="en-US">10 minutes</language>
+                    </option>
+                    <option value="15">
+                        <language value="en-US">15 minutes</language>
+                    </option>
+                    <option value="20">
+                        <language value="en-US">20 minutes</language>
+                    </option>
+                    <option value="30">
+                        <language value="en-US">30 minutes</language>
+                    </option>
+                    <option value="45">
+                        <language value="en-US">45 minutes</language>
+                    </option>
+                    <option value="60">
+                        <language value="en-US">60 minutes</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="goodByePage" type="input">
+                <label>
+                    <language value="en-US">Good-Bye Page</language>
+                </label>
+            </field>
+        </fieldGroup>
+        <!--Screensaver-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Screensaver</language>
+            </name>
+            <field keyName="sv_screenVideoEnabled" type="checkbox">
+                <label>
+                    <language value="en-US">Enable</language>
+                </label>
+            </field>
+            <field keyName="sv_url2MovieFile" type="input">
+                <label>
+                    <language value="en-US">Path to Local File or Folder</language>
+                </label>
+            </field>
+            <field keyName="kp_backgroundColorOfScreenSaverSlideShow" type="input">
+                <label>
+                    <language value="en-US">Standard Image and/or Video Settings &gt; Background Color</language>
+                </label>
+            </field>
+            <field keyName="kp_updateIntervalOfScreenSaverSlideShow" type="input">
+                <label>
+                    <language value="en-US">Standard Image and/or Video Settings &gt; Image Duration (seconds)</language>
+                </label>
+            </field>
+            <field keyName="kp_fadeDurationOfScreenSaverSlideShow" type="input">
+                <label>
+                    <language value="en-US">Standard Image and/or Video Settings &gt; Fade Duration (seconds)</language>
+                </label>
+            </field>
+            <field keyName="kp_screenSaverSlideShow_url2OverlayImage" type="input">
+                <label>
+                    <language value="en-US">Standard Image and/or Video Settings &gt; Path to Overlay Image</language>
+                </label>
+            </field>
+            <field keyName="kp_screenSaverSlideShow_overlayAlpha" type="input">
+                <label>
+                    <language value="en-US">Standard Image and/or Video Settings &gt; Overlay Transparency</language>
+                </label>
+                <description>
+                    <language value="en-US">decimal between 0 and 1, where 1 = no transparency</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <!--Internet Access & Error Handling-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Internet Access &amp; Error Handling</language>
+            </name>
+            <field keyName="showConnectionProblemPage" type="checkbox">
+                <label>
+                    <language value="en-US">Requires Internet Access</language>
+                </label>
+            </field>
+            <field keyName="customConnectionProblemPage" type="input">
+                <label>
+                    <language value="en-US">Alternate Homepage for Offline Use</language>
+                </label>
+            </field>
+            <field keyName="kp_customFileNotFoundPageLocation" type="input">
+                <label>
+                    <language value="en-US">Custom 'File Not Found' Page</language>
+                </label>
+            </field>
+        </fieldGroup>
+        <!--Power Management-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Power Management</language>
+            </name>
+            <field keyName="sleepSchedullerEnabled" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Night Mode</language>
+                </label>
+            </field>
+            <field keyName="time_0" type="input">
+                <label>
+                    <language value="en-US">Sleep Pair 1 &gt; Wake</language>
+                </label>
+            </field>
+            <field keyName="time_1" type="input">
+                <label>
+                    <language value="en-US">Sleep Pair 1 &gt; Dim or Sleep</language>
+                </label>
+            </field>
+            <field keyName="time_2" type="input">
+                <label>
+                    <language value="en-US">Sleep Pair 2 &gt; Wake</language>
+                </label>
+            </field>
+            <field keyName="time_3" type="input">
+                <label>
+                    <language value="en-US">Sleep Pair 2 &gt; Dim or Sleep</language>
+                </label>
+            </field>
+            <field keyName="time_4" type="input">
+                <label>
+                    <language value="en-US">Sleep Pair 3 &gt; Wake</language>
+                </label>
+            </field>
+            <field keyName="time_5" type="input">
+                <label>
+                    <language value="en-US">Sleep Pair 3 &gt; Dim or Sleep</language>
+                </label>
+            </field>
+            <field keyName="time_6" type="input">
+                <label>
+                    <language value="en-US">Sleep Pair 4 &gt; Wake</language>
+                </label>
+            </field>
+            <field keyName="time_7" type="input">
+                <label>
+                    <language value="en-US">Sleep Pair 4 &gt; Dim or Sleep</language>
+                </label>
+            </field>
+            <field keyName="time_8" type="input">
+                <label>
+                    <language value="en-US">Sleep Pair 5 &gt; Wake</language>
+                </label>
+            </field>
+            <field keyName="time_9" type="input">
+                <label>
+                    <language value="en-US">Sleep Pair 5 &gt; Dim or Sleep</language>
+                </label>
+            </field>
+            <field keyName="time_10" type="input">
+                <label>
+                    <language value="en-US">Sleep Pair 6 &gt; Wake</language>
+                </label>
+            </field>
+            <field keyName="time_11" type="input">
+                <label>
+                    <language value="en-US">Sleep Pair 6 &gt; Dim or Sleep</language>
+                </label>
+            </field>
+            <field keyName="time_12" type="input">
+                <label>
+                    <language value="en-US">Sleep Pair 7 &gt; Wake</language>
+                </label>
+            </field>
+            <field keyName="time_13" type="input">
+                <label>
+                    <language value="en-US">Sleep Pair 7 &gt; Dim or Sleep</language>
+                </label>
+            </field>
+            <field keyName="time_14" type="input">
+                <label>
+                    <language value="en-US">Sleep Pair 8 &gt; Wake</language>
+                </label>
+            </field>
+            <field keyName="time_15" type="input">
+                <label>
+                    <language value="en-US">Sleep Pair 8 &gt; Dim or Sleep</language>
+                </label>
+            </field>
+            <field keyName="reduceBrightnessTimeInterval" type="select">
+                <label>
+                    <language value="en-US">Reduce Brightness on Homepage</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Never</language>
+                    </option>
+                    <option value="30">
+                        <language value="en-US">30 sec</language>
+                    </option>
+                    <option value="60">
+                        <language value="en-US">1 min</language>
+                    </option>
+                    <option value="300">
+                        <language value="en-US">5 min</language>
+                    </option>
+                    <option value="600">
+                        <language value="en-US">10 min</language>
+                    </option>
+                    <option value="1800">
+                        <language value="en-US">30 min</language>
+                    </option>
+                    <option value="3600">
+                        <language value="en-US">60 min</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="allowAutoLock" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Auto-Lock</language>
+                </label>
+            </field>
+        </fieldGroup>
+        <!--Browser Engine-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Browser Engine</language>
+            </name>
+            <field keyName="browseTime" type="select">
+                <label>
+                    <language value="en-US">Browser Engine</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">UIWebView</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">WKWebView</language>
+                    </option>
+                </options>
+            </field>
+        </fieldGroup>
+        <!--Memory & Privacy-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Memory &amp; Privacy</language>
+            </name>
+            <field keyName="clearCache" type="checkbox">
+                <label>
+                    <language value="en-US">Clear Cache on Homepage</language>
+                </label>
+            </field>
+            <field keyName="clearCookies" type="checkbox">
+                <label>
+                    <language value="en-US">Clear Cookies on Homepage</language>
+                </label>
+            </field>
+            <field keyName="cookieAcceptPolicy" type="select">
+                <label>
+                    <language value="en-US">Accept Cookies</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Never</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">From Visited</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Always</language>
+                    </option>
+                </options>
+            </field>
+        </fieldGroup>
+        <!--Site Customization-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Site Customization</language>
+            </name>
+            <field keyName="customUserAgentString" type="input">
+                <label>
+                    <language value="en-US">Site Version &gt; Custom User Agent String</language>
+                </label>
+            </field>
+            <field keyName="injectCSSSnippetForSpecificURLEnabled" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Custom CSS</language>
+                </label>
+            </field>
+            <field keyName="specificURLPattern1ForCSSFileName1" type="input">
+                <label>
+                    <language value="en-US">Custom CSS Settings &gt; Group 1 &gt; Matched URLs</language>
+                </label>
+            </field>
+            <field keyName="specificCSSFileName1ForURLPattern1" type="input">
+                <label>
+                    <language value="en-US">Custom CSS Settings &gt; Group 1 &gt; Local File Path for Custom CSS</language>
+                </label>
+            </field>
+            <field keyName="specificURLPattern2ForCSSFileName2" type="input">
+                <label>
+                    <language value="en-US">Custom CSS Settings &gt; Group 2 &gt; Matched URLs</language>
+                </label>
+            </field>
+            <field keyName="specificCSSFileName2ForURLPattern2" type="input">
+                <label>
+                    <language value="en-US">Custom CSS Settings &gt; Group 2 &gt; Local File Path for Custom CSS</language>
+                </label>
+            </field>
+            <field keyName="specificURLPattern3ForCSSFileName3" type="input">
+                <label>
+                    <language value="en-US">Custom CSS Settings &gt; Group 3 &gt; Matched URLs</language>
+                </label>
+            </field>
+            <field keyName="specificCSSFileName3ForURLPattern3" type="input">
+                <label>
+                    <language value="en-US">Custom CSS Settings &gt; Group 3 &gt; Local File Path for Custom CSS</language>
+                </label>
+            </field>
+            <field keyName="specificURLPattern4ForCSSFileName4" type="input">
+                <label>
+                    <language value="en-US">Custom CSS Settings &gt; Group 4 &gt; Matched URLs</language>
+                </label>
+            </field>
+            <field keyName="specificCSSFileName4ForURLPattern4" type="input">
+                <label>
+                    <language value="en-US">Custom CSS Settings &gt; Group 4 &gt; Local File Path for Custom CSS</language>
+                </label>
+            </field>
+            <field keyName="specificURLPattern5ForCSSFileName5" type="input">
+                <label>
+                    <language value="en-US">Custom CSS Settings &gt; Group 5 &gt; Matched URLs</language>
+                </label>
+            </field>
+            <field keyName="specificCSSFileName5ForURLPattern5" type="input">
+                <label>
+                    <language value="en-US">Custom CSS Settings &gt; Group 5 &gt; Local File Path for Custom CSS</language>
+                </label>
+            </field>
+            <field keyName="specificURLPattern6ForCSSFileName6" type="input">
+                <label>
+                    <language value="en-US">Custom CSS Settings &gt; Group 6 &gt; Matched URLs</language>
+                </label>
+            </field>
+            <field keyName="specificCSSFileName6ForURLPattern6" type="input">
+                <label>
+                    <language value="en-US">Custom CSS Settings &gt; Group 6 &gt; Local File Path for Custom CSS</language>
+                </label>
+            </field>
+            <field keyName="specificURLPattern7ForCSSFileName7" type="input">
+                <label>
+                    <language value="en-US">Custom CSS Settings &gt; Group 7 &gt; Matched URLs</language>
+                </label>
+            </field>
+            <field keyName="specificCSSFileName7ForURLPattern7" type="input">
+                <label>
+                    <language value="en-US">Custom CSS Settings &gt; Group 7 &gt; Local File Path for Custom CSS</language>
+                </label>
+            </field>
+            <field keyName="specificURLPattern8ForCSSFileName8" type="input">
+                <label>
+                    <language value="en-US">Custom CSS Settings &gt; Group 8 &gt; Matched URLs</language>
+                </label>
+            </field>
+            <field keyName="specificCSSFileName8ForURLPattern8" type="input">
+                <label>
+                    <language value="en-US">Custom CSS Settings &gt; Group 8 &gt; Local File Path for Custom CSS</language>
+                </label>
+            </field>
+            <field keyName="specificURLPattern9ForCSSFileName9" type="input">
+                <label>
+                    <language value="en-US">Custom CSS Settings &gt; Group 9 &gt; Matched URLs</language>
+                </label>
+            </field>
+            <field keyName="specificCSSFileName9ForURLPattern9" type="input">
+                <label>
+                    <language value="en-US">Custom CSS Settings &gt; Group 9 &gt; Local File Path for Custom CSS</language>
+                </label>
+            </field>
+            <field keyName="specificURLPattern10ForCSSFileName10" type="input">
+                <label>
+                    <language value="en-US">Custom CSS Settings &gt; Group 10 &gt; Matched URLs</language>
+                </label>
+            </field>
+            <field keyName="specificCSSFileName10ForURLPattern10" type="input">
+                <label>
+                    <language value="en-US">Custom CSS Settings &gt; Group 10 &gt; Local File Path for Custom CSS</language>
+                </label>
+            </field>
+            <field keyName="kp_insertHomepageURLParametersAsJavaScriptVariables" type="select">
+                <label>
+                    <language value="en-US">Insert Homepage URL Parameters as JavaScript Variables</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">On Homepage Only</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Always</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Never</language>
+                    </option>
+                </options>
+            </field>
+        </fieldGroup>
+        <!--JavaScript API-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">JavaScript API</language>
+            </name>
+            <field keyName="accessJS_API" type="select">
+                <label>
+                    <language value="en-US">Access JavaScript API</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">By Injection</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">By Import</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Never</language>
+                    </option>
+                </options>
+            </field>
+        </fieldGroup>
+        <!--Geolocation & Motion Detection-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Geolocation &amp; Motion Detection</language>
+            </name>
+            <field keyName="locationUpdateFrequency" type="select">
+                <label>
+                    <language value="en-US">Define Location Coordinates</language>
+                </label>
+                <options>
+                    <option value="0.0">
+                        <language value="en-US">Never</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">On App Launch</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Continuously</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="shakeSensibility" type="select">
+                <label>
+                    <language value="en-US">Accelerometer Sensitivity</language>
+                </label>
+                <options>
+                    <option value="0.059999999999999998">
+                        <language value="en-US">Very High</language>
+                    </option>
+                    <option value="0.10000000000000001">
+                        <language value="en-US">High</language>
+                    </option>
+                    <option value="0.20000000000000001">
+                        <language value="en-US">Medium</language>
+                    </option>
+                    <option value="0.40000000000000002">
+                        <language value="en-US">Low</language>
+                    </option>
+                    <option value="0.59999999999999998">
+                        <language value="en-US">Very Low</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="motionResetPeriod" type="input">
+                <label>
+                    <language value="en-US">Motion Detection Reset Period (minutes)</language>
+                </label>
+            </field>
+        </fieldGroup>
+        <!--Autofill-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Autofill</language>
+            </name>
+            <field keyName="autofillingEnabled" type="checkbox">
+                <label>
+                    <language value="en-US">Enable</language>
+                </label>
+            </field>
+            <field keyName="autofillingURL1" type="input">
+                <label>
+                    <language value="en-US">Group 1 &gt; Matched URLs</language>
+                </label>
+            </field>
+            <field keyName="autofillingLogin1" type="input">
+                <label>
+                    <language value="en-US">Group 1 &gt; Username</language>
+                </label>
+            </field>
+            <field keyName="autofillingPassword1" type="input">
+                <label>
+                    <language value="en-US">Group 1 &gt; Password</language>
+                </label>
+            </field>
+            <field keyName="autofillingLoginID1" type="input">
+                <label>
+                    <language value="en-US">Group 1 &gt; Username Field Identifier</language>
+                </label>
+            </field>
+            <field keyName="autofillingPasswordID1" type="input">
+                <label>
+                    <language value="en-US">Group 1 &gt; Password Field Identifier</language>
+                </label>
+            </field>
+            <field keyName="autofillingURL2" type="input">
+                <label>
+                    <language value="en-US">Group 2 &gt; Matched URLs</language>
+                </label>
+            </field>
+            <field keyName="autofillingLogin2" type="input">
+                <label>
+                    <language value="en-US">Group 2 &gt; Username</language>
+                </label>
+            </field>
+            <field keyName="autofillingPassword2" type="input">
+                <label>
+                    <language value="en-US">Group 2 &gt; Password</language>
+                </label>
+            </field>
+            <field keyName="autofillingLoginID2" type="input">
+                <label>
+                    <language value="en-US">Group 2 &gt; Username Field Identifier</language>
+                </label>
+            </field>
+            <field keyName="autofillingPasswordID2" type="input">
+                <label>
+                    <language value="en-US">Group 2 &gt; Password Field Identifier</language>
+                </label>
+            </field>
+            <field keyName="autofillingURL3" type="input">
+                <label>
+                    <language value="en-US">Group 3 &gt; Matched URLs</language>
+                </label>
+            </field>
+            <field keyName="autofillingLogin3" type="input">
+                <label>
+                    <language value="en-US">Group 3 &gt; Username</language>
+                </label>
+            </field>
+            <field keyName="autofillingPassword3" type="input">
+                <label>
+                    <language value="en-US">Group 3 &gt; Password</language>
+                </label>
+            </field>
+            <field keyName="autofillingLoginID3" type="input">
+                <label>
+                    <language value="en-US">Group 3 &gt; Username Field Identifier</language>
+                </label>
+            </field>
+            <field keyName="autofillingPasswordID3" type="input">
+                <label>
+                    <language value="en-US">Group 3 &gt; Password Field Identifier</language>
+                </label>
+            </field>
+            <field keyName="autofillingURL4" type="input">
+                <label>
+                    <language value="en-US">Group 4 &gt; Matched URLs</language>
+                </label>
+            </field>
+            <field keyName="autofillingLogin4" type="input">
+                <label>
+                    <language value="en-US">Group 4 &gt; Username</language>
+                </label>
+            </field>
+            <field keyName="autofillingPassword4" type="input">
+                <label>
+                    <language value="en-US">Group 4 &gt; Password</language>
+                </label>
+            </field>
+            <field keyName="autofillingLoginID4" type="input">
+                <label>
+                    <language value="en-US">Group 4 &gt; Username Field Identifier</language>
+                </label>
+            </field>
+            <field keyName="autofillingPasswordID4" type="input">
+                <label>
+                    <language value="en-US">Group 4 &gt; Password Field Identifier</language>
+                </label>
+            </field>
+            <field keyName="autofillingURL5" type="input">
+                <label>
+                    <language value="en-US">Group 5 &gt; Matched URLs</language>
+                </label>
+            </field>
+            <field keyName="autofillingLogin5" type="input">
+                <label>
+                    <language value="en-US">Group 5 &gt; Username</language>
+                </label>
+            </field>
+            <field keyName="autofillingPassword5" type="input">
+                <label>
+                    <language value="en-US">Group 5 &gt; Password</language>
+                </label>
+            </field>
+            <field keyName="autofillingLoginID5" type="input">
+                <label>
+                    <language value="en-US">Group 5 &gt; Username Field Identifier</language>
+                </label>
+            </field>
+            <field keyName="autofillingPasswordID5" type="input">
+                <label>
+                    <language value="en-US">Group 5 &gt; Password Field Identifier</language>
+                </label>
+            </field>
+            <field keyName="autofillingURL6" type="input">
+                <label>
+                    <language value="en-US">Group 6 &gt; Matched URLs</language>
+                </label>
+            </field>
+            <field keyName="autofillingLogin6" type="input">
+                <label>
+                    <language value="en-US">Group 6 &gt; Username</language>
+                </label>
+            </field>
+            <field keyName="autofillingPassword6" type="input">
+                <label>
+                    <language value="en-US">Group 6 &gt; Password</language>
+                </label>
+            </field>
+            <field keyName="autofillingLoginID6" type="input">
+                <label>
+                    <language value="en-US">Group 6 &gt; Username Field Identifier</language>
+                </label>
+            </field>
+            <field keyName="autofillingPasswordID6" type="input">
+                <label>
+                    <language value="en-US">Group 6 &gt; Password Field Identifier</language>
+                </label>
+            </field>
+            <field keyName="autofillingURL7" type="input">
+                <label>
+                    <language value="en-US">Group 7 &gt; Matched URLs</language>
+                </label>
+            </field>
+            <field keyName="autofillingLogin7" type="input">
+                <label>
+                    <language value="en-US">Group 7 &gt; Username</language>
+                </label>
+            </field>
+            <field keyName="autofillingPassword7" type="input">
+                <label>
+                    <language value="en-US">Group 7 &gt; Password</language>
+                </label>
+            </field>
+            <field keyName="autofillingLoginID7" type="input">
+                <label>
+                    <language value="en-US">Group 7 &gt; Username Field Identifier</language>
+                </label>
+            </field>
+            <field keyName="autofillingPasswordID7" type="input">
+                <label>
+                    <language value="en-US">Group 7 &gt; Password Field Identifier</language>
+                </label>
+            </field>
+            <field keyName="autofillingURL8" type="input">
+                <label>
+                    <language value="en-US">Group 8 &gt; Matched URLs</language>
+                </label>
+            </field>
+            <field keyName="autofillingLogin8" type="input">
+                <label>
+                    <language value="en-US">Group 8 &gt; Username</language>
+                </label>
+            </field>
+            <field keyName="autofillingPassword8" type="input">
+                <label>
+                    <language value="en-US">Group 8 &gt; Password</language>
+                </label>
+            </field>
+            <field keyName="autofillingLoginID8" type="input">
+                <label>
+                    <language value="en-US">Group 8 &gt; Username Field Identifier</language>
+                </label>
+            </field>
+            <field keyName="autofillingPasswordID8" type="input">
+                <label>
+                    <language value="en-US">Group 8 &gt; Password Field Identifier</language>
+                </label>
+            </field>
+            <field keyName="autofillingURL9" type="input">
+                <label>
+                    <language value="en-US">Group 9 &gt; Matched URLs</language>
+                </label>
+            </field>
+            <field keyName="autofillingLogin9" type="input">
+                <label>
+                    <language value="en-US">Group 9 &gt; Username</language>
+                </label>
+            </field>
+            <field keyName="autofillingPassword9" type="input">
+                <label>
+                    <language value="en-US">Group 9 &gt; Password</language>
+                </label>
+            </field>
+            <field keyName="autofillingLoginID9" type="input">
+                <label>
+                    <language value="en-US">Group 9 &gt; Username Field Identifier</language>
+                </label>
+            </field>
+            <field keyName="autofillingPasswordID9" type="input">
+                <label>
+                    <language value="en-US">Group 9 &gt; Password Field Identifier</language>
+                </label>
+            </field>
+            <field keyName="autofillingURL10" type="input">
+                <label>
+                    <language value="en-US">Group 10 &gt; Matched URLs</language>
+                </label>
+            </field>
+            <field keyName="autofillingLogin10" type="input">
+                <label>
+                    <language value="en-US">Group 10 &gt; Username</language>
+                </label>
+            </field>
+            <field keyName="autofillingPassword10" type="input">
+                <label>
+                    <language value="en-US">Group 10 &gt; Password</language>
+                </label>
+            </field>
+            <field keyName="autofillingLoginID10" type="input">
+                <label>
+                    <language value="en-US">Group 10 &gt; Username Field Identifier</language>
+                </label>
+            </field>
+            <field keyName="autofillingPasswordID10" type="input">
+                <label>
+                    <language value="en-US">Group 10 &gt; Password Field Identifier</language>
+                </label>
+            </field>
+        </fieldGroup>
+        <!--Printing-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Printing</language>
+            </name>
+            <field keyName="showPrintIcon" type="checkbox">
+                <label>
+                    <language value="en-US">Show Print Icon</language>
+                </label>
+            </field>
+            <field keyName="printEnabled" type="checkbox">
+                <label>
+                    <language value="en-US">AirPrint</language>
+                </label>
+            </field>
+            <field keyName="airPrint_PrintInfoOutputType" type="select">
+                <label>
+                    <language value="en-US">Print Quality</language>
+                </label>
+                <options>
+                    <option value="0.0">
+                        <language value="en-US">Standard</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Photo</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Greyscale</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="kp_airPrint_setNumberOfCopiesOption" type="checkbox">
+                <label>
+                    <language value="en-US">Standard Dialog Print Mode &gt; Allow Visitor to Set Number of Copies</language>
+                </label>
+            </field>
+            <field keyName="airPrint_pageRangeOption" type="checkbox">
+                <label>
+                    <language value="en-US">Standard Dialog Print Mode &gt; Allow Visitor to Set Page Range</language>
+                </label>
+            </field>
+        </fieldGroup>
+        <!--Event Notifications-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Event Notifications</language>
+            </name>
+            <field keyName="emailOnPower" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Event Notifications &gt; Power Supply Change</language>
+                </label>
+            </field>
+            <field keyName="emailOnBatteryDischargeToLowerZone" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Event Notifications &gt; Battery Level Change &gt; Battery Discharge to Lower Zone</language>
+                </label>
+            </field>
+            <field keyName="emailOnBatteryChargeToHigherZone" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Event Notifications &gt; Battery Level Change &gt; Battery Charge to Higher Zone</language>
+                </label>
+            </field>
+            <field keyName="lowZoneLevel" type="select">
+                <label>
+                    <language value="en-US">Enable Event Notifications &gt; Battery Level Change &gt; Low %</language>
+                </label>
+                <options>
+                    <option value="-1">
+                        <language value="en-US">Undefined</language>
+                    </option>
+                    <option value="90">
+                        <language value="en-US">90%</language>
+                    </option>
+                    <option value="80">
+                        <language value="en-US">80%</language>
+                    </option>
+                    <option value="70">
+                        <language value="en-US">70%</language>
+                    </option>
+                    <option value="60">
+                        <language value="en-US">60%</language>
+                    </option>
+                    <option value="50">
+                        <language value="en-US">50%</language>
+                    </option>
+                    <option value="40">
+                        <language value="en-US">40%</language>
+                    </option>
+                    <option value="30">
+                        <language value="en-US">30%</language>
+                    </option>
+                    <option value="20">
+                        <language value="en-US">20%</language>
+                    </option>
+                    <option value="10">
+                        <language value="en-US">10%</language>
+                    </option>
+                    <option value="0">
+                        <language value="en-US">0%</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="emailWhenUnpluggedInNormalZone" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Event Notifications &gt; Battery Level Change &gt; Normal Zone &gt; Notify when Unplugged</language>
+                </label>
+            </field>
+            <field keyName="emailWhenChargingInNormalZone" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Event Notifications &gt; Battery Level Change &gt; Normal Zone &gt; Notify when Charging</language>
+                </label>
+            </field>
+            <field keyName="criticalZoneLevel" type="select">
+                <label>
+                    <language value="en-US">Enable Event Notifications &gt; Battery Level Change &gt; Critical %</language>
+                </label>
+                <options>
+                    <option value="-1">
+                        <language value="en-US">Undefined</language>
+                    </option>
+                    <option value="90">
+                        <language value="en-US">90%</language>
+                    </option>
+                    <option value="80">
+                        <language value="en-US">80%</language>
+                    </option>
+                    <option value="70">
+                        <language value="en-US">70%</language>
+                    </option>
+                    <option value="60">
+                        <language value="en-US">60%</language>
+                    </option>
+                    <option value="50">
+                        <language value="en-US">50%</language>
+                    </option>
+                    <option value="40">
+                        <language value="en-US">40%</language>
+                    </option>
+                    <option value="30">
+                        <language value="en-US">30%</language>
+                    </option>
+                    <option value="20">
+                        <language value="en-US">20%</language>
+                    </option>
+                    <option value="10">
+                        <language value="en-US">10%</language>
+                    </option>
+                    <option value="0">
+                        <language value="en-US">0%</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="emailWhenUnpluggedInLowZone" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Event Notifications &gt; Battery Level Change &gt; Low Zone &gt; Notify when Unplugged</language>
+                </label>
+            </field>
+            <field keyName="emailWhenChargingInLowZone" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Event Notifications &gt; Battery Level Change &gt; Low Zone &gt; Notify when Charging</language>
+                </label>
+            </field>
+            <field keyName="emailWhenUnpluggedInCriticalZone" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Event Notifications &gt; Battery Level Change &gt; Critical Zone &gt; Notify when Unplugged</language>
+                </label>
+            </field>
+            <field keyName="emailWhenChargingInCriticalZone" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Event Notifications &gt; Battery Level Change &gt; Critical Zone &gt; Notify when Charging</language>
+                </label>
+            </field>
+            <field keyName="emailOnRemoteSettingsChange" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Event Notifications &gt; Remote Update of Settings</language>
+                </label>
+            </field>
+            <field keyName="emailOnContentUpdate" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Event Notifications &gt; Update of Local Files</language>
+                </label>
+            </field>
+            <field keyName="emailOnAccelTrigger" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Event Notifications &gt; Motion Detection</language>
+                </label>
+            </field>
+            <field keyName="emailOnChangeNetworkReachabilityStatus" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Event Notifications &gt; Switch between Cellular Data &amp; WiFi</language>
+                </label>
+            </field>
+            <field keyName="kp_sendEventNotificationsThrough" type="select">
+                <label>
+                    <language value="en-US">Send Event Notifications Through</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">SMTP Email Server</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Zapier Webhook</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="smtpFromEmail" type="input">
+                <label>
+                    <language value="en-US">SMTP Server Settings &gt; From Email</language>
+                </label>
+            </field>
+            <field keyName="smtpToEmail" type="input">
+                <label>
+                    <language value="en-US">SMTP Server Settings &gt; To Email</language>
+                </label>
+            </field>
+            <field keyName="smtpServer" type="input">
+                <label>
+                    <language value="en-US">SMTP Server Settings &gt; SMTP Server</language>
+                </label>
+            </field>
+            <field keyName="smtpPorts" type="input">
+                <label>
+                    <language value="en-US">SMTP Server Settings &gt; SMTP Ports</language>
+                </label>
+            </field>
+            <field keyName="smtpRequiresAuth" type="checkbox">
+                <label>
+                    <language value="en-US">SMTP Server Settings &gt; Requires Authentication</language>
+                </label>
+            </field>
+            <field keyName="smtpUserName" type="input">
+                <label>
+                    <language value="en-US">SMTP Server Settings &gt; User Name</language>
+                </label>
+            </field>
+            <field keyName="smtpPassword" type="input">
+                <label>
+                    <language value="en-US">SMTP Server Settings &gt; Password</language>
+                </label>
+            </field>
+            <field keyName="smtpEnableSSL" type="checkbox">
+                <label>
+                    <language value="en-US">SMTP Server Settings &gt; Enable SSL</language>
+                </label>
+            </field>
+            <field keyName="kp_zapierDefaultZapURL" type="input">
+                <label>
+                    <language value="en-US">Zapier Webhook URL</language>
+                </label>
+            </field>
+        </fieldGroup>
+        <!--Remote Settings Control-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Remote Settings Control</language>
+            </name>
+            <field keyName="remoteSettingsEnabled" type="checkbox">
+                <label>
+                    <language value="en-US">Enable</language>
+                </label>
+            </field>
+            <field keyName="externalSettingsFile" type="input">
+                <label>
+                    <language value="en-US">XML File Location</language>
+                </label>
+            </field>
+            <field keyName="localSettingsUpdatePeriod" type="input">
+                <label>
+                    <language value="en-US">Update Period (minutes)</language>
+                </label>
+            </field>
+            <field keyName="kp_remoteSettingsUpdatingMessage" type="input">
+                <label>
+                    <language value="en-US">Update Indicator Text</language>
+                </label>
+            </field>
+        </fieldGroup>
+        <!--Remote Update of Local Files-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Remote Update of Local Files</language>
+            </name>
+            <field keyName="updateOfLocalFilesEnabled" type="checkbox">
+                <label>
+                    <language value="en-US">Enable</language>
+                </label>
+            </field>
+            <field keyName="localContentUpdateUrl" type="input">
+                <label>
+                    <language value="en-US">XML File Location</language>
+                </label>
+            </field>
+            <field keyName="localContentUpdatePeriod" type="input">
+                <label>
+                    <language value="en-US">Update Period (minutes)</language>
+                </label>
+            </field>
+            <field keyName="kp_shouldShowProgressIndicatorDuringUpdatingLocalFiles" type="checkbox">
+                <label>
+                    <language value="en-US">Show Update Indicator</language>
+                </label>
+            </field>
+            <field keyName="kp_serverRequestTimeoutPeriodForUpdateOfLocalFiles" type="input">
+                <label>
+                    <language value="en-US">Server Request Timeout Period (seconds)</language>
+                </label>
+            </field>
+        </fieldGroup>
+        <!--Dropbox Synchronization-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Dropbox Synchronization</language>
+            </name>
+            <field keyName="dropboxSyncEnabled" type="checkbox">
+                <label>
+                    <language value="en-US">Enable</language>
+                </label>
+            </field>
+            <field keyName="dropboxSharedContentFolderPath" type="input">
+                <label>
+                    <language value="en-US">Shared Content Folder</language>
+                </label>
+            </field>
+            <field keyName="dropboxRestrictedListOfPaths" type="input">
+                <label>
+                    <language value="en-US">Restricted Sync List</language>
+                </label>
+            </field>
+            <field keyName="dropboxLogSyncSessions" type="checkbox">
+                <label>
+                    <language value="en-US">Log Sync Sessions</language>
+                </label>
+            </field>
+        </fieldGroup>
+        <!--Remote Management Server-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Remote Management Server</language>
+            </name>
+            <field keyName="enabledKWC" type="checkbox">
+                <label>
+                    <language value="en-US">Enable</language>
+                </label>
+            </field>
+            <field keyName="KWC_SiteName" type="input">
+                <label>
+                    <language value="en-US">Site Name</language>
+                </label>
+            </field>
+            <field keyName="KWC_KioskName" type="input">
+                <label>
+                    <language value="en-US">Kiosk Name</language>
+                </label>
+            </field>
+            <field keyName="KWC_UnitName" type="input">
+                <label>
+                    <language value="en-US">Unit Name</language>
+                </label>
+            </field>
+            <field keyName="KWC_HeartbeatInterval" type="select">
+                <label>
+                    <language value="en-US">Heartbeat Interval</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Disabled</language>
+                    </option>
+                    <option value="5">
+                        <language value="en-US">5 min</language>
+                    </option>
+                    <option value="10">
+                        <language value="en-US">10 min</language>
+                    </option>
+                    <option value="30">
+                        <language value="en-US">30 min</language>
+                    </option>
+                    <option value="60">
+                        <language value="en-US">1 hour</language>
+                    </option>
+                    <option value="120">
+                        <language value="en-US">2 hours</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="KWC_ServerCommandsInterval" type="select">
+                <label>
+                    <language value="en-US">Server Command Interval</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Disabled</language>
+                    </option>
+                    <option value="5">
+                        <language value="en-US">5 min</language>
+                    </option>
+                    <option value="10">
+                        <language value="en-US">10 min</language>
+                    </option>
+                    <option value="30">
+                        <language value="en-US">30 min</language>
+                    </option>
+                    <option value="60">
+                        <language value="en-US">1 hour</language>
+                    </option>
+                    <option value="120">
+                        <language value="en-US">2 hours</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="KWC_xmlFilenameForRemoteSettingsControl" type="input">
+                <label>
+                    <language value="en-US">XML Filename for Remote Settings Control</language>
+                </label>
+            </field>
+            <field keyName="logPowerOn" type="select">
+                <label>
+                    <language value="en-US">Notification Events &gt; Power On</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">None</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Error</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Warning</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">Info</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="logPowerOff" type="select">
+                <label>
+                    <language value="en-US">Notification Events &gt; Power Off</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">None</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Error</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Warning</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">Info</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="logBatteryTriggerPercentage" type="select">
+                <label>
+                    <language value="en-US">Notification Events &gt; Battery &gt; Battery Percentage</language>
+                </label>
+                <options>
+                    <option value="90">
+                        <language value="en-US">90%</language>
+                    </option>
+                    <option value="80">
+                        <language value="en-US">80%</language>
+                    </option>
+                    <option value="70">
+                        <language value="en-US">70%</language>
+                    </option>
+                    <option value="60">
+                        <language value="en-US">60%</language>
+                    </option>
+                    <option value="50">
+                        <language value="en-US">50%</language>
+                    </option>
+                    <option value="40">
+                        <language value="en-US">40%</language>
+                    </option>
+                    <option value="30">
+                        <language value="en-US">30%</language>
+                    </option>
+                    <option value="20">
+                        <language value="en-US">20%</language>
+                    </option>
+                    <option value="10">
+                        <language value="en-US">10%</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="logBatteryAboveTriggerPercentage" type="select">
+                <label>
+                    <language value="en-US">Notification Events &gt; Battery &gt; Above Trigger Percentage</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">None</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Error</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Warning</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">Info</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="logBatteryBelowTriggerPercentage" type="select">
+                <label>
+                    <language value="en-US">Notification Events &gt; Battery &gt; Below Trigger Percentage</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">None</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Error</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Warning</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">Info</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="logNightModeDimmedScreen" type="select">
+                <label>
+                    <language value="en-US">Notification Events &gt; Night Mode &gt; Dimmed Screen</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">None</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Error</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Warning</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">Info</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="logNightModeUndimmedScreen" type="select">
+                <label>
+                    <language value="en-US">Notification Events &gt; Night Mode &gt; Undimmed Screen</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">None</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Error</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Warning</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">Info</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="logRestartPlanned" type="select">
+                <label>
+                    <language value="en-US">Notification Events &gt; App Status &gt; App Launched</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">None</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Error</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Warning</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">Info</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="logUpdateSettingsSuccessful" type="select">
+                <label>
+                    <language value="en-US">Notification Events &gt; Settings Update &gt; Download Successful and Settings Applied</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">None</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Error</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Warning</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">Info</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="logUpdateSettingsFailed" type="select">
+                <label>
+                    <language value="en-US">Notification Events &gt; Settings Update &gt; Download Failed</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">None</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Error</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Warning</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">Info</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="logUpdateSettingsManual" type="select">
+                <label>
+                    <language value="en-US">Notification Events &gt; Settings Update &gt; Manual Update Occurred</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">None</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Error</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Warning</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">Info</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="logContentUpdateDownloadSuccessful" type="select">
+                <label>
+                    <language value="en-US">Notification Events &gt; Content Update &gt; Download Successful</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">None</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Error</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Warning</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">Info</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="logContentUpdateDownloadFailed" type="select">
+                <label>
+                    <language value="en-US">Notification Events &gt; Content Update &gt; Download Failed</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">None</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Error</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Warning</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">Info</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="logMotionDetected" type="select">
+                <label>
+                    <language value="en-US">Notification Events &gt; Accelerometer Motion &gt; Detected</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">None</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Error</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Warning</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">Info</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="logMotionNoLongerDetected" type="select">
+                <label>
+                    <language value="en-US">Notification Events &gt; Accelerometer Motion &gt; No Longer Detected</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">None</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Error</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Warning</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">Info</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="kp_airPrinter_offlineStatusDetected" type="select">
+                <label>
+                    <language value="en-US">Notification Events &gt; Printer &gt; AirPrint Printer Offline Status Detected</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">None</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Error</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Warning</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">Info</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="kp_airPrinter_onlineStatusDetected" type="select">
+                <label>
+                    <language value="en-US">Notification Events &gt; Printer &gt; AirPrint Printer Online Status Detected</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">None</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Error</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Warning</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">Info</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="logServerVersionIncompatibilityDetected" type="select">
+                <label>
+                    <language value="en-US">Notification Events &gt; Server Version &gt; Incompatibility Detected</language>
+                </label>
+                <options>
+                    <option value="0">
+                        <language value="en-US">None</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Error</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Warning</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">Info</language>
+                    </option>
+                </options>
+            </field>
+        </fieldGroup>
+        <!--Advanced Settings-->
+        <fieldGroup>
+            <name>
+                <language value="en-US">Advanced Settings</language>
+            </name>
+            <field keyName="_kp_disableTelLinks_" type="checkbox">
+                <label>
+                    <language value="en-US">Advanced Options &gt; Disable Tel: Links</language>
+                </label>
+            </field>
+            <field keyName="_kp_disableDefaultCalloutShownWhenTouchAndHoldTarget_" type="checkbox">
+                <label>
+                    <language value="en-US">Advanced Options &gt; Disable Touch Callouts</language>
+                </label>
+            </field>
+            <field keyName="kp_preloadHomepageBehindScreensaver" type="checkbox">
+                <label>
+                    <language value="en-US">Advanced Options &gt; Preload Homepage Behind Screensaver</language>
+                </label>
+            </field>
+            <field keyName="kp_showKeyboardAutomaticallyOnFocusEvent" type="checkbox">
+                <label>
+                    <language value="en-US">Advanced Options &gt; Show Keyboard Automatically on Focus Event</language>
+                </label>
+            </field>
+            <field keyName="kp_compensateiOS8RotationIssue" type="checkbox">
+                <label>
+                    <language value="en-US">Temporary Beta Settings &gt; Enable Camera Rotation Fix</language>
+                </label>
+            </field>
+            <field keyName="kp_enableDropdownsForiOS8" type="checkbox">
+                <label>
+                    <language value="en-US">Temporary Beta Settings &gt; Enable Drop-down Menu Fix</language>
+                </label>
+            </field>
+            <field keyName="kp_transformLinksForGuidedAccess" type="checkbox">
+                <label>
+                    <language value="en-US">Temporary Beta Settings &gt; Transform Links for Guided Access</language>
+                </label>
+            </field>
+            <field keyName="triggerOnChangeEventForAutofilling" type="checkbox">
+                <label>
+                    <language value="en-US">Temporary Beta Settings &gt; Trigger Change Event After Autofill</language>
+                </label>
+            </field>
+            <field keyName="listOfAllowedAppURLHandlers" type="input">
+                <label>
+                    <language value="en-US">Deprecated Features &gt; Allowed Links to External Apps</language>
+                </label>
+            </field>
+            <field keyName="linksDepth" type="input">
+                <label>
+                    <language value="en-US">Deprecated Features &gt; Allowed Link Path Depth from Homepage</language>
+                </label>
+            </field>
+            <field keyName="kp_clearAppDataOnRelaunch" type="checkbox">
+                <label>
+                    <language value="en-US">Cache Settings &gt; Clear Cache on Relaunch</language>
+                </label>
+            </field>
+            <field keyName="kp_cacheSource" type="select">
+                <label>
+                    <language value="en-US">Cache Settings &gt; Cache Source</language>
+                </label>
+                <description>
+                    <language value="en-US">only applies if Browser Engine &gt; UIWebView, requires app restart to apply</language>
+                </description>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Kiosk Pro Cache</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Native UIWebView Cache</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Never Cache (may result in slower performance)</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="kp_notifyWebViewAboutAllRedirections" type="checkbox">
+                <label>
+                    <language value="en-US">Cache Settings &gt; Only Notify Browser of Server Redirection Events</language>
+                </label>
+            </field>
+            <field keyName="mps_server_list" type="input">
+                <label>
+                    <language value="en-US">MercuryPay Server List</language>
+                </label>
+            </field>
+            <field keyName="KWC_ServerMinRequiredVersion" type="input">
+                <label>
+                    <language value="en-US">Remote Management Server Settings &gt; Server Version</language>
+                </label>
+            </field>
+            <field keyName="kwc_request_timeout" type="input">
+                <label>
+                    <language value="en-US">Remote Management Server Settings &gt; Request Timeout Interval (seconds)</language>
+                </label>
+            </field>
+            <field keyName="kp_logMode" type="checkbox">
+                <label>
+                    <language value="en-US">Troubleshooting &gt; Log App Events</language>
+                </label>
+            </field>
+            <field keyName="kp_logAllWebKitRequests" type="checkbox">
+                <label>
+                    <language value="en-US">Troubleshooting &gt; Log WebKit Requests</language>
+                </label>
+            </field>
+            <field keyName="KWC_LogClientEvents" type="checkbox">
+                <label>
+                    <language value="en-US">Troubleshooting &gt; Log Remote Management Server Events</language>
+                </label>
+            </field>
+            <field keyName="KWC_LogOutcomingXMLDocuments" type="checkbox">
+                <label>
+                    <language value="en-US">Troubleshooting &gt; Log Remote Management Server Communications</language>
+                </label>
+            </field>
+        </fieldGroup>
+    </presentation>
+</managedAppConfiguration>

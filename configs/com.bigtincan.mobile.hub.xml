@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>3</version>
+    <bundleId>com.bigtincan.mobile.hub</bundleId>
+    <dict>
+        <string keyName="sign_in_has_server_settings_ui">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>true</value>
+                    <value>false</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="sign_in_has_try_demo">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>true</value>
+                    <value>false</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="sign_in_type">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>3</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="sign_in_server_url">
+            <constraint nullable="true"/>
+        </string>
+        <string keyName="should_auto_login">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>true</value>
+                    <value>false</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="password">
+            <constraint nullable="true"/>
+        </string>
+        <string keyName="user_name">
+            <constraint nullable="true"/>
+        </string>
+        <string keyName="has_first_launch_intro">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>true</value>
+                    <value>false</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="facebook_api_key">
+            <constraint nullable="true"/>
+        </string>
+        <string keyName="theme_colour_code">
+            <constraint nullable="true"/>
+        </string>
+        <string keyName="tagline_text_ipad">
+            <constraint nullable="true"/>
+        </string>
+        <string keyName="tagline_text_iphone">
+            <constraint nullable="true"/>
+        </string>
+        <string keyName="application_key">
+            <constraint nullable="true"/>
+        </string>
+        <string keyName="region">
+            <defaultValue>
+                <value>usa</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>usa</value>
+                    <value>eu</value>
+                    <value>apac</value>
+                </values>
+            </constraint>
+        </string>
+    </dict>
+    <presentation defaultLocale="en-US">
+        <field keyName="sign_in_has_server_settings_ui" type="select">
+            <label>
+                <language value="en-US">Has Server Settings</language>
+            </label>
+            <description>
+                <language value="en-US">This will enable / disable the server settings UI for the login page</language>
+            </description>
+            <options>
+                <option value="true">
+                    <language value="en-US">Enable</language>
+                </option>
+                <option value="false">
+                    <language value="en-US">Disable</language>
+                </option>
+            </options>
+        </field>
+        <field keyName="sign_in_has_try_demo" type="select">
+            <label>
+                <language value="en-US">Has Try Demo</language>
+            </label>
+            <description>
+                <language value="en-US">This will enable / disable the Try Demo Login option</language>
+            </description>
+            <options>
+                <option value="true">
+                    <language value="en-US">Enable</language>
+                </option>
+                <option value="false">
+                    <language value="en-US">Disable</language>
+                </option>
+            </options>
+        </field>
+        <field keyName="sign_in_type" type="select">
+            <label>
+                <language value="en-US">Authentication Options</language>
+            </label>
+            <description>
+                <language value="en-US">This will set the sign in type options</language>
+            </description>
+            <options>
+                <option value="0">
+                    <language value="en-US">Cloud</language>
+                </option>
+                <option value="1">
+                    <language value="en-US">Private Server</language>
+                </option>
+                <option value="2">
+                    <language value="en-US">Corporate Sign In</language>
+                </option>
+                <option value="3">
+                    <language value="en-US">Enterprise Single Sign On</language>
+                </option>
+            </options>
+        </field>
+        <field keyName="sign_in_server_url" type="input">
+            <label>
+                <language value="en-US">API Server Endpoint</language>
+            </label>
+        </field>
+        <field keyName="should_auto_login" type="select">
+            <label>
+                <language value="en-US">Should Auto Login</language>
+            </label>
+            <description>
+                <language value="en-US">This will enable / disable the Auto Login feature</language>
+            </description>
+            <options>
+                <option value="true">
+                    <language value="en-US">Enable</language>
+                </option>
+                <option value="false">
+                    <language value="en-US">Disable</language>
+                </option>
+            </options>
+        </field>
+        <field keyName="user_name" type="input">
+            <label>
+                <language value="en-US">Hub user name</language>
+            </label>
+            <description>
+                <language value="en-US">This will be used to auto login if that feature is enabled. Email address or AD User Name depending on the configuration</language>
+            </description>
+        </field>
+        <field keyName="password" type="input">
+            <label>
+                <language value="en-US">Hub password</language>
+            </label>
+            <description>
+                <language value="en-US">This will be used to auto login if that feature is enabled</language>
+            </description>
+        </field>
+        <field keyName="has_first_launch_intro" type="select">
+            <label>
+                <language value="en-US">Has first launch intro</language>
+            </label>
+            <description>
+                <language value="en-US">This will enable / disable the first launch intro in v4.0.4 only</language>
+            </description>
+            <options>
+                <option value="true">
+                    <language value="en-US">Enable</language>
+                </option>
+                <option value="false">
+                    <language value="en-US">Disable</language>
+                </option>
+            </options>
+        </field>
+        <field keyName="facebook_api_key" type="input">
+            <label>
+                <language value="en-US">Used by HubShare in v4 only (4.0.4+)</language>
+            </label>
+        </field>
+        <field keyName="theme_colour_code" type="input">
+            <label>
+                <language value="en-US">The login screen theme color. App theme color will be taken from the configuration bundle after login (4.0.4+)</language>
+            </label>
+        </field>
+        <field keyName="tagline_text_ipad" type="input">
+            <label>
+                <language value="en-US">Login screen tagline for iPad (4.0.4 only)</language>
+            </label>
+        </field>
+        <field keyName="tagline_text_iphone" type="input">
+            <label>
+                <language value="en-US">Login screen tagline for iPhone (4.0.4 only)</language>
+            </label>
+        </field>
+        <field keyName="application_key" type="input">
+            <label>
+                <language value="en-US">Application Key binds app and specific bigtincan hub company. It can be generated in company details section of the web admin site</language>
+            </label>
+        </field>
+        <field keyName="region" type="select">
+            <label>
+                <language value="en-US">Application Region</language>
+            </label>
+            <description>
+                <language value="en-US">The region determines the bigtincan hub cloud geographic data and user authentication zone</language>
+            </description>
+            <options>
+                <option value="usa">
+                    <language value="en-US">Americas</language>
+                </option>
+                <option value="eu">
+                    <language value="en-US">Europe</language>
+                </option>
+                <option value="apac">
+                    <language value="en-US">Asia/Pacific</language>
+                </option>
+            </options>
+        </field>
+    </presentation>
+</managedAppConfiguration>

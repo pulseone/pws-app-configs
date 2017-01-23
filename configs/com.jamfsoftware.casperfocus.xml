@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>1</version>
+    <bundleId>com.jamfsoftware.casperfocus</bundleId>
+    <dict>
+        <string keyName="JSS_URL">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <string keyName="JSS_ID">
+            <defaultValue>
+                <value>$JSSID</value>
+            </defaultValue>
+        </string>
+    </dict>
+    <presentation defaultLocale="en-US">
+        <field keyName="JSS_URL" type="input">
+            <label>
+                <language value="en-US">JSS URL</language>
+            </label>
+            <description>
+                <language value="en-US">URL of your JAMF Software Server</language>
+            </description>
+        </field>
+        <field keyName="JSS_ID" type="hidden"/>
+    </presentation>
+</managedAppConfiguration>

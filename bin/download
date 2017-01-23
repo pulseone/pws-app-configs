@@ -1,0 +1,69 @@
+#!/usr/bin/env python
+
+# Copyright (c) 2017 by Pulse Secure, LLC. All rights reserved
+
+import os
+import sys
+import logging
+
+import requests
+import xmltodict
+import furl
+
+
+log = logging.getLogger('app-config-downloader')
+
+
+def _parse_apps(data):
+    try:
+        data = data['ListBucketResult']
+        apps = data['Contents']
+        for app in apps:
+            key = app['Key']
+            if 'current' in key:
+                package, _ = key.split('/', 1)
+                yield package, key
+            else:
+                log.debug('Skipping app config that is not current: %s' % key)
+                continue
+    except KeyError:
+        raise Exception('Unexpected XML structure, cannot proceed.')
+
+
+def _save_app_config(package, xml, config_files_root):
+    try:
+        root = config_files_root
+        if not config_files_root:
+            parent = os.path.dirname(os.path.dirname(__file__))
+            root = os.path.join(parent, 'configs')
+        config_filename = os.path.join(root, '%s.xml' % package)
+        with open(config_filename, 'w') as f:
+            f.write(xml.encode('utf8'))
+        log.info('Wrote config for %s' % package)
+    except:
+        log.exception('Error saving app config: %s' % package)
+
+
+def main(app_config_root, config_files_root):
+    result = requests.get(app_config_root)
+    data = xmltodict.parse(result.text)
+    for package, url in _parse_apps(data):
+        f = furl.furl(app_config_root)
+        f.path = url
+        app_config_xml_url = f.url
+        result = requests.get(app_config_xml_url)
+        # assume this is correct appconfig.org XML, don't bother with
+        # verification as we're just stockpiling these.
+        xml = result.text
+        _save_app_config(package, xml, config_files_root)
+
+
+if __name__ == '__main__':
+    logging.basicConfig(level=logging.INFO)
+    app_config_root = os.getenv('APP_CONFIG_ROOT')
+    config_files_root = os.getenv('APP_CONFIG_FILES_ROOT')
+    if not app_config_root:
+        log.error('Missing APP_CONFIG_ROOT environment variable, exiting.')
+        sys.exit(1)
+
+    main(app_config_root, config_files_root)

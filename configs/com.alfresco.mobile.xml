@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>1</version>
+    <bundleId>com.alfresco.mobile</bundleId>
+    <dict>
+        <string keyName="AlfrescoDisplayName">
+            <constraint min="1"/>
+        </string>
+        <string keyName="AlfrescoRepositoryURL"/>
+        <string keyName="AlfrescoUserName">
+            <constraint nullable="true"/>
+        </string>
+    </dict>
+    <presentation defaultLocale="en-US">
+        <fieldGroup>
+            <name>
+                <language value="en-US">Alfresco Server Settings</language>
+            </name>
+            <field keyName="AlfrescoDisplayName" type="input">
+                <label>
+                    <language value="en-US">Display Name</language>
+                </label>
+                <description>
+                    <language value="en-US">A user-recognizable name for your Alfresco server, displayed on the login screen within the app. For example: "Company Intranet".</language>
+                </description>
+            </field>
+            <field keyName="AlfrescoRepositoryURL" type="input">
+                <label>
+                    <language value="en-US">Repository URL</language>
+                </label>
+                <description>
+                    <language value="en-US">The Alfresco repository URL to which these users will connect, including the repository context path. For example: "https://alfresco.example.net/alfresco".</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Alfresco User Settings</language>
+            </name>
+            <field keyName="AlfrescoUserName" type="input">
+                <label>
+                    <language value="en-US">User Name</language>
+                </label>
+                <description>
+                    <language value="en-US">(Optional) Set this field to set the username the app will use to connect to Alfresco. The user will only need to enter their password.</language>
+                </description>
+            </field>
+        </fieldGroup>
+    </presentation>
+</managedAppConfiguration>

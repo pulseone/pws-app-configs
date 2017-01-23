@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>2</version>
+    <bundleId>com.truecontext.ProntoForms</bundleId>
+    <dict>
+        <string keyName="PFManagedUsername">
+            <defaultValue>
+                <userVariable value="emailAddress"/>
+            </defaultValue>
+            <constraint min="1" max="255"/>
+        </string>
+        <integer keyName="PFManagedLogLevel">
+            <defaultValue>
+                <value>1</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>1</value>
+                    <value>3</value>
+                    <value>7</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="PFManagedPhotoResolution">
+            <defaultValue>
+                <value>2</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>3</value>
+                    <value>4</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="PFManagedPhotoResolutionCustomSize">
+            <constraint min="200" max="9000" nullable="true"/>
+        </integer>
+        <integer keyName="PFManagedPhotoCompression">
+            <defaultValue>
+                <value>30</value>
+            </defaultValue>
+            <constraint min="0" max="100" nullable="false"/>
+        </integer>
+        <string keyName="PFManagedAudioQuality">
+            <defaultValue>
+                <value>Medium</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>Low</value>
+                    <value>Medium</value>
+                    <value>High</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="PFManagedBarcodeCamera">
+            <defaultValue>
+                <value>Rear</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>Rear</value>
+                    <value>Front</value>
+                </values>
+            </constraint>
+        </string>
+        <boolean keyName="PFManagedUseDitto">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="PFManagedConfirmSend">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="PFManagedConfirmDiscard">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="PFManagedConfirmClear">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="PFManagedShowHints">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+    </dict>
+    <presentation defaultLocale="en-US">
+        <fieldGroup>
+            <name>
+                <language value="en-US">Account</language>
+            </name>
+            <field keyName="PFManagedUsername" type="input">
+                <label>
+                    <language value="en-US">User ID</language>
+                </label>
+                <description>
+                    <language value="en-US">Please enter the user's login name.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Photo Quality</language>
+            </name>
+            <field keyName="PFManagedPhotoResolution" type="select">
+                <label>
+                    <language value="en-US">Resolution</language>
+                </label>
+                <description>
+                    <language value="en-US">Select the maximum size of the long edge of the image.</language>
+                </description>
+                <options>
+                    <option value="1">
+                        <language value="en-US">Small (640px)</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Medium (1024px)</language>
+                    </option>
+                    <option value="3">
+                        <language value="en-US">Original</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">Custom</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="PFManagedPhotoResolutionCustomSize" type="input">
+                <label>
+                    <language value="en-US">Custom Maximum Size</language>
+                </label>
+                <description>
+                    <language value="en-US">Please enter the custom maximum size.</language>
+                </description>
+            </field>
+            <field keyName="PFManagedPhotoCompression" type="input">
+                <label>
+                    <language value="en-US">Compression (0-100)</language>
+                </label>
+                <description>
+                    <language value="en-US">Greater amounts of compression lead to smaller file sizes and lower quality photos.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Audio Quality</language>
+            </name>
+            <field keyName="PFManagedAudioQuality" type="select">
+                <label>
+                    <language value="en-US">Audio Quality</language>
+                </label>
+                <description>
+                    <language value="en-US">Select the quality level of recorded audio.</language>
+                </description>
+                <options>
+                    <option value="Low">
+                        <language value="en-US">Low</language>
+                    </option>
+                    <option value="Medium">
+                        <language value="en-US">Medium</language>
+                    </option>
+                    <option value="High">
+                        <language value="en-US">High</language>
+                    </option>
+                </options>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Barcode Camera</language>
+            </name>
+            <field keyName="PFManagedBarcodeCamera" type="select">
+                <label>
+                    <language value="en-US">Barcode Camera</language>
+                </label>
+                <options>
+                    <option value="Rear">
+                        <language value="en-US">Rear facing camera</language>
+                    </option>
+                    <option value="Front">
+                        <language value="en-US">Front facing camera</language>
+                    </option>
+                </options>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Other Settings</language>
+            </name>
+            <field keyName="PFManagedConfirmSend" type="checkbox">
+                <label>
+                    <language value="en-US">Confirm Send</language>
+                </label>
+                <description>
+                    <language value="en-US">Click this checkbox to enable.</language>
+                </description>
+            </field>
+            <field keyName="PFManagedConfirmDiscard" type="checkbox">
+                <label>
+                    <language value="en-US">Confirm Discard</language>
+                </label>
+                <description>
+                    <language value="en-US">Click this checkbox to enable.</language>
+                </description>
+            </field>
+            <field keyName="PFManagedUseDitto" type="checkbox">
+                <label>
+                    <language value="en-US">Use Ditto</language>
+                </label>
+                <description>
+                    <language value="en-US">Click this checkbox to enable.</language>
+                </description>
+            </field>
+            <field keyName="PFManagedConfirmClear" type="checkbox">
+                <label>
+                    <language value="en-US">Confirm Clear</language>
+                </label>
+                <description>
+                    <language value="en-US">Click this checkbox to enable.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Diagnostics</language>
+            </name>
+            <field keyName="PFManagedLogLevel" type="select">
+                <label>
+                    <language value="en-US">Log Level</language>
+                </label>
+                <description>
+                    <language value="en-US">Select the application log level.</language>
+                </description>
+                <options>
+                    <option value="1">
+                        <language value="en-US">Info</language>
+                    </option>
+                    <option value="3">
+                        <language value="en-US">Debug</language>
+                    </option>
+                    <option value="7">
+                        <language value="en-US">Trace</language>
+                    </option>
+                </options>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Hints</language>
+            </name>
+            <field keyName="PFManagedShowHints" type="checkbox">
+                <label>
+                    <language value="en-US">Show Hints</language>
+                </label>
+                <description>
+                    <language value="en-US">Click this checkbox to enable.</language>
+                </description>
+            </field>
+        </fieldGroup>
+    </presentation>
+</managedAppConfiguration>

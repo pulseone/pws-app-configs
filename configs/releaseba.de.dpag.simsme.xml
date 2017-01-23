@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>1</version>
+    <bundleId>releaseba.de.dpag.simsme</bundleId>
+    <dict>
+        <!-- Passwortabfrage beim Start erzwingen -->
+        <boolean keyName="disableNoPwLogin">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </boolean>
+        <!-- Passwortabfrage nach X Minuten -->
+        <integer keyName="simsLockApplicationDelay">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint nullable="true">
+                <values>
+                    <value>0</value>
+                    <value>5</value>
+                    <value>10</value>
+                </values>
+            </constraint>
+        </integer>
+        <!-- Komplexes Passwort erzwingen -->
+        <boolean keyName="forceComplexPin">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </boolean>
+        <!-- Anzahl Versuche Passworteingabe-->
+        <integer keyName="simsPasswordTries">
+            <defaultValue>
+                <value>10</value>
+            </defaultValue>
+            <constraint nullable="true">
+                <values>
+                    <value>3</value>
+                    <value>5</value>
+                    <value>10</value>
+                </values>
+            </constraint>
+        </integer>
+        <!-- Medien sichern -->
+        <boolean keyName="disableSaveToCameraRoll">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </boolean>
+        <!-- Medien senden -->
+        <boolean keyName="disableSendMedia">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </boolean>
+        <!-- Medien senden -->
+        <boolean keyName="disableOpenIn">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </boolean>
+        <!-- Passwort mindest Länge -->
+        <integer keyName="passwordMinLength">
+            <defaultValue>
+                <value>5</value>
+            </defaultValue>
+            <constraint min="1" max="99" nullable="true"/>
+        </integer>
+        <!-- Anzahl der Spezialzeichen im Passwort -->
+        <integer keyName="passwordMinSpecialChar">
+            <defaultValue>
+                <value>1</value>
+            </defaultValue>
+            <constraint min="1" max="99" nullable="true"/>
+        </integer>
+        <!-- Anzahl der Zahlen im Passwort -->
+        <integer keyName="passwordMinDigit">
+            <defaultValue>
+                <value>5</value>
+            </defaultValue>
+            <constraint min="1" max="99" nullable="true"/>
+        </integer>
+        <!-- Anzahl der Kleinbuchstaben im Passwort -->
+        <integer keyName="passwordMinLowercase">
+            <defaultValue>
+                <value>1</value>
+            </defaultValue>
+            <constraint min="1" max="99" nullable="true"/>
+        </integer>
+        <!-- Anzahl der Großbuchstaben im Passwort -->
+        <integer keyName="passwordMinUppercase">
+            <defaultValue>
+                <value>1</value>
+            </defaultValue>
+            <constraint min="1" max="99" nullable="true"/>
+        </integer>
+        <!-- Anzahl der Passwortklassen -->
+        <integer keyName="passwordMinClasses">
+            <defaultValue>
+                <value>1</value>
+            </defaultValue>
+            <constraint min="1" max="4" nullable="true"/>
+        </integer>
+        <!-- Gültigkeit des Passworts in Tagen -->
+        <integer keyName="passwordMaxDuration">
+            <defaultValue>
+                <value>365</value>
+            </defaultValue>
+            <constraint min="0" max="65535" nullable="true"/>
+        </integer>
+        <!-- Wiederverwendung alter Passwörter -->
+        <integer keyName="passwordReuseEntries">
+            <defaultValue>
+                <value>1</value>
+            </defaultValue>
+            <constraint min="1" max="100" nullable="true"/>
+        </integer>
+        <!-- Export Chat in Textdatei -->
+        <boolean keyName="disableExportChat">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </boolean>
+    </dict>
+    <presentation defaultLocale="en">
+        <fieldGroup>
+            <name>
+                <language value="en">Password Settings</language>
+                <language value="de">Passwort Einstellungen</language>
+            </name>
+            <field keyName="disableNoPwLogin" type="checkbox">
+                <label>
+                    <language value="en">enabled</language>
+                    <language value="de">aktivieren</language>
+                </label>
+                <description>
+                    <language value="en">Request password after start.</language>
+                    <language value="de">Passwort beim Start abfragen</language>
+                </description>
+            </field>
+            <field keyName="simsLockApplicationDelay" type="select">
+                <label>
+                    <language value="en">Lock App after</language>
+                    <language value="de">App sperren nach</language>
+                </label>
+                <description>
+                    <language value="en">Lock App in Background after delay in min.</language>
+                    <language value="de">Nach wieviel Minuten im Hintergund soll die App gesperrt werden.</language>
+                </description>
+                <options>
+                    <option value="0">
+                        <language value="en">0</language>
+                    </option>
+                    <option value="5">
+                        <language value="en">5</language>
+                    </option>
+                    <option value="10">
+                        <language value="en">10</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="forceComplexPin" type="checkbox">
+                <label>
+                    <language value="en">enabled</language>
+                    <language value="de">aktivieren</language>
+                </label>
+                <description>
+                    <language value="en">No simple four diggets password</language>
+                    <language value="de">Kein einfaches Passwort erlauben</language>
+                </description>
+            </field>
+            <field keyName="simsPasswordTries" type="select">
+                <label>
+                    <language value="en">Delete after</language>
+                    <language value="de">Löschen nach</language>
+                </label>
+                <description>
+                    <language value="en">Data will delete after selected password tries.</language>
+                    <language value="de">Daten werden nach ausgewählten Versuche gelöscht.</language>
+                </description>
+                <options>
+                    <option value="3">
+                        <language value="en">3</language>
+                    </option>
+                    <option value="5">
+                        <language value="en">5</language>
+                    </option>
+                    <option value="10">
+                        <language value="en">10</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="passwordMinLength" type="input">
+                <label>
+                    <language value="en">Min password length</language>
+                    <language value="en">Min Passwortlänge</language>
+                </label>
+                <description>
+                    <language value="en">Enter the minimum password length.</language>
+                    <language value="de">Minimale Passwortlänge.</language>
+                </description>
+            </field>
+            <field keyName="passwordMinSpecialChar" type="input">
+                <label>
+                    <language value="en">Min number of special characters</language>
+                    <language value="en">Min Anzahl Spezialzeichen</language>
+                </label>
+                <description>
+                    <language value="en">Enter the minimum number of spezial characters.</language>
+                    <language value="de">Minimale Anzahl der Spezialzeichen im Passwort.</language>
+                </description>
+            </field>
+            <field keyName="passwordMinDigit" type="input">
+                <label>
+                    <language value="en">Min number of digits</language>
+                    <language value="en">Min Anzahl Nummern</language>
+                </label>
+                <description>
+                    <language value="en">Enter the minimum number of digits.</language>
+                    <language value="de">Minimale Anzahl von Nummern im Passwort.</language>
+                </description>
+            </field>
+            <field keyName="passwordMinLowercase" type="input">
+                <label>
+                    <language value="en">Min number of lower case</language>
+                    <language value="en">Min Anzahl Kleinbuchstaben</language>
+                </label>
+                <description>
+                    <language value="en">Enter the minimum number of lower case characters.</language>
+                    <language value="de">Minimale Anzahl der Kleinbuchstaben im Passwort.</language>
+                </description>
+            </field>
+            <field keyName="passwordMinUppercase" type="input">
+                <label>
+                    <language value="en">Min number of upper case</language>
+                    <language value="en">Min Anzahl Großbuchstaben</language>
+                </label>
+                <description>
+                    <language value="en">Enter the minimum number of upper case characters.</language>
+                    <language value="de">Minimale Anzahl der Großbuchstaben im Passwort.</language>
+                </description>
+            </field>
+            <field keyName="passwordMinClasses" type="input">
+                <label>
+                    <language value="en">Min passord classes</language>
+                    <language value="en">Min Anzahl Passwortklassen</language>
+                </label>
+                <description>
+                    <language value="en">Enter the minimum number of password classes.</language>
+                    <language value="de">Minimale Anzahl der Passwortklassen.</language>
+                </description>
+            </field>
+            <field keyName="passwordMaxDuration" type="input">
+                <label>
+                    <language value="en">Max password duration</language>
+                    <language value="en">Max Passwortlaufzeit</language>
+                </label>
+                <description>
+                    <language value="en">Enter the maximum password duration.</language>
+                    <language value="de">Maximale Passwortlaufzeit.</language>
+                </description>
+            </field>
+            <field keyName="passwordReuseEntries" type="input">
+                <label>
+                    <language value="en">Password reuse entries</language>
+                    <language value="en">Passwortwiederholungen bei Änderung</language>
+                </label>
+                <description>
+                    <language value="en">Password reuse entries</language>
+                    <language value="de">Passwortwiederholungen nach x Änderung erlubt.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <field keyName="disableSaveToCameraRoll" type="checkbox">
+            <label>
+                <language value="en">enabled</language>
+                <language value="de">aktivieren</language>
+            </label>
+            <description>
+                <language value="en">Disable save media outside.</language>
+                <language value="de">Es können keine Medien aus der App heraus gespeichert werden.</language>
+            </description>
+        </field>
+        <field keyName="disableSendMedia" type="checkbox">
+            <label>
+                <language value="en">enabled</language>
+                <language value="de">aktivieren</language>
+            </label>
+            <description>
+                <language value="en">Disable send media in chat.</language>
+                <language value="de">Es können keine Medien gesendet werden.</language>
+            </description>
+        </field>
+        <field keyName="disableOpenIn" type="checkbox">
+            <label>
+                <language value="en">enabled</language>
+                <language value="de">aktivieren</language>
+            </label>
+            <description>
+                <language value="en">Disabled "open in" action.</language>
+                <language value="de">Unterbindet die "Öffnen in" Funktion.</language>
+            </description>
+        </field>
+        <field keyName="disableExportChat" type="checkbox">
+            <label>
+                <language value="en">enabled</language>
+                <language value="de">aktivieren</language>
+            </label>
+            <description>
+                <language value="en">Disabled "Export Chat" action.</language>
+                <language value="de">Unterbindet die "Chat exportieren" Funktion.</language>
+            </description>
+        </field>
+    </presentation>
+</managedAppConfiguration>

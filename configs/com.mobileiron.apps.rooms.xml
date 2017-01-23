@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>1</version>
+    <bundleId>com.mobileiron.apps.rooms</bundleId>
+    <dict>
+        <string keyName="SendAppLogsEmail">
+            <constraint nullable="true"/>
+        </string>
+        <string keyName="ReportRoomProblemEmail">
+            <constraint nullable="true"/>
+        </string>
+    </dict>
+    <presentation defaultLocale="en-US">
+        <fieldGroup>
+            <name>
+                <language value="en-US">Email Settings</language>
+            </name>
+            <field keyName="ReportRoomProblemEmail" type="input">
+                <label>
+                    <language value="en-US">Report Room Problem Email</language>
+                </label>
+                <description>
+                    <language value="en-US">This email address will be the default recipient of "Report a Problem with Room" email messages. It will override the corresponding email address set in the MobileIron Rooms server.</language>
+                </description>
+            </field>
+            <field keyName="SendAppLogsEmail" type="input">
+                <label>
+                    <language value="en-US">Send App Logs Email</language>
+                </label>
+                <description>
+                    <language value="en-US">This email address will be the default recipient of "Send App Logs" email messages. It will override the corresponding email address set in the MobileIron Rooms server.</language>
+                </description>
+            </field>
+        </fieldGroup>
+    </presentation>
+</managedAppConfiguration>

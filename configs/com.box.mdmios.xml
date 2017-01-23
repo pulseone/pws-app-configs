@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>1</version>
+    <bundleId>com.box.mdmios</bundleId>
+    <dict>
+        <string keyName="Public ID">
+            <constraint nullable="false"/>
+        </string>
+        <string keyName="Management ID">
+            <defaultValue>
+                <deviceVariable value="udid"/>
+            </defaultValue>
+            <constraint nullable="false"/>
+        </string>
+        <string keyName="com.box.mdm.OneTimeToken">
+            <defaultValue>
+                <deviceVariable value="udid"/>
+            </defaultValue>
+            <constraint nullable="false"/>
+        </string>
+        <string keyName="User Email Address">
+            <defaultValue>
+                <userVariable value="emailAddress"/>
+            </defaultValue>
+            <constraint nullable="false"/>
+        </string>
+        <string keyName="Billing ID">
+            <constraint nullable="true"/>
+        </string>
+    </dict>
+    <presentation defaultLocale="en-US">
+        <field keyName="Public ID" type="input">
+            <label>
+                <language value="en-US">Public ID</language>
+            </label>
+            <description>
+                <language value="en-US">The Box tenant code, provided by your Implementation Consultant or Customer Success Manager. Please contact your Box account team if you do not know your Public ID.</language>
+            </description>
+        </field>
+        <field keyName="Management ID" type="hidden">
+            <label>
+                <language value="en-US">Management ID</language>
+            </label>
+            <description>
+                <language value="en-US">The unique device identifier from the EMM service.</language>
+            </description>
+        </field>
+        <field keyName="com.box.mdm.OneTimeToken" type="hidden">
+            <label>
+                <language value="en-US">com.box.mdm.OneTimeToken</language>
+            </label>
+            <description>
+                <language value="en-US">A one-time value used to confirm the device is managed by the EMM service.</language>
+            </description>
+        </field>
+        <field keyName="User Email Address" type="input">
+            <label>
+                <language value="en-US">User Email Address</language>
+            </label>
+            <description>
+                <language value="en-US">The User Email Address used to log in to Box.</language>
+            </description>
+        </field>
+        <field keyName="Billing ID" type="input">
+            <label>
+                <language value="en-US">Billing ID</language>
+            </label>
+            <description>
+                <language value="en-US">This value has been deprecated and only exists for legacy compatibility.</language>
+            </description>
+        </field>
+    </presentation>
+</managedAppConfiguration>

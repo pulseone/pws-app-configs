@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>1</version>
+    <bundleId>com.skycure.skycure</bundleId>
+    <dict>
+        <string keyName="OrgToken">
+            <constraint nullable="false"/>
+        </string>
+        <string keyName="Udid">
+            <defaultValue>
+                <deviceVariable value="udid"/>
+            </defaultValue>
+            <constraint nullable="false"/>
+        </string>
+        <string keyName="UserEmail">
+            <defaultValue>
+                <userVariable value="emailAddress"/>
+            </defaultValue>
+            <constraint nullable="false"/>
+        </string>
+    </dict>
+    <presentation defaultLocale="en-US">
+        <field keyName="OrgToken" type="input">
+            <label>
+                <language value="en-US">Integration Secret Token</language>
+            </label>
+            <description>
+                <language value="en-US">This token uniquely identifies your organization and MobileIron deployment. It can be found by navigating to Settings \&gt; MobileIron Integration \&gt; Basic Setup in the SkyCure Management Console.</language>
+            </description>
+        </field>
+        <field keyName="Udid" type="hidden">
+            <label>
+                <language value="en-US">UDID</language>
+            </label>
+            <description>
+                <language value="en-US">The Apple iOS Unique Device Identifier for the device.</language>
+            </description>
+        </field>
+        <field keyName="UserEmail" type="hidden">
+            <label>
+                <language value="en-US">User E-mail Address</language>
+            </label>
+            <description>
+                <language value="en-US">The work e-mail for the end user.</language>
+            </description>
+        </field>
+    </presentation>
+</managedAppConfiguration>

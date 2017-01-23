@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>1</version>
+    <bundleId>com.adobe.Adobe-Reader</bundleId>
+    <dict>
+        <boolean keyName="com.adobe.configuration.application.copypaste">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.adobe.configuration.application.spotlight">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.adobe.configuration.beta">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.adobe.configuration.cloud.provider.extended.blue-heron">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.adobe.configuration.cloud.provider.basic.dropbox">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.adobe.configuration.cloud.service.mobileLink">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.adobe.configuration.cloud.service.exportPDF">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.adobe.configuration.cloud.service.createPDF">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.adobe.configuration.cloud.service.cameraToPDF">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.adobe.configuration.cloud.service.fillAndSign">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.adobe.configuration.cloud.service.purchaseSubscriptions">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.adobe.configuration.cloud.provider.basic.coordinated">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+    </dict>
+    <presentation defaultLocale="en-US">
+        <fieldGroup>
+            <name>
+                <language value="en-US">Application Features</language>
+            </name>
+            <field keyName="com.adobe.configuration.application.copypaste" type="checkbox">
+                <label>
+                    <language value="en-US">Enable copy &amp; paste</language>
+                </label>
+                <description>
+                    <language value="en-US">Controls the availability of copy &amp; paste.  If enabled, document content can be copied to destinations out of the application.</language>
+                </description>
+            </field>
+            <field keyName="com.adobe.configuration.application.spotlight" type="checkbox">
+                <label>
+                    <language value="en-US">Enable spotlight indexing</language>
+                </label>
+                <description>
+                    <language value="en-US">Controls spotlight indexing.  If enabled, search results containing document content can appear outside of the application.</language>
+                </description>
+            </field>
+            <field keyName="com.adobe.configuration.beta" type="checkbox">
+                <label>
+                    <language value="en-US">Enable beta features</language>
+                </label>
+                <description>
+                    <language value="en-US">Controls the availability of beta features.  These features may or may not provide mechanisms that allow content to be copied elsewhere.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">File Systems</language>
+            </name>
+            <field keyName="com.adobe.configuration.cloud.provider.extended.blue-heron" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Document Cloud and Creative Cloud file systems</language>
+                </label>
+                <description>
+                    <language value="en-US">Controls the availability of the Document Cloud and Creative Cloud file systems</language>
+                </description>
+            </field>
+            <field keyName="com.adobe.configuration.cloud.provider.basic.dropbox" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Dropbox file system</language>
+                </label>
+                <description>
+                    <language value="en-US">Controls the availability of the Dropbox file system</language>
+                </description>
+            </field>
+            <field keyName="com.adobe.configuration.cloud.provider.basic.coordinated" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Document Picker "More Locations"</language>
+                </label>
+                <description>
+                    <language value="en-US">Controls the availability of "More Locations" in the source switcher.  That feature allows users to open files from other applications/clouds using the iOS Document Picker.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Services</language>
+            </name>
+            <field keyName="com.adobe.configuration.cloud.service.mobileLink" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Mobile Link</language>
+                </label>
+                <description>
+                    <language value="en-US">Controls the availability of the MobileLink service.  This feature requires the Document Cloud file system to be enabled.</language>
+                </description>
+            </field>
+            <field keyName="com.adobe.configuration.cloud.service.exportPDF" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Export PDF</language>
+                </label>
+                <description>
+                    <language value="en-US">Controls the availability of the Export PDF service.  This feature requires the Document Cloud file system to be enabled.</language>
+                </description>
+            </field>
+            <field keyName="com.adobe.configuration.cloud.service.createPDF" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Create PDF</language>
+                </label>
+                <description>
+                    <language value="en-US">Controls the availability of the Create PDF service.  This feature requires the Document Cloud file system to be enabled.</language>
+                </description>
+            </field>
+            <field keyName="com.adobe.configuration.cloud.service.cameraToPDF" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Camera to PDF</language>
+                </label>
+                <description>
+                    <language value="en-US">Controls the availability of the Camera to PDF service.  This feature requires the Document Cloud file system to be enabled.</language>
+                </description>
+            </field>
+            <field keyName="com.adobe.configuration.cloud.service.fillAndSign" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Fill and Sign</language>
+                </label>
+                <description>
+                    <language value="en-US">Controls the availability of the Fill and Sign feaure</language>
+                </description>
+            </field>
+            <field keyName="com.adobe.configuration.cloud.service.purchaseSubscriptions" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Purchase Subscriptions</language>
+                </label>
+                <description>
+                    <language value="en-US">Controls the availability of the Purchase Subscriptions feature</language>
+                </description>
+            </field>
+        </fieldGroup>
+    </presentation>
+</managedAppConfiguration>

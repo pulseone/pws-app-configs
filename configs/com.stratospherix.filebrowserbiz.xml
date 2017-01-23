@@ -1,0 +1,2124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>1</version>
+    <bundleId>com.stratospherix.filebrowserbiz</bundleId>
+    <dict>
+        <!-- MDM -->
+        <boolean keyName="mdm-enforce">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="lockdown">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="remotewipe">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="resetStartupPassword">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <!-- Locations -->
+        <string keyName="1machinename">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="1displayname">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="1domain">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <string keyName="1username">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <string keyName="1password">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <integer keyName="1flags">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>8</value>
+                    <value>256</value>
+                    <value>512</value>
+                    <value>1024</value>
+                    <value>1536</value>
+                    <value>2048</value>
+                    <value>2560</value>
+                    <value>3072</value>
+                    <value>3584</value>
+                    <value>4608</value>
+                    <value>5632</value>
+                    <value>6144</value>
+                    <value>6656</value>
+                </values>
+            </constraint>
+        </integer>
+        <string keyName="1connectionurl">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <integer keyName="1vpntype">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>3</value>
+                    <value>4</value>
+                </values>
+            </constraint>
+        </integer>
+        <string keyName="1machine1sharename">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <string keyName="2machinename">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="2displayname">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="2domain">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <string keyName="2username">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <string keyName="2password">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <integer keyName="2flags">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>8</value>
+                    <value>256</value>
+                    <value>512</value>
+                    <value>1024</value>
+                    <value>1536</value>
+                    <value>2048</value>
+                    <value>2560</value>
+                    <value>3072</value>
+                    <value>3584</value>
+                    <value>4608</value>
+                    <value>5632</value>
+                    <value>6144</value>
+                    <value>6656</value>
+                </values>
+            </constraint>
+        </integer>
+        <string keyName="2connectionurl">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <integer keyName="2vpntype">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>3</value>
+                    <value>4</value>
+                </values>
+            </constraint>
+        </integer>
+        <string keyName="2machine1sharename">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <!-- Bookmarks -->
+        <string keyName="1bookmarkname">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="1bookmarkserver">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="1bookmarkpath">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <string keyName="1bookmarkshare">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <string keyName="1bookmarkfilename">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <integer keyName="1bookmarktype">
+            <defaultValue>
+                <value>6</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>2</value>
+                    <value>3</value>
+                    <value>6</value>
+                    <value>7</value>
+                </values>
+            </constraint>
+        </integer>
+        <string keyName="2bookmarkname">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="2bookmarkserver">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <string keyName="2bookmarkpath">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <string keyName="2bookmarkshare">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <string keyName="2bookmarkfilename">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <integer keyName="2bookmarktype">
+            <defaultValue>
+                <value>6</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>2</value>
+                    <value>3</value>
+                    <value>6</value>
+                    <value>7</value>
+                </values>
+            </constraint>
+        </integer>
+        <!-- Sync Preferences -->
+        <boolean keyName="disableOfflineMobileData">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <!-- Sync Files and Folders -->
+        <string keyName="1offlineRemotePath">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <boolean keyName="1offlineRemoteIsFolder">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="2offlineRemotePath">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <boolean keyName="2offlineRemoteIsFolder">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="3offlineRemotePath">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+        </string>
+        <boolean keyName="3offlineRemoteIsFolder">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <!-- Hints and tips -->
+        <boolean keyName="tipsDisabled">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <!-- Preferences -->
+        <boolean keyName="skipCopyMoveHints">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="filenameScroll">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="enableFullScreenViewer">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="gridModeMenuButtons">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <!-- Cache -->
+        <boolean keyName="disableDocCache">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <integer keyName="autoThumbnailMode">
+            <defaultValue>
+                <value>1</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="maxThumbnails">
+            <defaultValue>
+                <value>1000</value>
+            </defaultValue>
+            <constraint min="1" max="5000"/>
+        </integer>
+        <!-- Audio -->
+        <boolean keyName="disableMP3Tags">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableAudioAutoResume">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="switchToAudioView">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <integer keyName="replayAudioVideo">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>3</value>
+                </values>
+            </constraint>
+        </integer>
+        <!-- Video -->
+        <boolean keyName="showVideoLabel">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="autoStartVideo">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableVideoAutoResume">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <!-- Slideshow -->
+        <integer keyName="slideshowDelay">
+            <defaultValue>
+                <value>3</value>
+            </defaultValue>
+            <constraint min="0" max="3600"/>
+        </integer>
+        <integer keyName="slideshowMode">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="transitionMode">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>3</value>
+                    <value>4</value>
+                </values>
+            </constraint>
+        </integer>
+        <!-- Folder Search -->
+        <integer keyName="folderSearchMode">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                </values>
+            </constraint>
+        </integer>
+        <boolean keyName="waitForSearchButton">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="barCodeToolbarButton">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <!-- Accessibility -->
+        <boolean keyName="announceObjectAfter">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="announceTrackPos">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="largeTextFileNames">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <!-- WebDAV Server -->
+        <boolean keyName="disableWebDAVServer">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <string keyName="WebDAVServerPassword">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <string keyName="WebDAVMachineUnsharedList">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <!-- Show Files -->
+        <boolean keyName="showAdminShares">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="showHiddenFiles">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="showSystemFiles">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="hideXMPFiles">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <!-- Network Scanning -->
+        <boolean keyName="enableBonjour">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="enableDiscoveryOnStartup">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="enablePortScan">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <!-- Remote Permissions -->
+        <boolean keyName="canDeleteRemoteFiles">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="canPasteRemoteFiles">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <!-- Startup Preferences -->
+        <integer keyName="askPasswdSecs">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>60</value>
+                    <value>600</value>
+                    <value>1800</value>
+                </values>
+            </constraint>
+        </integer>
+        <boolean keyName="autoBookmarkEnabled">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="hideMenusOnLaunch">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableStartupPassword">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <!-- Data Security -->
+        <boolean keyName="clearCacheOnExit">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <integer keyName="encryptionMode">
+            <defaultValue>
+                <value>2</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                </values>
+            </constraint>
+        </integer>
+        <!-- Feature Switches -->
+        <boolean keyName="disableMyFiles">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="hideMyFiles">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableiTunesSync">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableShareWithApps">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disablePhotoLibrary">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableEmail">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableOpenIn">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableShare">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disablePhotoCapture">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableAudioRecorder">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableAnnotate">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableFileTransfer">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableURLDownload">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableCreateWebclip">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="freezeBookmarks">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableNetDocPicker">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <!-- Permitted Connections -->
+        <boolean keyName="disableAddBox">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableAddDropbox">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableAddSMB">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableAddGDrive">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableAddWebDAV">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableAddFTP">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableAddSkyDrive">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableAddOnePro">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableAddSharePoint">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <!-- iCloud Features -->
+        <boolean keyName="disableBackup">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="enableFBiCloud">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="disableiCloudImportExport">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <!-- Box Preferences -->
+        <boolean keyName="enableBoxAuthViaSafari">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <!-- OneDrive Preferences -->
+        <boolean keyName="disableSkyDriveDownsize">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <!-- Google Drive Preferences -->
+        <boolean keyName="exportGDriveAsPDF">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="viewGDriveAsNative">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <!-- User Credentials -->
+        <string keyName="defaultUserName">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <string keyName="defaultPassword">
+            <defaultValue>
+                <value/>
+            </defaultValue>
+            <constraint nullable="true"/>
+        </string>
+        <boolean keyName="disableSaveCreds">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="cacheCredentials">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+    </dict>
+    <presentation defaultLocale="en-US">
+        <fieldGroup>
+            <name>
+                <language value="en-US">MDM Settings</language>
+            </name>
+            <field keyName="mdm-enforce" type="checkbox">
+                <label>
+                    <language value="en-US">Enforce MDM Settings</language>
+                </label>
+                <description>
+                    <language value="en-US">Users will be prevented from changing all settings specified via MDM.</language>
+                </description>
+            </field>
+            <field keyName="lockdown" type="checkbox">
+                <label>
+                    <language value="en-US">Admin Lockdown</language>
+                </label>
+                <description>
+                    <language value="en-US">Users will be prevented from viewing the Admin Settings area.</language>
+                </description>
+            </field>
+            <field keyName="remotewipe" type="checkbox">
+                <label>
+                    <language value="en-US">Remote Wipe</language>
+                </label>
+                <description>
+                    <language value="en-US">All connection locations and locally stored data will be deleted.</language>
+                </description>
+            </field>
+            <field keyName="resetStartupPassword" type="checkbox">
+                <label>
+                    <language value="en-US">Reset Startup Password</language>
+                </label>
+                <description>
+                    <language value="en-US">Any startup password set in the app will be removed.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Locations - Location 1</language>
+            </name>
+            <field keyName="1machinename" type="input">
+                <label>
+                    <language value="en-US">Machine Address</language>
+                </label>
+                <description>
+                    <language value="en-US">The URL of the remote connection. This takes one of these formats:
+											smb://machineName/optionalShareAndPathName
+											http://WebDAVMachineName/WebDAVRootPath
+											https://WebDAVMachineName:WebDAVPortNumber/WebDAVRootPath
+											ftp://FTPMachineName/FTPRootPath
+											ftps://FTPSMachineName:Port/FTPRootPath
+											skydrive://
+											gdrive://
+											dropbox://
+											box://
+											onepro://
+					</language>
+                </description>
+            </field>
+            <field keyName="1displayname" type="input">
+                <label>
+                    <language value="en-US">Display Name</language>
+                </label>
+                <description>
+                    <language value="en-US">A text string containing the description of the remote connection, used in the Locations tab of FileBrowser.</language>
+                </description>
+            </field>
+            <field keyName="1domain" type="input">
+                <label>
+                    <language value="en-US">Domain Name</language>
+                </label>
+                <description>
+                    <language value="en-US">Optional. Leave as a blank string for cloud connections. For SMB connections, set this to the domain part of a UNC path, for example "local" or "company.com".</language>
+                </description>
+            </field>
+            <field keyName="1username" type="input">
+                <label>
+                    <language value="en-US">User Name</language>
+                </label>
+                <description>
+                    <language value="en-US">Optional. The account name for the connection.  If there is no account name, this may be set to "&amp;lt;!-BLANK--&amp;gt;" which will prevent FileBrowser prompting the user for the name.</language>
+                </description>
+            </field>
+            <field keyName="1password" type="input">
+                <label>
+                    <language value="en-US">Password</language>
+                </label>
+                <description>
+                    <language value="en-US">Optional. The password for the connection. Passwords should rarely need to be sent in settings. If there is no password, this may be set to "&amp;lt;!-BLANK--&amp;gt;" which will prevent FileBrowser prompting the user for the password.</language>
+                </description>
+            </field>
+            <field keyName="1flags" type="select">
+                <label>
+                    <language value="en-US">Connection Type</language>
+                </label>
+                <description>
+                    <language value="en-US">Choose the type of the connection.</language>
+                </description>
+                <options>
+                    <option value="0">
+                        <language value="en-US">PC</language>
+                    </option>
+                    <option value="8">
+                        <language value="en-US">PC without share enumeration</language>
+                    </option>
+                    <option value="256">
+                        <language value="en-US">PC with VPN</language>
+                    </option>
+                    <option value="512">
+                        <language value="en-US">Mac</language>
+                    </option>
+                    <option value="1024">
+                        <language value="en-US">TimeCapsule</language>
+                    </option>
+                    <option value="1536">
+                        <language value="en-US">NAS</language>
+                    </option>
+                    <option value="2048">
+                        <language value="en-US">Dropbox</language>
+                    </option>
+                    <option value="2560">
+                        <language value="en-US">OneDrive</language>
+                    </option>
+                    <option value="3072">
+                        <language value="en-US">Box</language>
+                    </option>
+                    <option value="3584">
+                        <language value="en-US">WebDAV</language>
+                    </option>
+                    <option value="4608">
+                        <language value="en-US">FTP</language>
+                    </option>
+                    <option value="5632">
+                        <language value="en-US">Google Drive</language>
+                    </option>
+                    <option value="6144">
+                        <language value="en-US">OneDrive for Business</language>
+                    </option>
+                    <option value="6656">
+                        <language value="en-US">SharePoint</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="1connectionurl" type="input">
+                <label>
+                    <language value="en-US">Connection URL</language>
+                </label>
+                <description>
+                    <language value="en-US">Optional. If using a VPN that can be automatically started when making a connection, enter the http address that will trigger the VPN.</language>
+                </description>
+            </field>
+            <field keyName="1vpntype" type="select">
+                <label>
+                    <language value="en-US">VPN Type</language>
+                </label>
+                <description>
+                    <language value="en-US">Choose the type of VPN connection.</language>
+                </description>
+                <options>
+                    <option value="0">
+                        <language value="en-US">None</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">L2TP</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">PPTP</language>
+                    </option>
+                    <option value="3">
+                        <language value="en-US">IPSEC</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">SONICWALL</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="1machine1sharename" type="input">
+                <label>
+                    <language value="en-US">Share Name</language>
+                </label>
+                <description>
+                    <language value="en-US">Optional. If using a connection with share enumeration disabled, you can enter a share name to connect here and/or after the machine's network name.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Locations - Location 2</language>
+            </name>
+            <field keyName="2machinename" type="input">
+                <label>
+                    <language value="en-US">Machine Address</language>
+                </label>
+                <description>
+                    <language value="en-US">The URL of the remote connection. This takes one of these formats:
+						smb://machineName/optionalShareAndPathName
+						http://WebDAVMachineName/WebDAVRootPath
+						https://WebDAVMachineName:WebDAVPortNumber/WebDAVRootPath
+						ftp://FTPMachineName/FTPRootPath
+						ftps://FTPSMachineName:Port/FTPRootPath
+						skydrive://
+						gdrive://
+						dropbox://
+						box://
+						onepro://
+					</language>
+                </description>
+            </field>
+            <field keyName="2displayname" type="input">
+                <label>
+                    <language value="en-US">Display Name</language>
+                </label>
+                <description>
+                    <language value="en-US">A text string containing the description of the remote connection, used in the Locations tab of FileBrowser.</language>
+                </description>
+            </field>
+            <field keyName="2domain" type="input">
+                <label>
+                    <language value="en-US">Domain Name</language>
+                </label>
+                <description>
+                    <language value="en-US">Optional. Leave as a blank string for cloud connections. For SMB connections, set this to the domain part of a UNC path, for example "local" or "company.com".</language>
+                </description>
+            </field>
+            <field keyName="2username" type="input">
+                <label>
+                    <language value="en-US">User Name</language>
+                </label>
+                <description>
+                    <language value="en-US">Optional. The account name for the connection.  If there is no account name, this may be set to "&amp;lt;!-BLANK--&amp;gt;" which will prevent FileBrowser prompting the user for the name.</language>
+                </description>
+            </field>
+            <field keyName="2password" type="input">
+                <label>
+                    <language value="en-US">Password</language>
+                </label>
+                <description>
+                    <language value="en-US">Optional. The password for the connection. Passwords should rarely need to be sent in settings. If there is no password, this may be set to "&amp;lt;!-BLANK--&amp;gt;" which will prevent FileBrowser prompting the user for the password.</language>
+                </description>
+            </field>
+            <field keyName="2flags" type="select">
+                <label>
+                    <language value="en-US">Connection Type</language>
+                </label>
+                <description>
+                    <language value="en-US">Choose the type of the connection.</language>
+                </description>
+                <options>
+                    <option value="0">
+                        <language value="en-US">PC</language>
+                    </option>
+                    <option value="8">
+                        <language value="en-US">PC without share enumeration</language>
+                    </option>
+                    <option value="256">
+                        <language value="en-US">PC with VPN</language>
+                    </option>
+                    <option value="512">
+                        <language value="en-US">Mac</language>
+                    </option>
+                    <option value="1024">
+                        <language value="en-US">TimeCapsule</language>
+                    </option>
+                    <option value="1536">
+                        <language value="en-US">NAS</language>
+                    </option>
+                    <option value="2048">
+                        <language value="en-US">Dropbox</language>
+                    </option>
+                    <option value="2560">
+                        <language value="en-US">OneDrive</language>
+                    </option>
+                    <option value="3072">
+                        <language value="en-US">Box</language>
+                    </option>
+                    <option value="3584">
+                        <language value="en-US">WebDAV</language>
+                    </option>
+                    <option value="4608">
+                        <language value="en-US">FTP</language>
+                    </option>
+                    <option value="5632">
+                        <language value="en-US">Google Drive</language>
+                    </option>
+                    <option value="6144">
+                        <language value="en-US">OneDrive for Business</language>
+                    </option>
+                    <option value="6656">
+                        <language value="en-US">SharePoint</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="2connectionurl" type="input">
+                <label>
+                    <language value="en-US">Connection URL</language>
+                </label>
+                <description>
+                    <language value="en-US">Optional. If using a VPN that can be automatically started when making a connection, enter the http address that will trigger the VPN.</language>
+                </description>
+            </field>
+            <field keyName="2vpntype" type="select">
+                <label>
+                    <language value="en-US">VPN Type</language>
+                </label>
+                <description>
+                    <language value="en-US">Choose the type of VPN connection.</language>
+                </description>
+                <options>
+                    <option value="0">
+                        <language value="en-US">None</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">L2TP</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">PPTP</language>
+                    </option>
+                    <option value="3">
+                        <language value="en-US">IPSEC</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">SONICWALL</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="2machine1sharename" type="input">
+                <label>
+                    <language value="en-US">Share Name</language>
+                </label>
+                <description>
+                    <language value="en-US">Optional. If using a connection with share enumeration disabled, you can enter a share name to connect here and/or after the machine's network name.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Bookmarks - Bookmark 1</language>
+            </name>
+            <field keyName="1bookmarkname" type="input">
+                <label>
+                    <language value="en-US">Bookmark Name</language>
+                </label>
+                <description>
+                    <language value="en-US">The convenience name of the bookmark as it will appear in the list.</language>
+                </description>
+            </field>
+            <field keyName="1bookmarkserver" type="input">
+                <label>
+                    <language value="en-US">Bookmark Server</language>
+                </label>
+                <description>
+                    <language value="en-US">The server name. For cloud connections this is the display name of the connection so that it can be uniquely identified. For local connections this is "localhost".</language>
+                </description>
+            </field>
+            <field keyName="1bookmarkshare" type="input">
+                <label>
+                    <language value="en-US">Bookmark Share</language>
+                </label>
+                <description>
+                    <language value="en-US">The share name. Leave empty for connections without shares.</language>
+                </description>
+            </field>
+            <field keyName="1bookmarkpath" type="input">
+                <label>
+                    <language value="en-US">Bookmark Path</language>
+                </label>
+                <description>
+                    <language value="en-US">The path may contain multiple path components separated by forward slashes.</language>
+                </description>
+            </field>
+            <field keyName="1bookmarkfilename" type="input">
+                <label>
+                    <language value="en-US">Bookmark Filename</language>
+                </label>
+                <description>
+                    <language value="en-US">If the bookmark is for a file rather than a folder, this setting is the file"s name.</language>
+                </description>
+            </field>
+            <field keyName="1bookmarktype" type="select">
+                <label>
+                    <language value="en-US">Bookmark Type</language>
+                </label>
+                <description>
+                    <language value="en-US">Choose the type of bookmark.</language>
+                </description>
+                <options>
+                    <option value="2">
+                        <language value="en-US">Local folder</language>
+                    </option>
+                    <option value="3">
+                        <language value="en-US">Local file</language>
+                    </option>
+                    <option value="6">
+                        <language value="en-US">Remote folder</language>
+                    </option>
+                    <option value="7">
+                        <language value="en-US">Remote file</language>
+                    </option>
+                </options>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Bookmarks - Bookmark 2</language>
+            </name>
+            <field keyName="2bookmarkname" type="input">
+                <label>
+                    <language value="en-US">Bookmark Name</language>
+                </label>
+                <description>
+                    <language value="en-US">The convenience name of the bookmark as it will appear in the list.</language>
+                </description>
+            </field>
+            <field keyName="2bookmarkserver" type="input">
+                <label>
+                    <language value="en-US">Bookmark Server</language>
+                </label>
+                <description>
+                    <language value="en-US">The server name. For cloud connections this is the display name of the connection so that it can be uniquely identified. For local connections this is "localhost".</language>
+                </description>
+            </field>
+            <field keyName="2bookmarkshare" type="input">
+                <label>
+                    <language value="en-US">Bookmark Share</language>
+                </label>
+                <description>
+                    <language value="en-US">The share name. Leave empty for connections without shares.</language>
+                </description>
+            </field>
+            <field keyName="2bookmarkpath" type="input">
+                <label>
+                    <language value="en-US">Bookmark Path</language>
+                </label>
+                <description>
+                    <language value="en-US">The path may contain multiple path components separated by forward slashes.</language>
+                </description>
+            </field>
+            <field keyName="2bookmarkfilename" type="input">
+                <label>
+                    <language value="en-US">Bookmark Filename</language>
+                </label>
+                <description>
+                    <language value="en-US">If the bookmark is for a file rather than a folder, this setting is the file"s name.</language>
+                </description>
+            </field>
+            <field keyName="2bookmarktype" type="select">
+                <label>
+                    <language value="en-US">Bookmark Type</language>
+                </label>
+                <description>
+                    <language value="en-US">Choose the type of bookmark.</language>
+                </description>
+                <options>
+                    <option value="2">
+                        <language value="en-US">Local folder</language>
+                    </option>
+                    <option value="3">
+                        <language value="en-US">Local file</language>
+                    </option>
+                    <option value="6">
+                        <language value="en-US">Remote folder</language>
+                    </option>
+                    <option value="7">
+                        <language value="en-US">Remote file</language>
+                    </option>
+                </options>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Sync Files</language>
+            </name>
+            <field keyName="disableOfflineMobileData" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Sync on Mobile Data</language>
+                </label>
+                <description>
+                    <language value="en-US">Background sync will be prevented when not on a WiFi network.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Sync Files - Location 1</language>
+            </name>
+            <field keyName="1offlineRemotePath" type="input">
+                <label>
+                    <language value="en-US">Location Path</language>
+                </label>
+                <description>
+                    <language value="en-US">Start with the display name of the location and then the path to the file or folder.</language>
+                </description>
+            </field>
+            <field keyName="1offlineRemoteIsFolder" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Location is a Folder</language>
+                </label>
+                <description>
+                    <language value="en-US">Select this option if the desired location is a folder. The complete folder contents will be synchronised.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Sync Files - Location 2</language>
+            </name>
+            <field keyName="2offlineRemotePath" type="input">
+                <label>
+                    <language value="en-US">Location Path</language>
+                </label>
+                <description>
+                    <language value="en-US">Start with the display name of the location and then the path to the file or folder.</language>
+                </description>
+            </field>
+            <field keyName="2offlineRemoteIsFolder" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Location is a Folder</language>
+                </label>
+                <description>
+                    <language value="en-US">Select this option if the desired location is a folder. The complete folder contents will be synchronised.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Sync Files - Location 3</language>
+            </name>
+            <field keyName="3offlineRemotePath" type="input">
+                <label>
+                    <language value="en-US">Location Path</language>
+                </label>
+                <description>
+                    <language value="en-US">Start with the display name of the location and then the path to the file or folder.</language>
+                </description>
+            </field>
+            <field keyName="3offlineRemoteIsFolder" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Location is a Folder</language>
+                </label>
+                <description>
+                    <language value="en-US">Select this option if the desired location is a folder. The complete folder contents will be synchronised.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Hints and Tips</language>
+            </name>
+            <field keyName="tipsDisabled" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Tip Button</language>
+                </label>
+                <description>
+                    <language value="en-US">The blue tips button will be prevented from appearing.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Preferences</language>
+            </name>
+            <field keyName="skipCopyMoveHints" type="checkbox">
+                <label>
+                    <language value="en-US">Omit Copy/Move Hint Popup</language>
+                </label>
+                <description>
+                    <language value="en-US">After selecting files/folders and choosing Copy/Move, the help popup will be omitted if this option is selected.</language>
+                </description>
+            </field>
+            <field keyName="filenameScroll" type="checkbox">
+                <label>
+                    <language value="en-US">Scroll Long Filenames</language>
+                </label>
+                <description>
+                    <language value="en-US">File names longer than can be displayed on the screen will be scrolled from left to right.</language>
+                </description>
+            </field>
+            <field keyName="enableFullScreenViewer" type="checkbox">
+                <label>
+                    <language value="en-US">Default to Print View</language>
+                </label>
+                <description>
+                    <language value="en-US">Tapping on a document will open a viewer with a Print option. This swaps the View/Print menu option with the action on tapping a document.</language>
+                </description>
+            </field>
+            <field keyName="gridModeMenuButtons" type="checkbox">
+                <label>
+                    <language value="en-US">Grid Mode Menu Buttons</language>
+                </label>
+                <description>
+                    <language value="en-US">When in Grid View mode, viewing folders contents as icons, show a menu button for each file. If this option is disabled then a long tap is needed to bring up a file menu.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Cache Behaviour</language>
+            </name>
+            <field keyName="disableDocCache" type="checkbox">
+                <label>
+                    <language value="en-US">Disable the document cache</language>
+                </label>
+                <description>
+                    <language value="en-US">When opening a file on remote storage, always re-load it and ignore any cached data.</language>
+                </description>
+            </field>
+            <field keyName="autoThumbnailMode" type="select">
+                <label>
+                    <language value="en-US">Thumbnail Mode</language>
+                </label>
+                <description>
+                    <language value="en-US">When opening a folder, images and videos can be automatically be given a thumbnail image. The On Screen option only creates thumbnails for the files visible on screen. The All Files option will create them for every image/video in a folder.</language>
+                </description>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Off</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">On Screen</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">All Files in Folder</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="maxThumbnails" type="input">
+                <label>
+                    <language value="en-US">Maximum Number of Cached Thumbnails</language>
+                </label>
+                <description>
+                    <language value="en-US">More thumbnails means that network data to re-calculate them is reduced, but additional local memory will be used to store them.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Audio</language>
+            </name>
+            <field keyName="disableMP3Tags" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Audio File Tags</language>
+                </label>
+                <description>
+                    <language value="en-US">When opening an audio file for playback, embedded tags for track metadata and thumbnails will not be extracted.</language>
+                </description>
+            </field>
+            <field keyName="disableAudioAutoResume" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Track Position Memory</language>
+                </label>
+                <description>
+                    <language value="en-US">When opening an audio file, always start playing from the start. Leave this unchecked to start playback from the last play position.</language>
+                </description>
+            </field>
+            <field keyName="switchToAudioView" type="checkbox">
+                <label>
+                    <language value="en-US">Auto Switch to Audio Tab</language>
+                </label>
+                <description>
+                    <language value="en-US">iPhone only: When tapping an audio file, the view will switch to the Audio tab.</language>
+                </description>
+            </field>
+            <field keyName="replayAudioVideo" type="select">
+                <label>
+                    <language value="en-US">Audio Playback Mode</language>
+                </label>
+                <description>
+                    <language value="en-US">Changes the audio queueing behaviour when tapping on an audio file.</language>
+                </description>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Play remaining audio in folder once</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Play all files in folder on repeat</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Shuffle play all files in folder</language>
+                    </option>
+                    <option value="3">
+                        <language value="en-US">Play selected file only</language>
+                    </option>
+                </options>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Video</language>
+            </name>
+            <field keyName="showVideoLabel" type="checkbox">
+                <label>
+                    <language value="en-US">Show Video Filename</language>
+                </label>
+                <description>
+                    <language value="en-US">Display the video filename when video controls are displayed.</language>
+                </description>
+            </field>
+            <field keyName="autoStartVideo" type="checkbox">
+                <label>
+                    <language value="en-US">Play Next Video</language>
+                </label>
+                <description>
+                    <language value="en-US">Use the current slideshow mode (repeat/random) to start playing the next video in a folder once the current video finishes.</language>
+                </description>
+            </field>
+            <field keyName="disableVideoAutoResume" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Video Position Memory</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Slideshow</language>
+            </name>
+            <field keyName="slideshowDelay" type="input">
+                <label>
+                    <language value="en-US">Slideshow Delay</language>
+                </label>
+                <description>
+                    <language value="en-US">From 0 to 3600 seconds.</language>
+                </description>
+            </field>
+            <field keyName="slideshowMode" type="select">
+                <label>
+                    <language value="en-US">Slideshow Mode</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Repeat</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Random</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Once</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="transitionMode" type="select">
+                <label>
+                    <language value="en-US">Slideshow Transition Mode</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Fade</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Slide</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Slide Left</language>
+                    </option>
+                    <option value="3">
+                        <language value="en-US">Swap</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">None</language>
+                    </option>
+                </options>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Folder Search</language>
+            </name>
+            <field keyName="folderSearchMode" type="select">
+                <label>
+                    <language value="en-US">Folder Search Mode</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Ask the User</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Never Search Sub-folders</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Always Search Sub-folders</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="waitForSearchButton" type="checkbox">
+                <label>
+                    <language value="en-US">Wait for Search Button</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="barCodeToolbarButton" type="checkbox">
+                <label>
+                    <language value="en-US">Bar Code Button on Toolbar</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Accessibility</language>
+            </name>
+            <field keyName="announceObjectAfter" type="checkbox">
+                <label>
+                    <language value="en-US">VoiceOver Says Filename Last</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="announceTrackPos" type="checkbox">
+                <label>
+                    <language value="en-US">Use VoiceOver Friendly Audio Scrubber</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="largeTextFileNames" type="checkbox">
+                <label>
+                    <language value="en-US">Larger File Name Text</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">WebDAV Server</language>
+            </name>
+            <field keyName="disableWebDAVServer" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Internal WebDAV Server</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="WebDAVServerPassword" type="input">
+                <label>
+                    <language value="en-US">WebDAV Server Password</language>
+                </label>
+                <description>
+                    <language value="en-US">The password that the WebDAV server and web server in the app uses to verify a remote user.</language>
+                </description>
+            </field>
+            <field keyName="WebDAVMachineUnsharedList" type="input">
+                <label>
+                    <language value="en-US">Prevent WebDAV Server From Sharing Machines</language>
+                </label>
+                <description>
+                    <language value="en-US">Enter display names for locations prevented from being shared over WebDAV. Separate the names using '/'.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Show Files</language>
+            </name>
+            <field keyName="showAdminShares" type="checkbox">
+                <label>
+                    <language value="en-US">List Administrator Shares</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="showHiddenFiles" type="checkbox">
+                <label>
+                    <language value="en-US">Show Hidden Files</language>
+                </label>
+                <description>
+                    <language value="en-US">Includes files with the Hidden file system attribute and files whose names start with a period.</language>
+                </description>
+            </field>
+            <field keyName="showSystemFiles" type="checkbox">
+                <label>
+                    <language value="en-US">Show System Files</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="hideXMPFiles" type="checkbox">
+                <label>
+                    <language value="en-US">Hide XMP Files</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Network Scanning</language>
+            </name>
+            <field keyName="enableBonjour" type="checkbox">
+                <label>
+                    <language value="en-US">Include Apple Bonjour Discovery</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="enablePortScan" type="checkbox">
+                <label>
+                    <language value="en-US">Scan IP Address Range</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="enableDiscoveryOnStartup" type="checkbox">
+                <label>
+                    <language value="en-US">Start Scan on App Start</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Remote Permissions</language>
+            </name>
+            <field keyName="canDeleteRemoteFiles" type="checkbox">
+                <label>
+                    <language value="en-US">Allow File Delete</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="canPasteRemoteFiles" type="checkbox">
+                <label>
+                    <language value="en-US">Allow File Copy</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Startup Preferences</language>
+            </name>
+            <field keyName="askPasswdSecs" type="checkbox">
+                <label>
+                    <language value="en-US">Ask for Startup Password:</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="autoBookmarkEnabled" type="checkbox">
+                <label>
+                    <language value="en-US">On App Start Jump to Last Folder</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="hideMenusOnLaunch" type="checkbox">
+                <label>
+                    <language value="en-US">Hide iPad Tab Controls</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disableStartupPassword" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Setting Startup Password</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Data Security</language>
+            </name>
+            <field keyName="clearCacheOnExit" type="checkbox">
+                <label>
+                    <language value="en-US">Clear Cached Files on App Exit</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="encryptionMode" type="select">
+                <label>
+                    <language value="en-US">Encryption Mode</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+                <options>
+                    <option value="0">
+                        <language value="en-US">No Protection</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Until First Unlock</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">Complete Protection</language>
+                    </option>
+                </options>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Feature Switches</language>
+            </name>
+            <field keyName="disableMyFiles" type="checkbox">
+                <label>
+                    <language value="en-US">Make My Files Read Only</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="hideMyFiles" type="checkbox">
+                <label>
+                    <language value="en-US">Remove My Files</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disableiTunesSync" type="checkbox">
+                <label>
+                    <language value="en-US">Remove iTunes Sync</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disableShareWithApps" type="checkbox">
+                <label>
+                    <language value="en-US">Remove Share With Apps Location</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disablePhotoLibrary" type="checkbox">
+                <label>
+                    <language value="en-US">Remove Photo Library</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disableEmail" type="checkbox">
+                <label>
+                    <language value="en-US">Remove Email Option</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disableOpenIn" type="checkbox">
+                <label>
+                    <language value="en-US">Remove Open In Option</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disableShare" type="checkbox">
+                <label>
+                    <language value="en-US">Remove Share Option</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disablePhotoCapture" type="checkbox">
+                <label>
+                    <language value="en-US">Remove Photo Capture Option</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disableAudioRecorder" type="checkbox">
+                <label>
+                    <language value="en-US">Remove Audio Recorder Option</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disableAnnotate" type="checkbox">
+                <label>
+                    <language value="en-US">Remove Annotation Option</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disableFileTransfer" type="checkbox">
+                <label>
+                    <language value="en-US">Remove File Transfer Controls</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disableURLDownload" type="checkbox">
+                <label>
+                    <language value="en-US">Remove Download from URL Option</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disableCreateWebclip" type="checkbox">
+                <label>
+                    <language value="en-US">Remove WebClip Creation Option</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="freezeBookmarks" type="checkbox">
+                <label>
+                    <language value="en-US">Make Bookmarks Read Only</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disableNetDocPicker" type="checkbox">
+                <label>
+                    <language value="en-US">Remove Network Files Picker</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Permitted Connections</language>
+            </name>
+            <field keyName="disableAddBox" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Adding Box</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disableAddDropbox" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Adding Dropbox</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disableAddSMB" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Adding PC/Mac/TC</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disableAddGDrive" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Adding GDrive</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disableAddWebDAV" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Adding WebDAV</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disableAddFTP" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Adding FTP/SFTP</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disableAddSkyDrive" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Adding OneDrive</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disableAddOnePro" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Adding OneDrive for Business</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disableAddSharePoint" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Adding SharePoint</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">iCloud Features</language>
+            </name>
+            <field keyName="disableBackup" type="checkbox">
+                <label>
+                    <language value="en-US">Prevent My Files Being Included in iTunes/iCloud Backup</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="enableFBiCloud" type="checkbox">
+                <label>
+                    <language value="en-US">Show iCloud Location</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="disableiCloudImportExport" type="checkbox">
+                <label>
+                    <language value="en-US">Remove Import/Export File Options</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Box Preferences</language>
+            </name>
+            <field keyName="enableBoxAuthViaSafari" type="checkbox">
+                <label>
+                    <language value="en-US">Enable Box Authorisation with Safari</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">OneDrive Preferences</language>
+            </name>
+            <field keyName="disableSkyDriveDownsize" type="checkbox">
+                <label>
+                    <language value="en-US">Keep Full Size Images in OneDrive</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Google Drive Preferences</language>
+            </name>
+            <field keyName="exportGDriveAsPDF" type="checkbox">
+                <label>
+                    <language value="en-US">Export Google Docs as PDF</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="viewGDriveAsNative" type="checkbox">
+                <label>
+                    <language value="en-US">View Google Docs in Native Viewer</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">User Credentials</language>
+            </name>
+            <field keyName="defaultUserName" type="input">
+                <label>
+                    <language value="en-US">Default User Name for New Locations</language>
+                </label>
+                <description>
+                    <language value="en-US">Used only when a user tries to create a new machine location to connect to.</language>
+                </description>
+            </field>
+            <field keyName="defaultPassword" type="input">
+                <label>
+                    <language value="en-US">Default Password for New Locations</language>
+                </label>
+                <description>
+                    <language value="en-US">Used only when a user tries to create a new machine location to connect to.</language>
+                </description>
+            </field>
+            <field keyName="disableSaveCreds" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Storage of Credentials</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+            <field keyName="cacheCredentials" type="checkbox">
+                <label>
+                    <language value="en-US">Allow Future Logins to Re-use Credentials</language>
+                </label>
+                <description>
+                    <language value="en-US"/>
+                </description>
+            </field>
+        </fieldGroup>
+    </presentation>
+</managedAppConfiguration>
