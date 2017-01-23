@@ -1,0 +1,142 @@
+#!/usr/bin/env python
+
+# Copyright (c) 2017 by Pulse Secure, LLC. All rights reserved
+
+import os
+import sys
+import logging
+import json
+import textwrap
+from collections import defaultdict
+
+
+log = logging.getLogger('app-config-generator')
+
+
+# default should be 'input'
+_html_type_map = {
+    'string': 'input',
+    'boolean': 'checkbox',
+}
+
+# The generation format is just simple JSON, so we are not building a really complicated
+# XML structure and this seems simpler and good enough for now.
+# The version is hardcoded because we are manually constructing these configs,
+# if the app vendor wants to create their own XML config and specify version,
+# more power to them!
+_app_config_xml_tpl = """
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>1</version>
+    <bundleId>{package_name}</bundleId>
+    <dict>
+{fields}
+    </dict>
+    <presentation defaultLocale="en-US">
+{presentation}
+    </presentation>
+</managedAppConfiguration>
+"""
+
+_field_tpl = """        <{type} keyName="{key}"/>
+"""
+
+# group, presentation_fields
+_presentation_group_tpl = """
+        <fieldGroup>
+            <name>
+                <language value="en-US">{group}</language>
+            </name>
+            {presentation_fields}
+        </fieldGroup>"""
+
+
+# key, field_type, label, description
+_presentation_field_tpl = """
+            <field keyName="{key}" type="{field_type}">
+                <label>
+                    <language value="en-US">{label}</language>
+                </label>
+                <description>
+                    <language value="en-US">{description}</language>
+                </description>
+            </field>"""
+
+
+
+
+def _generate_xml(package_name, json_filename):
+    format_kwargs = {
+        'package_name': package_name,
+    }
+    try:
+        with open(json_filename, 'r') as f:
+            data = json.load(f)
+    except Exception as e:
+        log.exception('could not parse file, here is contents:')
+        with open(json_filename, 'r') as f:
+            log.info(f.read())
+
+
+    schema_fields = []
+    presentation_fields = defaultdict(list)
+    for k, field in data.iteritems():
+        format_kwargs['key'] = k
+        format_kwargs['field_type'] = _html_type_map.get(field['type'], 'input')
+        format_kwargs['label'] = field['title']
+        format_kwargs['description'] = field['description']
+        format_kwargs['group'] = field['group']
+        format_kwargs['type'] = field['type']
+
+        schema_fields.append(_field_tpl.format(**format_kwargs))
+        presentation_fields[field['group']].append(
+            _presentation_field_tpl.format(**format_kwargs)
+        )
+
+    groups = []
+    for group, pfields in presentation_fields.iteritems():
+        all_fields = "".join(pfields)
+        groups.append(_presentation_group_tpl.format(
+            group=group,
+            presentation_fields=all_fields
+        ))
+
+    return _app_config_xml_tpl.format(
+        package_name=package_name,
+        fields="".join(schema_fields),
+        presentation="".join(groups)
+    )
+
+
+def _save_xml(package_name, xml, config_files_root):
+    config_file = os.path.join(config_files_root, '%s.xml' % package_name)
+    log.info('Writing config file: %s' % config_file)
+    with open(config_file, 'w') as f:
+        f.write(xml)
+
+
+def main(config_json_root, config_files_root):
+    for f in os.listdir(config_json_root):
+        json_filename = os.path.join(config_json_root, f)
+        log.debug('checking: %s' % json_filename)
+        if os.path.isfile(json_filename):
+            package_name, ext = f.rsplit('.', 1)
+            xml = _generate_xml(package_name, json_filename)
+            _save_xml(package_name, xml, config_files_root)
+
+
+if __name__ == '__main__':
+    logging.basicConfig(level=logging.DEBUG)
+
+    parent = os.path.dirname(os.path.dirname(__file__))
+    config_json_root = os.getenv('CONFIG_JSON_ROOT')
+    if not config_json_root:
+        config_json_root = os.path.join(parent, 'apps')
+    log.debug('configs will be read from: %s' % config_json_root)
+
+    config_files_root = os.getenv('APP_CONFIG_FILES_ROOT')
+    if not config_files_root:
+        config_files_root = os.path.join(parent, 'configs')
+    log.debug('configs will be SAVED TO: %s' % config_files_root)
+
+    main(config_json_root, config_files_root)

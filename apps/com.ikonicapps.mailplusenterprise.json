@@ -1,0 +1,152 @@
+{
+  "iaallowsbackup": {
+    "description": "Used to disable iTunes backups of Mail+ data",
+    "group": "Advanced", 
+    "title": "Allow Backups", 
+    "type": "boolean"
+  }, 
+  "iaallowsimplepasscode": {
+    "description": "Used to set passcode difficulty",
+    "group": "Passcode", 
+    "title": "Allow Simple Passcode", 
+    "type": "boolean"
+  }, 
+  "iaallowuntrustedcerts": {
+    "description": "Automatically reject unknown security certificates",
+    "group": "Extras",
+    "title": "Allow Untrusted Certs", 
+    "type": "boolean"
+  }, 
+  "iaalphanumericpasscoderequired": {
+    "description": "Require alpha numeric passcodes",
+    "group": "Passcode", 
+    "title": "Alpha-numeric Passcode Required", 
+    "type": "boolean"
+  }, 
+  "iaclientcertificate": {
+    "description": "Used for two-factor certificate authentication. This should also be used as a replacement for AppTunnel for Mail apps",
+    "group": "Advanced", 
+    "title": "Client Cert", 
+    "type": "string"
+  }, 
+  "iadeviceid": {
+    "description": "Used to manage the deviceid Mail+ uses to connect to the ActiveSync server. Ex: $DEVICE_UUID_NO_DASHES$ or ABC123. Please make sure this is an ActiveSync formatted deviceid",
+    "group": "Advanced", 
+    "title": "Device ID", 
+    "type": "string"
+  }, 
+  "iaemailaddress": {
+    "description": "ActiveSync email address",
+    "group": "Required", 
+    "title": "ActiveSync email address", 
+    "type": "string"
+  }, 
+  "iaencryptioncert": {
+    "description": "Separate signinng certificate. Use this ONLY if signing and encryption certificate are different. This cannot be used with iasmimecertificate",
+    "group": "SMIME", 
+    "title": "Encryption Cert", 
+    "type": "string"
+  }, 
+  "iaencryptionrequired": {
+    "description": "Require all outgoing emails to be encrypted",
+    "group": "SMIME", 
+    "title": "Encryption Required", 
+    "type": "boolean"
+  }, 
+  "iahidesnapshot": {
+    "description": "This controls the screenshot saved into the app directory when the app enters the background",
+    "group": "Extras",
+    "title": "Hide Snapshot", 
+    "type": "boolean"
+  }, 
+  "ialicensekey": {
+    "description": "Mail+ license key given to you by iKonic Apps",
+    "group": "Required", 
+    "title": "Mail+ License Key", 
+    "type": "string"
+  }, 
+  "iaminpasscodecomplexcharacters": {
+    "description": "Number of required complex characters in the passcode",
+    "group": "Passcode", 
+    "title": "Minimum Passcode Complex Characters", 
+    "type": "integer"
+  }, 
+  "iaminpasscodelength": {
+    "description": "Used to set passcode difficulty length",
+    "group": "Passcode", 
+    "title": "Minimum Passcode Length", 
+    "type": "integer"
+  }, 
+  "iapasscoderequired": {
+    "description": "Require or disable an app passcode. This value will take precedence over ActiveSync policies. Note: this does not affect device passcode.",
+    "group": "Passcode", 
+    "title": "Passcode Required", 
+    "type": "boolean"
+  }, 
+  "iapasscoderequiredforviewingencrypted": {
+    "description": "Require a passcode to access the encryption certificate. Must be used with iapasscoderequired set to TRUE",
+    "group": "SMIME", 
+    "title": "Passcode Required For Viewing Encryption Cert", 
+    "type": "boolean"
+  }, 
+  "iapassword": {
+    "description": "ActiveSync password. Send $NULL$ to force the user to input his/her password instead.",
+    "group": "Required", 
+    "title": "ActiveSync Password", 
+    "type": "string"
+  }, 
+  "iaserver": {
+    "description": "The ActiveSync server or proxy",
+    "group": "Required", 
+    "title": "ActiveSync Server", 
+    "type": "string"
+  }, 
+  "iasigningcert": {
+    "description": "Separate signinng certificate. Use this ONLY if signing and encryption certificate are differen. This cannot be used with iasmimecertificate",
+    "group": "SMIME", 
+    "title": "Signing Cert", 
+    "type": "string"
+  }, 
+  "iasigningrequired": {
+    "description": "Require all outgoing emails to be signed",
+    "group": "SMIME", 
+    "title": "Signing Required", 
+    "type": "boolean"
+  }, 
+  "iasmimecertificate": {
+    "description": "Certificate used for signing and encryption",
+    "group": "SMIME", 
+    "title": "SMIME Cert", 
+    "type": "string"
+  }, 
+  "iasmimerequireencryptedreplies": {
+    "description": "Used to require encrypted emails also be replied/forwarded as encrypted",
+    "group": "SMIME", 
+    "title": "SMIME Required Encrypted Replies", 
+    "type": "boolean"
+  }, 
+  "iasmimeshoulduse3des": {
+    "description": "Used to change the encryption algorithm to 3DES",
+    "group": "SMIME", 
+    "title": "Should Use 3DES Encryption", 
+    "type": "boolean"
+  }, 
+  "iasupportemail": {
+    "description": "The email address users should contact for additional help",
+    "group": "Extras",
+    "title": "Support Email", 
+    "type": "string"
+  }, 
+  "iasupporturl": {
+    "description": "The support URL users should be directed to if they need help",
+    "group": "Extras",
+    "title": "Support URL", 
+    "type": "string"
+  }, 
+  "iausername": {
+    "description": "ActiveSync username",
+    "group": "Required", 
+    "title": "ActiveSync Username", 
+    "type": "string"
+  }
+}

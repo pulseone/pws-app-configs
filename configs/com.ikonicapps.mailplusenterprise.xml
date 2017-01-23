@@ -1,0 +1,267 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>1</version>
+    <bundleId>com.ikonicapps.mailplusenterprise</bundleId>
+    <dict>
+        <boolean keyName="iasmimeshoulduse3des"/>
+        <boolean keyName="iasigningrequired"/>
+        <string keyName="iasupportemail"/>
+        <string keyName="iasmimecertificate"/>
+        <boolean keyName="iaallowsbackup"/>
+        <string keyName="iadeviceid"/>
+        <string keyName="iaemailaddress"/>
+        <string keyName="iausername"/>
+        <boolean keyName="iaallowsimplepasscode"/>
+        <integer keyName="iaminpasscodecomplexcharacters"/>
+        <string keyName="iapassword"/>
+        <string keyName="iaclientcertificate"/>
+        <string keyName="iasupporturl"/>
+        <string keyName="ialicensekey"/>
+        <boolean keyName="iahidesnapshot"/>
+        <boolean keyName="iapasscoderequiredforviewingencrypted"/>
+        <boolean keyName="iaencryptionrequired"/>
+        <boolean keyName="iaallowuntrustedcerts"/>
+        <string keyName="iaserver"/>
+        <integer keyName="iaminpasscodelength"/>
+        <boolean keyName="iaalphanumericpasscoderequired"/>
+        <string keyName="iaencryptioncert"/>
+        <boolean keyName="iasmimerequireencryptedreplies"/>
+        <string keyName="iasigningcert"/>
+        <boolean keyName="iapasscoderequired"/>
+
+    </dict>
+    <presentation defaultLocale="en-US">
+
+        <fieldGroup>
+            <name>
+                <language value="en-US">Passcode</language>
+            </name>
+            
+            <field keyName="iaallowsimplepasscode" type="checkbox">
+                <label>
+                    <language value="en-US">Allow Simple Passcode</language>
+                </label>
+                <description>
+                    <language value="en-US">Used to set passcode difficulty</language>
+                </description>
+            </field>
+            <field keyName="iaminpasscodecomplexcharacters" type="input">
+                <label>
+                    <language value="en-US">Minimum Passcode Complex Characters</language>
+                </label>
+                <description>
+                    <language value="en-US">Number of required complex characters in the passcode</language>
+                </description>
+            </field>
+            <field keyName="iaminpasscodelength" type="input">
+                <label>
+                    <language value="en-US">Minimum Passcode Length</language>
+                </label>
+                <description>
+                    <language value="en-US">Used to set passcode difficulty length</language>
+                </description>
+            </field>
+            <field keyName="iaalphanumericpasscoderequired" type="checkbox">
+                <label>
+                    <language value="en-US">Alpha-numeric Passcode Required</language>
+                </label>
+                <description>
+                    <language value="en-US">Require alpha numeric passcodes</language>
+                </description>
+            </field>
+            <field keyName="iapasscoderequired" type="checkbox">
+                <label>
+                    <language value="en-US">Passcode Required</language>
+                </label>
+                <description>
+                    <language value="en-US">Require or disable an app passcode. This value will take precedence over ActiveSync policies. Note: this does not affect device passcode.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Required</language>
+            </name>
+            
+            <field keyName="iaemailaddress" type="input">
+                <label>
+                    <language value="en-US">ActiveSync email address</language>
+                </label>
+                <description>
+                    <language value="en-US">ActiveSync email address</language>
+                </description>
+            </field>
+            <field keyName="iausername" type="input">
+                <label>
+                    <language value="en-US">ActiveSync Username</language>
+                </label>
+                <description>
+                    <language value="en-US">ActiveSync username</language>
+                </description>
+            </field>
+            <field keyName="iapassword" type="input">
+                <label>
+                    <language value="en-US">ActiveSync Password</language>
+                </label>
+                <description>
+                    <language value="en-US">ActiveSync password. Send $NULL$ to force the user to input his/her password instead.</language>
+                </description>
+            </field>
+            <field keyName="ialicensekey" type="input">
+                <label>
+                    <language value="en-US">Mail+ License Key</language>
+                </label>
+                <description>
+                    <language value="en-US">Mail+ license key given to you by iKonic Apps</language>
+                </description>
+            </field>
+            <field keyName="iaserver" type="input">
+                <label>
+                    <language value="en-US">ActiveSync Server</language>
+                </label>
+                <description>
+                    <language value="en-US">The ActiveSync server or proxy</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Extras</language>
+            </name>
+            
+            <field keyName="iasupportemail" type="input">
+                <label>
+                    <language value="en-US">Support Email</language>
+                </label>
+                <description>
+                    <language value="en-US">The email address users should contact for additional help</language>
+                </description>
+            </field>
+            <field keyName="iasupporturl" type="input">
+                <label>
+                    <language value="en-US">Support URL</language>
+                </label>
+                <description>
+                    <language value="en-US">The support URL users should be directed to if they need help</language>
+                </description>
+            </field>
+            <field keyName="iahidesnapshot" type="checkbox">
+                <label>
+                    <language value="en-US">Hide Snapshot</language>
+                </label>
+                <description>
+                    <language value="en-US">This controls the screenshot saved into the app directory when the app enters the background</language>
+                </description>
+            </field>
+            <field keyName="iaallowuntrustedcerts" type="checkbox">
+                <label>
+                    <language value="en-US">Allow Untrusted Certs</language>
+                </label>
+                <description>
+                    <language value="en-US">Automatically reject unknown security certificates</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Advanced</language>
+            </name>
+            
+            <field keyName="iaallowsbackup" type="checkbox">
+                <label>
+                    <language value="en-US">Allow Backups</language>
+                </label>
+                <description>
+                    <language value="en-US">Used to disable iTunes backups of Mail+ data</language>
+                </description>
+            </field>
+            <field keyName="iadeviceid" type="input">
+                <label>
+                    <language value="en-US">Device ID</language>
+                </label>
+                <description>
+                    <language value="en-US">Used to manage the deviceid Mail+ uses to connect to the ActiveSync server. Ex: $DEVICE_UUID_NO_DASHES$ or ABC123. Please make sure this is an ActiveSync formatted deviceid</language>
+                </description>
+            </field>
+            <field keyName="iaclientcertificate" type="input">
+                <label>
+                    <language value="en-US">Client Cert</language>
+                </label>
+                <description>
+                    <language value="en-US">Used for two-factor certificate authentication. This should also be used as a replacement for AppTunnel for Mail apps</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">SMIME</language>
+            </name>
+            
+            <field keyName="iasmimeshoulduse3des" type="checkbox">
+                <label>
+                    <language value="en-US">Should Use 3DES Encryption</language>
+                </label>
+                <description>
+                    <language value="en-US">Used to change the encryption algorithm to 3DES</language>
+                </description>
+            </field>
+            <field keyName="iasigningrequired" type="checkbox">
+                <label>
+                    <language value="en-US">Signing Required</language>
+                </label>
+                <description>
+                    <language value="en-US">Require all outgoing emails to be signed</language>
+                </description>
+            </field>
+            <field keyName="iasmimecertificate" type="input">
+                <label>
+                    <language value="en-US">SMIME Cert</language>
+                </label>
+                <description>
+                    <language value="en-US">Certificate used for signing and encryption</language>
+                </description>
+            </field>
+            <field keyName="iapasscoderequiredforviewingencrypted" type="checkbox">
+                <label>
+                    <language value="en-US">Passcode Required For Viewing Encryption Cert</language>
+                </label>
+                <description>
+                    <language value="en-US">Require a passcode to access the encryption certificate. Must be used with iapasscoderequired set to TRUE</language>
+                </description>
+            </field>
+            <field keyName="iaencryptionrequired" type="checkbox">
+                <label>
+                    <language value="en-US">Encryption Required</language>
+                </label>
+                <description>
+                    <language value="en-US">Require all outgoing emails to be encrypted</language>
+                </description>
+            </field>
+            <field keyName="iaencryptioncert" type="input">
+                <label>
+                    <language value="en-US">Encryption Cert</language>
+                </label>
+                <description>
+                    <language value="en-US">Separate signinng certificate. Use this ONLY if signing and encryption certificate are different. This cannot be used with iasmimecertificate</language>
+                </description>
+            </field>
+            <field keyName="iasmimerequireencryptedreplies" type="checkbox">
+                <label>
+                    <language value="en-US">SMIME Required Encrypted Replies</language>
+                </label>
+                <description>
+                    <language value="en-US">Used to require encrypted emails also be replied/forwarded as encrypted</language>
+                </description>
+            </field>
+            <field keyName="iasigningcert" type="input">
+                <label>
+                    <language value="en-US">Signing Cert</language>
+                </label>
+                <description>
+                    <language value="en-US">Separate signinng certificate. Use this ONLY if signing and encryption certificate are differen. This cannot be used with iasmimecertificate</language>
+                </description>
+            </field>
+        </fieldGroup>
+    </presentation>
+</managedAppConfiguration>
