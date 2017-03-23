@@ -121,7 +121,7 @@
                     <language value="en-US">ActiveSync Server</language>
                 </label>
                 <description>
-                    <language value="en-US">The ActiveSync server or proxy</language>
+                    <language value="en-US">The ActiveSync server or proxy. This value must begin with 'http://' or 'https://'.</language>
                 </description>
             </field>
         </fieldGroup>
@@ -243,7 +243,7 @@
                     <language value="en-US">Encryption Cert</language>
                 </label>
                 <description>
-                    <language value="en-US">Separate signinng certificate. Use this ONLY if signing and encryption certificate are different. This cannot be used with iasmimecertificate</language>
+                    <language value="en-US">Separate signing certificate. Use this ONLY if signing and encryption certificate are different. This cannot be used with iasmimecertificate</language>
                 </description>
             </field>
             <field keyName="iasmimerequireencryptedreplies" type="checkbox">
@@ -259,7 +259,7 @@
                     <language value="en-US">Signing Cert</language>
                 </label>
                 <description>
-                    <language value="en-US">Separate signinng certificate. Use this ONLY if signing and encryption certificate are differen. This cannot be used with iasmimecertificate</language>
+                    <language value="en-US">Separate signing certificate. Use this ONLY if signing and encryption certificate are different. This cannot be used with iasmimecertificate</language>
                 </description>
             </field>
         </fieldGroup>
