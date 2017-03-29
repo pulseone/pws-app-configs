@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>1</version>
+    <bundleId>com.nitrodesk.ent.TouchDown</bundleId>
+    <dict>
+        <string keyName="email"/>
+        <string keyName="userid"/>
+        <string keyName="domain"/>
+        <string keyName="server"/>
+        <string keyName="deviceid"/>
+        <string keyName="ResetPolicies"/>
+        <string keyName="SMIMEDefaultCertPFX"/>
+        <string keyName="SMIMEEncryptionCertPFX"/>
+        <string keyName="SMIMESigningCertPFX"/>
+        <string keyName="SMIMEDecryptionCert1PFX"/>
+        <string keyName="SMIMEDecryptionCert2PFX"/>
+        <string keyName="SMIMEDecryptionCert3PFX"/>
+        <string keyName="SMIMEDecryptionCert4PFX"/>
+        <string keyName="SMIMEDecryptionCert5PFX"/>
+    </dict>
+    <presentation defaultLocale="en-US">
+        <fieldGroup>
+            <name>
+                <language value="en-US">Basic Configuration Entries</language>
+            </name>
+            <field keyName="email" type="input">
+                <label>
+                    <language value="en-US">Email address</language>
+                </label>
+                <description>
+                    <language value="en-US">Email address of the user</language>
+                </description>
+            </field>
+            <field keyName="userid" type="input">
+                <label>
+                    <language value="en-US">Username id</language>
+                </label>
+                <description>
+                    <language value="en-US">Normally you would put in the users email address here, and that would mean you should not specify the domain entry. If your server requires the user to login with domain\alias, enter the alias here.</language>
+                </description>
+            </field>
+            <field keyName="domain" type="input">
+                <label>
+                    <language value="en-US">Domain</language>
+                </label>
+                <description>
+                    <language value="en-US">The domain value to be used for this users account. Note you should not typically specify this entry if the userid is the email address of the user.</language>
+                </description>
+            </field>
+            <field keyName="server" type="input">
+                <label>
+                    <language value="en-US">Server</language>
+                </label>
+                <description>
+                    <language value="en-US">Enter the server name of the exchange server. TouchDown will automatically prefix with https:// Note that if you are connecting to a lotus traveler server, you may have to suffix the server name with /servlet/traveler</language>
+                </description>
+            </field>
+            <field keyName="deviceid" type="input">
+                <label>
+                    <language value="en-US">Device Id</language>
+                </label>
+                <description>
+                    <language value="en-US">The device ID to be used when connecting from touchdown on this device.</language>
+                </description>
+            </field>
+            <field keyName="ResetPolicies" type="input">
+                <label>
+                    <language value="en-US">Reset Policies</language>
+                </label>
+                <description>
+                    <language value="en-US">Specify 1 here if you want touchdown to always apply the full list of policies overwriting existing ones.</language>
+                </description>
+            </field>
+            <field keyName="SMIMEDefaultCertPFX" type="input">
+                <label>
+                    <language value="en-US">SMIMEDefaultCertPFX</language>
+                </label>
+                <description>
+                    <language value="en-US">If there is a single certificate for both SMIME Signing and Encryption, set this and associate this with the SMIME cert’s corresponding value on MI</language>
+                </description>
+            </field>
+            <field keyName="SMIMEEncryptionCertPFX" type="input">
+                <label>
+                    <language value="en-US">SMIMEEncryptionCertPFX</language>
+                </label>
+                <description>
+                    <language value="en-US">If there are separate certs for encryption and signing, set this value to the encryption certificate. NOT APPLICABLE IF YOU SET SMIMEDefaultCertPFX</language>
+                </description>
+            </field>
+            <field keyName="SMIMESigningCertPFX" type="input">
+                <label>
+                    <language value="en-US">SMIMESigningCertPFX</language>
+                </label>
+                <description>
+                    <language value="en-US">If there are separate certs for encryption and signing, set this value to the Signing certificate. NOT APPLICABLE IF YOU SET SMIMEDefaultCertPFX</language>
+                </description>
+            </field>
+            <field keyName="SMIMEDecryptionCert1PFX" type="input">
+                <label>
+                    <language value="en-US">SMIMEDecryptionCert1PFX</language>
+                </label>
+                <description>
+                    <language value="en-US">Set this cert to the certificate that should be used ONLY for decryption. For example, prior certs which may have expired. You can set up to 5 decryption certs.</language>
+                </description>
+            </field>
+            <field keyName="SMIMEDecryptionCert2PFX" type="input">
+                <label>
+                    <language value="en-US">SMIMEDecryptionCert2PFX</language>
+                </label>
+                <description>
+                    <language value="en-US">Second decryption cert</language>
+                </description>
+            </field>
+            <field keyName="SMIMEDecryptionCert3PFX" type="input">
+                <label>
+                    <language value="en-US">SMIMEDecryptionCert3PFX</language>
+                </label>
+                <description>
+                    <language value="en-US">Third Decryption cert</language>
+                </description>
+            </field>
+            <field keyName="SMIMEDecryptionCert4PFX" type="input">
+                <label>
+                    <language value="en-US">SMIMEDecryptionCert4PFX</language>
+                </label>
+                <description>
+                    <language value="en-US">Fourth Decryption cert</language>
+                </description>
+            </field>
+            <field keyName="SMIMEDecryptionCert5PFX" type="input">
+                <label>
+                    <language value="en-US">SMIMEDecryptionCert5PFX</language>
+                </label>
+                <description>
+                    <language value="en-US">Fifth Decryption cert</language>
+                </description>
+            </field>
+        </fieldGroup>
+    </presentation>
+</managedAppConfiguration>
+
