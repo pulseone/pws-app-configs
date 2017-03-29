@@ -12,7 +12,7 @@
     "type": "boolean"
   }, 
   "iaallowuntrustedcerts": {
-    "description": "Automatically reject unknown security certificates",
+    "description": "Allow untrusted certificates.",
     "group": "Extras",
     "title": "Allow Untrusted Certs", 
     "type": "boolean"

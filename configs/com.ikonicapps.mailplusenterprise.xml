@@ -159,7 +159,7 @@
                     <language value="en-US">Allow Untrusted Certs</language>
                 </label>
                 <description>
-                    <language value="en-US">Automatically reject unknown security certificates</language>
+                    <language value="en-US">Allow untrusted certificates.</language>
                 </description>
             </field>
         </fieldGroup>
