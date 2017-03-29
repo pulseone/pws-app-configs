@@ -98,6 +98,14 @@
                 <language value="en-US">Basic Configuration</language>
             </name>
             
+            <field keyName="ResetPolicies" type="input">
+                <label>
+                    <language value="en-US">Reset Policies</language>
+                </label>
+                <description>
+                    <language value="en-US">Specify 1 here if you want touchdown to always apply the full list of policies overwriting existing ones</language>
+                </description>
+            </field>
             <field keyName="domain" type="input">
                 <label>
                     <language value="en-US">Domain</language>
@@ -112,14 +120,6 @@
                 </label>
                 <description>
                     <language value="en-US">Enter the server name of the exchange server.  TouchDown will automatically prefix with https:// Note that if you are connecting to a lotus traveler server, you may have to suffix the server name with /servlet/traveler</language>
-                </description>
-            </field>
-            <field keyName="ResetPolicies" type="input">
-                <label>
-                    <language value="en-US">Reset Policies</language>
-                </label>
-                <description>
-                    <language value="en-US">Specify 1 here if you want touchdown to always apply the full list of policies overwriting existing ones</language>
                 </description>
             </field>
             <field keyName="email" type="input">
@@ -152,12 +152,28 @@
                 <language value="en-US">SMIME</language>
             </name>
             
+            <field keyName="SMIMEDefaultCertPFX" type="input">
+                <label>
+                    <language value="en-US">SMIME Default Cert PFX</language>
+                </label>
+                <description>
+                    <language value="en-US">If there is a single certificate for both SMIME Signing and Encryption, set this and associate this with the SMIME cert's corresponding value.</language>
+                </description>
+            </field>
             <field keyName="SMIMESigningCertPFX" type="input">
                 <label>
                     <language value="en-US">SMIME Signing Cert PFX</language>
                 </label>
                 <description>
                     <language value="en-US">If there are separate certs for encryption and signing, set this value to the Signing certificate. NOT APPLICABLE IF YOU SET SMIME Default Cert PFX</language>
+                </description>
+            </field>
+            <field keyName="SMIMEEncryptionCertPFX" type="input">
+                <label>
+                    <language value="en-US">SMIME Encryption Cert PFX</language>
+                </label>
+                <description>
+                    <language value="en-US">If there are separate certs for encryption and signing, set this value to the encryption certificate. NOT APPLICABLE IF YOU SET SMIME Default Cert PFX</language>
                 </description>
             </field>
             <field keyName="SMIMEDecryptionCert1PFX" type="input">
@@ -176,22 +192,6 @@
                     <language value="en-US"></language>
                 </description>
             </field>
-            <field keyName="SMIMEDecryptionCert5PFX" type="input">
-                <label>
-                    <language value="en-US">SMIME Decryption Cert 5 PFX</language>
-                </label>
-                <description>
-                    <language value="en-US"></language>
-                </description>
-            </field>
-            <field keyName="SMIMEDefaultCertPFX" type="input">
-                <label>
-                    <language value="en-US">SMIME Default Cert PFX</language>
-                </label>
-                <description>
-                    <language value="en-US">If there is a single certificate for both SMIME Signing and Encryption, set this and associate this with the SMIME cert's corresponding value.</language>
-                </description>
-            </field>
             <field keyName="SMIMEDecryptionCert3PFX" type="input">
                 <label>
                     <language value="en-US">SMIME Decryption Cert 3 PFX</language>
@@ -208,12 +208,12 @@
                     <language value="en-US"></language>
                 </description>
             </field>
-            <field keyName="SMIMEEncryptionCertPFX" type="input">
+            <field keyName="SMIMEDecryptionCert5PFX" type="input">
                 <label>
-                    <language value="en-US">SMIME Encryption Cert PFX</language>
+                    <language value="en-US">SMIME Decryption Cert 5 PFX</language>
                 </label>
                 <description>
-                    <language value="en-US">If there are separate certs for encryption and signing, set this value to the encryption certificate. NOT APPLICABLE IF YOU SET SMIME Default Cert PFX</language>
+                    <language value="en-US"></language>
                 </description>
             </field>
         </fieldGroup>
@@ -222,12 +222,12 @@
                 <language value="en-US">Mail</language>
             </name>
             
-            <field keyName="DisableCopyPaste" type="input">
+            <field keyName="SetSignature" type="input">
                 <label>
-                    <language value="en-US">Disable Copy and Paste</language>
+                    <language value="en-US">Set Signature</language>
                 </label>
                 <description>
-                    <language value="en-US">If set to '1', users will not be able to copy data from email or paste data into email when composing messages</language>
+                    <language value="en-US">Set the signature on the application.</language>
                 </description>
             </field>
             <field keyName="SetPlainTextSignature" type="input">
@@ -236,6 +236,22 @@
                 </label>
                 <description>
                     <language value="en-US">Set the signature on the application to be used with plain text email.</language>
+                </description>
+            </field>
+            <field keyName="DisableChangeSignature" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Changing of Signature</language>
+                </label>
+                <description>
+                    <language value="en-US">Suppress signature line changing</language>
+                </description>
+            </field>
+            <field keyName="DisableCopyPaste" type="input">
+                <label>
+                    <language value="en-US">Disable Copy and Paste</language>
+                </label>
+                <description>
+                    <language value="en-US">If set to '1', users will not be able to copy data from email or paste data into email when composing messages</language>
                 </description>
             </field>
             <field keyName="MaxEmailBodyTruncationSize" type="select">
@@ -274,22 +290,6 @@
                         <language value="en-US">Unlimited</language>
                     </option>
                 </options>
-            </field>
-            <field keyName="DisableChangeSignature" type="checkbox">
-                <label>
-                    <language value="en-US">Disable Changing of Signature</language>
-                </label>
-                <description>
-                    <language value="en-US">Suppress signature line changing</language>
-                </description>
-            </field>
-            <field keyName="SetSignature" type="input">
-                <label>
-                    <language value="en-US">Set Signature</language>
-                </label>
-                <description>
-                    <language value="en-US">Set the signature on the application.</language>
-                </description>
             </field>
             <field keyName="AttachmentsEnabled" type="input">
                 <label>
@@ -371,13 +371,21 @@
             <name>
                 <language value="en-US">Password</language>
             </name>
-            <field keyName="SuppressApplicationPIN" type="input">
+            <field keyName="SuppressApplicationPIN" type="select">
                 <label>
                     <language value="en-US">Suppress Application PIN</language>
                 </label>
                 <description>
-                    <language value="en-US">Set to '1' if you want the application to not show a PIN prompt if you don't want EAS PIN to be enforced by TouchDown. This is useful if the MDM decides to enforce a device level PIN.</language>
+                    <language value="en-US">Enable if you want the application to not show a PIN prompt.</language>
                 </description>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Disabled</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Enabled</language>
+                    </option>
+                </options>
             </field>
             <field keyName="MinDevicePasswordLength" type="input">
                 <label>
@@ -392,16 +400,24 @@
                     <language value="en-US">Device Password History Count</language>
                 </label>
                 <description>
-                    <language value="en-US">Set to '0' to not keep any password history.</language>
+                    <language value="en-US">Number of passwords to keep in history. Set to '0' to not keep any password history.</language>
                 </description>
             </field>
-            <field keyName="AllowSimpleDevicePassword" type="input">
+            <field keyName="AllowSimpleDevicePassword" type="select">
                 <label>
                     <language value="en-US">Allow Simple Device Password</language>
                 </label>
                 <description>
-                    <language value="en-US">Set to '1' to allow simple sequences like 1234</language>
+                    <language value="en-US">If enabled, allow simple sequences like 1234</language>
                 </description>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Disabled</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Enabled</language>
+                    </option>
+                </options>
             </field>
             <field keyName="MaxDevicePasswordFailedAttempts" type="input">
                 <label>
@@ -411,21 +427,37 @@
                     <language value="en-US">The number of failed PIN attempts after which the container data is wiped.</language>
                 </description>
             </field>
-            <field keyName="DevicePasswordEnabled" type="input">
+            <field keyName="DevicePasswordEnabled" type="select">
                 <label>
                     <language value="en-US">Device Password Enabled</language>
                 </label>
                 <description>
-                    <language value="en-US">Set to '1' to enable PIN prompting. If set to '0', TouchDown will not prompt for PIN (even if EAS policies require it)</language>
+                    <language value="en-US">If enabled, a PIN will be required. If disabled, TouchDown will not prompt for PIN (even if EAS policies require it)</language>
                 </description>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Disabled</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Enabled</language>
+                    </option>
+                </options>
             </field>
-            <field keyName="AlphaNumericDevicePasswordRequired" type="input">
+            <field keyName="AlphaNumericDevicePasswordRequired" type="select">
                 <label>
                     <language value="en-US">AlphaNumeric Device Password Required</language>
                 </label>
                 <description>
-                    <language value="en-US">Set to '1' if you require alphanumeric password.</language>
+                    <language value="en-US">If enabled, an alphanumeric password will be required.</language>
                 </description>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Disabled</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Enabled</language>
+                    </option>
+                </options>
             </field>
             <field keyName="MinDevicePasswordComplexCharacters" type="input">
                 <label>
@@ -440,7 +472,7 @@
                     <language value="en-US">Device Password Expiration Days</language>
                 </label>
                 <description>
-                    <language value="en-US">Set to '0' to never expire.</language>
+                    <language value="en-US">Number of days for password to expire. Set to '0' to never expire.</language>
                 </description>
             </field>
         </fieldGroup>
@@ -449,29 +481,45 @@
                 <language value="en-US">Security</language>
             </name>
             
-            <field keyName="HideTaskInfoOnNotificationBar" type="input">
+            <field keyName="HideTaskInfoOnNotificationBar" type="select">
                 <label>
                     <language value="en-US">Hide Task Info On Notification Bar</language>
                 </label>
                 <description>
-                    <language value="en-US">If set to '1', notifications should not show data on tasks</language>
+                    <language value="en-US">Disable if notifications should not show data on tasks.</language>
                 </description>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Disabled</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Enabled</language>
+                    </option>
+                </options>
             </field>
             <field keyName="RequireManualSyncOnRoaming" type="checkbox">
                 <label>
                     <language value="en-US">Require Manual Sync On Roaming</language>
                 </label>
                 <description>
-                    <language value="en-US">If set to 'true', automatic sync is disabled when device is found to be roaming</language>
+                    <language value="en-US">If enabled, automatic sync is disabled when device is found to be roaming</language>
                 </description>
             </field>
-            <field keyName="HideEmailInfoOnNotificationBar" type="input">
+            <field keyName="HideEmailInfoOnNotificationBar" type="select">
                 <label>
                     <language value="en-US">Hide Email Info On Notification Bar</language>
                 </label>
                 <description>
-                    <language value="en-US">If set to '1', notifications should not show email data</language>
+                    <language value="en-US">If enabled, notifications should not show email data</language>
                 </description>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Disabled</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Enabled</language>
+                    </option>
+                </options>
             </field>
             <field keyName="MaxInactivityTimeDeviceLock" type="input">
                 <label>
@@ -513,13 +561,21 @@
                     <language value="en-US">The list of suppression codes to apply to TouchDown, to prevent TouchDown from displaying certain options to the end user. The list of all suppression codes available are present in http://tinyurl.com/tdstart The list of codes should be comma separated, with at least one comma in the string.</language>
                 </description>
             </field>
-            <field keyName="DisableCopyToPhoneBook" type="input">
+            <field keyName="DisableCopyToPhoneBook" type="select">
                 <label>
                     <language value="en-US">Disable Copy To PhoneBook</language>
                 </label>
                 <description>
-                    <language value="en-US">If set to '1', this will cause TouchDown to never copy contacts to the device phone book</language>
+                    <language value="en-US">If enabled, this will cause TouchDown to never copy contacts to the device phone book</language>
                 </description>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Disabled</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">Enabled</language>
+                    </option>
+                </options>
             </field>
             <field keyName="DisableCleanup" type="checkbox">
                 <label>
