@@ -1,44 +1,103 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <version>1</version>
     <bundleId>com.nitrodesk.ent.TouchDown</bundleId>
     <dict>
-        <string keyName="email"/>
-        <string keyName="userid"/>
         <string keyName="domain"/>
-        <string keyName="server"/>
-        <string keyName="deviceid"/>
-        <string keyName="ResetPolicies"/>
-        <string keyName="SMIMEDefaultCertPFX"/>
-        <string keyName="SMIMEEncryptionCertPFX"/>
         <string keyName="SMIMESigningCertPFX"/>
         <string keyName="SMIMEDecryptionCert1PFX"/>
         <string keyName="SMIMEDecryptionCert2PFX"/>
-        <string keyName="SMIMEDecryptionCert3PFX"/>
-        <string keyName="SMIMEDecryptionCert4PFX"/>
+        <integer keyName="HideTaskInfoOnNotificationBar"/>
+        <integer keyName="SuppressApplicationPIN"/>
+        <integer keyName="MaxCalendarAgeFilter">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>4</value>
+                    <value>5</value>
+                    <value>6</value>
+                    <value>7</value>
+                </values>
+            </constraint>
+        </integer>
+        <string keyName="server"/>
+        <boolean keyName="RequireManualSyncOnRoaming"/>
+        <integer keyName="HideEmailInfoOnNotificationBar"/>
+        <integer keyName="DisableCopyPaste"/>
+        <integer keyName="MinDevicePasswordLength"/>
+        <integer keyName="DevicePasswordHistoryCount"/>
+        <integer keyName="MaxInactivityTimeDeviceLock"/>
+        <integer keyName="AllowSimpleDevicePassword"/>
+        <integer keyName="ResetPolicies"/>
         <string keyName="SMIMEDecryptionCert5PFX"/>
+        <integer keyName="ForcedSMIMEPinTimeout"/>
+        <string keyName="email"/>
+        <boolean keyName="DisableReconfiguration"/>
+        <string keyName="SMIMEDefaultCertPFX"/>
+        <boolean keyName="HideCalendarInfoOnNotificationBar"/>
+        <integer keyName="MaxDevicePasswordFailedAttempts"/>
+        <integer keyName="DevicePasswordEnabled"/>
+        <string keyName="SMIMEDecryptionCert3PFX"/>
+        <string keyName="SetPlainTextSignature"/>
+        <integer keyName="MaxEmailAgeFilter">
+            <defaultValue>
+                <value>0</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>3</value>
+                    <value>4</value>
+                    <value>5</value>
+                </values>
+            </constraint>
+        </integer>
+        <integer keyName="AlphaNumericDevicePasswordRequired"/>
+        <integer keyName="MaxEmailBodyTruncationSize">
+            <defaultValue>
+                <value>8</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>0</value>
+                    <value>1</value>
+                    <value>2</value>
+                    <value>3</value>
+                    <value>4</value>
+                    <value>5</value>
+                    <value>6</value>
+                    <value>7</value>
+                    <value>8</value>
+                </values>
+            </constraint>
+        </integer>
+        <boolean keyName="DisableChangeSignature"/>
+        <string keyName="userid"/>
+        <integer keyName="MinDevicePasswordComplexCharacters"/>
+        <string keyName="SMIMEDecryptionCert4PFX"/>
+        <string keyName="SetSignature"/>
+        <integer keyName="DevicePasswordExpirationDays"/>
+        <string keyName="deviceid"/>
+        <string keyName="SMIMEEncryptionCertPFX"/>
+        <string keyName="SetSuppressions"/>
+        <integer keyName="AttachmentsEnabled"/>
+        <integer keyName="DisableCopyToPhoneBook"/>
+        <boolean keyName="DisableCleanup"/>
+        <integer keyName="MaxAttachmentSize"/>
     </dict>
     <presentation defaultLocale="en-US">
+
         <fieldGroup>
             <name>
-                <language value="en-US">Basic Configuration Entries</language>
+                <language value="en-US">Basic Configuration</language>
             </name>
-            <field keyName="email" type="input">
-                <label>
-                    <language value="en-US">Email address</language>
-                </label>
-                <description>
-                    <language value="en-US">Email address of the user</language>
-                </description>
-            </field>
-            <field keyName="userid" type="input">
-                <label>
-                    <language value="en-US">Username id</language>
-                </label>
-                <description>
-                    <language value="en-US">Normally you would put in the users email address here, and that would mean you should not specify the domain entry. If your server requires the user to login with domain\alias, enter the alias here.</language>
-                </description>
-            </field>
+            
             <field keyName="domain" type="input">
                 <label>
                     <language value="en-US">Domain</language>
@@ -52,15 +111,7 @@
                     <language value="en-US">Server</language>
                 </label>
                 <description>
-                    <language value="en-US">Enter the server name of the exchange server. TouchDown will automatically prefix with https:// Note that if you are connecting to a lotus traveler server, you may have to suffix the server name with /servlet/traveler</language>
-                </description>
-            </field>
-            <field keyName="deviceid" type="input">
-                <label>
-                    <language value="en-US">Device Id</language>
-                </label>
-                <description>
-                    <language value="en-US">The device ID to be used when connecting from touchdown on this device.</language>
+                    <language value="en-US">Enter the server name of the exchange server.  TouchDown will automatically prefix with https:// Note that if you are connecting to a lotus traveler server, you may have to suffix the server name with /servlet/traveler</language>
                 </description>
             </field>
             <field keyName="ResetPolicies" type="input">
@@ -68,74 +119,416 @@
                     <language value="en-US">Reset Policies</language>
                 </label>
                 <description>
-                    <language value="en-US">Specify 1 here if you want touchdown to always apply the full list of policies overwriting existing ones.</language>
+                    <language value="en-US">Specify 1 here if you want touchdown to always apply the full list of policies overwriting existing ones</language>
                 </description>
             </field>
-            <field keyName="SMIMEDefaultCertPFX" type="input">
+            <field keyName="email" type="input">
                 <label>
-                    <language value="en-US">SMIMEDefaultCertPFX</language>
+                    <language value="en-US">Email Address</language>
                 </label>
                 <description>
-                    <language value="en-US">If there is a single certificate for both SMIME Signing and Encryption, set this and associate this with the SMIME cert’s corresponding value on MI</language>
+                    <language value="en-US"></language>
                 </description>
             </field>
-            <field keyName="SMIMEEncryptionCertPFX" type="input">
+            <field keyName="userid" type="input">
                 <label>
-                    <language value="en-US">SMIMEEncryptionCertPFX</language>
+                    <language value="en-US">User Id</language>
                 </label>
                 <description>
-                    <language value="en-US">If there are separate certs for encryption and signing, set this value to the encryption certificate. NOT APPLICABLE IF YOU SET SMIMEDefaultCertPFX</language>
+                    <language value="en-US">Normally you would put in the users email address here, and that would mean you should not specify the domain entry. If your server requires the user to login with domain\alias, enter the alias here</language>
                 </description>
             </field>
+            <field keyName="deviceid" type="input">
+                <label>
+                    <language value="en-US">Device ID</language>
+                </label>
+                <description>
+                    <language value="en-US">The device ID to be used when connecting from TouchDown on this device.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">SMIME</language>
+            </name>
+            
             <field keyName="SMIMESigningCertPFX" type="input">
                 <label>
-                    <language value="en-US">SMIMESigningCertPFX</language>
+                    <language value="en-US">SMIME Signing Cert PFX</language>
                 </label>
                 <description>
-                    <language value="en-US">If there are separate certs for encryption and signing, set this value to the Signing certificate. NOT APPLICABLE IF YOU SET SMIMEDefaultCertPFX</language>
+                    <language value="en-US">If there are separate certs for encryption and signing, set this value to the Signing certificate. NOT APPLICABLE IF YOU SET SMIME Default Cert PFX</language>
                 </description>
             </field>
             <field keyName="SMIMEDecryptionCert1PFX" type="input">
                 <label>
-                    <language value="en-US">SMIMEDecryptionCert1PFX</language>
+                    <language value="en-US">SMIME Decryption Cert 1 PFX</language>
                 </label>
                 <description>
-                    <language value="en-US">Set this cert to the certificate that should be used ONLY for decryption. For example, prior certs which may have expired. You can set up to 5 decryption certs.</language>
+                    <language value="en-US">Set this cert to the certificate that should be used ONLY for decryption. For example, prior certs which may have expired. You can set up to 5 decryption certs</language>
                 </description>
             </field>
             <field keyName="SMIMEDecryptionCert2PFX" type="input">
                 <label>
-                    <language value="en-US">SMIMEDecryptionCert2PFX</language>
+                    <language value="en-US">SMIME Decryption Cert 2 PFX</language>
                 </label>
                 <description>
-                    <language value="en-US">Second decryption cert</language>
-                </description>
-            </field>
-            <field keyName="SMIMEDecryptionCert3PFX" type="input">
-                <label>
-                    <language value="en-US">SMIMEDecryptionCert3PFX</language>
-                </label>
-                <description>
-                    <language value="en-US">Third Decryption cert</language>
-                </description>
-            </field>
-            <field keyName="SMIMEDecryptionCert4PFX" type="input">
-                <label>
-                    <language value="en-US">SMIMEDecryptionCert4PFX</language>
-                </label>
-                <description>
-                    <language value="en-US">Fourth Decryption cert</language>
+                    <language value="en-US"></language>
                 </description>
             </field>
             <field keyName="SMIMEDecryptionCert5PFX" type="input">
                 <label>
-                    <language value="en-US">SMIMEDecryptionCert5PFX</language>
+                    <language value="en-US">SMIME Decryption Cert 5 PFX</language>
                 </label>
                 <description>
-                    <language value="en-US">Fifth Decryption cert</language>
+                    <language value="en-US"></language>
+                </description>
+            </field>
+            <field keyName="SMIMEDefaultCertPFX" type="input">
+                <label>
+                    <language value="en-US">SMIME Default Cert PFX</language>
+                </label>
+                <description>
+                    <language value="en-US">If there is a single certificate for both SMIME Signing and Encryption, set this and associate this with the SMIME cert's corresponding value.</language>
+                </description>
+            </field>
+            <field keyName="SMIMEDecryptionCert3PFX" type="input">
+                <label>
+                    <language value="en-US">SMIME Decryption Cert 3 PFX</language>
+                </label>
+                <description>
+                    <language value="en-US"></language>
+                </description>
+            </field>
+            <field keyName="SMIMEDecryptionCert4PFX" type="input">
+                <label>
+                    <language value="en-US">SMIME Decryption Cert 4 PFX</language>
+                </label>
+                <description>
+                    <language value="en-US"></language>
+                </description>
+            </field>
+            <field keyName="SMIMEEncryptionCertPFX" type="input">
+                <label>
+                    <language value="en-US">SMIME Encryption Cert PFX</language>
+                </label>
+                <description>
+                    <language value="en-US">If there are separate certs for encryption and signing, set this value to the encryption certificate. NOT APPLICABLE IF YOU SET SMIME Default Cert PFX</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Mail</language>
+            </name>
+            
+            <field keyName="DisableCopyPaste" type="input">
+                <label>
+                    <language value="en-US">Disable Copy and Paste</language>
+                </label>
+                <description>
+                    <language value="en-US">If set to '1', users will not be able to copy data from email or paste data into email when composing messages</language>
+                </description>
+            </field>
+            <field keyName="SetPlainTextSignature" type="input">
+                <label>
+                    <language value="en-US">Set Plain Text Signature</language>
+                </label>
+                <description>
+                    <language value="en-US">Set the signature on the application to be used with plain text email.</language>
+                </description>
+            </field>
+            <field keyName="MaxEmailBodyTruncationSize" type="select">
+                <label>
+                    <language value="en-US">Max Email Body Truncation Size</language>
+                </label>
+                <description>
+                    <language value="en-US">Note that this ONLY limits the upper limit the user chooses, and does not enforce the exact value. This means if you set it to 7, the user himself can choose to limit to any value less than 100k.</language>
+                </description>
+                <options>
+                    <option value="0">
+                        <language value="en-US">No Body Fetched</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">4k</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">5k</language>
+                    </option>
+                    <option value="3">
+                        <language value="en-US">7k</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">10k</language>
+                    </option>
+                    <option value="5">
+                        <language value="en-US">20k</language>
+                    </option>
+                    <option value="6">
+                        <language value="en-US">50k</language>
+                    </option>
+                    <option value="7">
+                        <language value="en-US">100k</language>
+                    </option>
+                    <option value="8">
+                        <language value="en-US">Unlimited</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="DisableChangeSignature" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Changing of Signature</language>
+                </label>
+                <description>
+                    <language value="en-US">Suppress signature line changing</language>
+                </description>
+            </field>
+            <field keyName="SetSignature" type="input">
+                <label>
+                    <language value="en-US">Set Signature</language>
+                </label>
+                <description>
+                    <language value="en-US">Set the signature on the application.</language>
+                </description>
+            </field>
+            <field keyName="AttachmentsEnabled" type="input">
+                <label>
+                    <language value="en-US">Attachments Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">Set to '1' if you want to enable attachments in TouchDown.</language>
+                </description>
+            </field>
+            <field keyName="MaxAttachmentSize" type="input">
+                <label>
+                    <language value="en-US">Max Attachment Size (in bytes)</language>
+                </label>
+                <description>
+                    <language value="en-US">Maximum allowed size of attachments to be downloaded or sent, in bytes</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Calendar</language>
+            </name>
+            
+            <field keyName="MaxCalendarAgeFilter" type="select">
+                <label>
+                    <language value="en-US">Max Calendar Age Filter</language>
+                </label>
+                <description>
+                    <language value="en-US">Integer specifying maximum range of past events to sync.</language>
+                </description>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Unlimited</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">2 Weeks</language>
+                    </option>
+                    <option value="5">
+                        <language value="en-US">1 Month</language>
+                    </option>
+                    <option value="6">
+                        <language value="en-US">3 Months</language>
+                    </option>
+                    <option value="7">
+                        <language value="en-US">6 Months</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="MaxEmailAgeFilter" type="select">
+                <label>
+                    <language value="en-US">Max Email Age Filter</language>
+                </label>
+                <description>
+                    <language value="en-US">Integer specifying maximum range of past emails to sync.</language>
+                </description>
+                <options>
+                    <option value="0">
+                        <language value="en-US">Unlimited</language>
+                    </option>
+                    <option value="1">
+                        <language value="en-US">1 Day</language>
+                    </option>
+                    <option value="2">
+                        <language value="en-US">3 Days</language>
+                    </option>
+                    <option value="3">
+                        <language value="en-US">1 Week</language>
+                    </option>
+                    <option value="4">
+                        <language value="en-US">2 Weeks</language>
+                    </option>
+                    <option value="5">
+                        <language value="en-US">1 Month</language>
+                    </option>
+                </options>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Password</language>
+            </name>
+            <field keyName="SuppressApplicationPIN" type="input">
+                <label>
+                    <language value="en-US">Suppress Application PIN</language>
+                </label>
+                <description>
+                    <language value="en-US">Set to '1' if you want the application to not show a PIN prompt if you don't want EAS PIN to be enforced by TouchDown. This is useful if the MDM decides to enforce a device level PIN.</language>
+                </description>
+            </field>
+            <field keyName="MinDevicePasswordLength" type="input">
+                <label>
+                    <language value="en-US">Minimum Device Password Length</language>
+                </label>
+                <description>
+                    <language value="en-US">Set this to the minimum password length</language>
+                </description>
+            </field>
+            <field keyName="DevicePasswordHistoryCount" type="input">
+                <label>
+                    <language value="en-US">Device Password History Count</language>
+                </label>
+                <description>
+                    <language value="en-US">Set to '0' to not keep any password history.</language>
+                </description>
+            </field>
+            <field keyName="AllowSimpleDevicePassword" type="input">
+                <label>
+                    <language value="en-US">Allow Simple Device Password</language>
+                </label>
+                <description>
+                    <language value="en-US">Set to '1' to allow simple sequences like 1234</language>
+                </description>
+            </field>
+            <field keyName="MaxDevicePasswordFailedAttempts" type="input">
+                <label>
+                    <language value="en-US">Max Device Password Failed Attempts</language>
+                </label>
+                <description>
+                    <language value="en-US">The number of failed PIN attempts after which the container data is wiped.</language>
+                </description>
+            </field>
+            <field keyName="DevicePasswordEnabled" type="input">
+                <label>
+                    <language value="en-US">Device Password Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">Set to '1' to enable PIN prompting. If set to '0', TouchDown will not prompt for PIN (even if EAS policies require it)</language>
+                </description>
+            </field>
+            <field keyName="AlphaNumericDevicePasswordRequired" type="input">
+                <label>
+                    <language value="en-US">AlphaNumeric Device Password Required</language>
+                </label>
+                <description>
+                    <language value="en-US">Set to '1' if you require alphanumeric password.</language>
+                </description>
+            </field>
+            <field keyName="MinDevicePasswordComplexCharacters" type="input">
+                <label>
+                    <language value="en-US">Minimum Device Password Complex Characters</language>
+                </label>
+                <description>
+                    <language value="en-US">Number of different character classes required in the password. NOTE: To be implemented, current implementation is deficient</language>
+                </description>
+            </field>
+            <field keyName="DevicePasswordExpirationDays" type="input">
+                <label>
+                    <language value="en-US">Device Password Expiration Days</language>
+                </label>
+                <description>
+                    <language value="en-US">Set to '0' to never expire.</language>
+                </description>
+            </field>
+        </fieldGroup>
+        <fieldGroup>
+            <name>
+                <language value="en-US">Security</language>
+            </name>
+            
+            <field keyName="HideTaskInfoOnNotificationBar" type="input">
+                <label>
+                    <language value="en-US">Hide Task Info On Notification Bar</language>
+                </label>
+                <description>
+                    <language value="en-US">If set to '1', notifications should not show data on tasks</language>
+                </description>
+            </field>
+            <field keyName="RequireManualSyncOnRoaming" type="checkbox">
+                <label>
+                    <language value="en-US">Require Manual Sync On Roaming</language>
+                </label>
+                <description>
+                    <language value="en-US">If set to 'true', automatic sync is disabled when device is found to be roaming</language>
+                </description>
+            </field>
+            <field keyName="HideEmailInfoOnNotificationBar" type="input">
+                <label>
+                    <language value="en-US">Hide Email Info On Notification Bar</language>
+                </label>
+                <description>
+                    <language value="en-US">If set to '1', notifications should not show email data</language>
+                </description>
+            </field>
+            <field keyName="MaxInactivityTimeDeviceLock" type="input">
+                <label>
+                    <language value="en-US">Max Inactivity Time Device Lock (minutes)</language>
+                </label>
+                <description>
+                    <language value="en-US">Set this to the number of minutes for the password to timeout.</language>
+                </description>
+            </field>
+            <field keyName="ForcedSMIMEPinTimeout" type="input">
+                <label>
+                    <language value="en-US">Forced SMIME PIN Timeout</language>
+                </label>
+                <description>
+                    <language value="en-US">If specified, this policy sets the timeout before TouchDown will prompt for a PIN before using an S.MIME certificate for signing or decryption. If this is set, the user is not allowed to change this timeout.</language>
+                </description>
+            </field>
+            <field keyName="DisableReconfiguration" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Reconfiguration</language>
+                </label>
+                <description>
+                    <language value="en-US">Disable reconfiguration.</language>
+                </description>
+            </field>
+            <field keyName="HideCalendarInfoOnNotificationBar" type="checkbox">
+                <label>
+                    <language value="en-US">HideCalendarInfoOnNotificationBar</language>
+                </label>
+                <description>
+                    <language value="en-US">If set to '1', notifications should not show calendar data indicating which appointment is approaching</language>
+                </description>
+            </field>
+            <field keyName="SetSuppressions" type="input">
+                <label>
+                    <language value="en-US">Set Suppressions</language>
+                </label>
+                <description>
+                    <language value="en-US">The list of suppression codes to apply to TouchDown, to prevent TouchDown from displaying certain options to the end user. The list of all suppression codes available are present in http://tinyurl.com/tdstart The list of codes should be comma separated, with at least one comma in the string.</language>
+                </description>
+            </field>
+            <field keyName="DisableCopyToPhoneBook" type="input">
+                <label>
+                    <language value="en-US">Disable Copy To PhoneBook</language>
+                </label>
+                <description>
+                    <language value="en-US">If set to '1', this will cause TouchDown to never copy contacts to the device phone book</language>
+                </description>
+            </field>
+            <field keyName="DisableCleanup" type="checkbox">
+                <label>
+                    <language value="en-US">Disable Cleanup</language>
+                </label>
+                <description>
+                    <language value="en-US">Disable user ability to wipe configuration from settings</language>
                 </description>
             </field>
         </fieldGroup>
     </presentation>
 </managedAppConfiguration>
-
