@@ -98,7 +98,7 @@
   "iaserver": {
     "description": "The ActiveSync server or proxy. This value must begin with 'http://' or 'https://'.",
     "group": "Required", 
-    "title": "ActiveSync Server", 
+    "title": "ActiveSync Server (please include 'https://')",
     "type": "string"
   }, 
   "iasigningcert": {

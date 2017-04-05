@@ -118,7 +118,7 @@
             </field>
             <field keyName="iaserver" type="input">
                 <label>
-                    <language value="en-US">ActiveSync Server</language>
+                    <language value="en-US">ActiveSync Server (please include 'https://')</language>
                 </label>
                 <description>
                     <language value="en-US">The ActiveSync server or proxy. This value must begin with 'http://' or 'https://'.</language>
