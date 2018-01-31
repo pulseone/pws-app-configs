@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version>2</version>
+    <bundleId>com.truecontext.ProntoForms</bundleId>
+    <dict>
+        <!--
+         Configuration copied from here:
+         https://technet.microsoft.com/EN-US/library/mt829322(v=exchg.160).aspx#kvp
+         -->
+        <string keyName="com.microsoft.outlook.EmailProfile.EmailAccountName"/>
+        <string keyName="com.microsoft.outlook.EmailProfile.EmailAddress"/>
+        <string keyName="com.microsoft.outlook.EmailProfile.EmailUPN"/>
+        <string keyName="com.microsoft.outlook.EmailProfile.ServerAuthentication">
+            <defaultValue>
+                <value>Username and Password</value>
+            </defaultValue>
+            <constraint>
+                <values>
+                    <value>Username and Password</value>
+                    <value>Certificates</value>
+                </values>
+            </constraint>
+        </string>
+        <string keyName="com.microsoft.outlook.EmailProfile.ServerHostName"/>
+    </dict>
+    <presentation defaultLocale="en-US">
+        <fieldGroup>
+            <name>
+                <language value="en-US">Exchange Account</language>
+            </name>
+            <field keyName="com.microsoft.outlook.EmailProfile.EmailAccountName" type="input">
+                <label>
+                    <language value="en-US">Accout Name</language>
+                </label>
+                <description>
+                    <language value="en-US">This value specifies the display name email account as it will appear to users on their devices.</language>
+                </description>
+            </field>
+            <field keyName="com.microsoft.outlook.EmailProfile.EmailAddress" type="input">
+                <label>
+                    <language value="en-US">Email Address</language>
+                </label>
+                <description>
+                    <language value="en-US">This value specifies the email address to be used for sending and receiving mail.</language>
+                </description>
+            </field>
+            <field keyName="com.microsoft.outlook.EmailProfile.EmailUPN" type="input">
+                <label>
+                    <language value="en-US">Email UPN</language>
+                </label>
+                <description>
+                    <language value="en-US">This value specifies the User Principal Name for the email profile that will be used to authenticate the account.</language>
+                </description>
+            </field>
+            <field keyName="com.microsoft.outlook.EmailProfile.ServerAuthentication" type="select">
+                <label>
+                    <language value="en-US">Server Authentication</language>
+                </label>
+                <description>
+                    <language value="en-US">This value specifies the authentication method for the user.</language>
+                </description>
+                <options>
+                    <option value="Username and Password">
+                        <language value="en-US">Username and Password</language>
+                    </option>
+                    <option value="Certificates">
+                        <language value="en-US">Certificates</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="com.microsoft.outlook.EmailProfile.ServerHostName" type="input">
+                <label>
+                    <language value="en-US">Server Hostname</language>
+                </label>
+                <description>
+                    <language value="en-US">This value specifies the host name of your Exchange server.</language>
+                </description>
+            </field>
+        </fieldGroup>
+    </presentation>
+</managedAppConfiguration>
+

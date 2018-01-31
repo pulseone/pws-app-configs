@@ -90,3 +90,6 @@ ENV/
 
 # Pycharm project
 .idea
+
+# Mac folder previews
+.DS_Store
