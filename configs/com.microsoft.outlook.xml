@@ -22,6 +22,13 @@
             </constraint>
         </string>
         <string keyName="com.microsoft.outlook.EmailProfile.ServerHostName"/>
+        <string keyName="com.microsoft.outlook.EmailProfile.ServerHostName"/>
+        <string keyName="com.microsoft.outlook.EmailProfile.AccountDomain"/>
+        <string keyName="com.microsoft.outlook.EmailProfile.AccountType">
+            <defaultValue>
+                <value>BasicAuth</value>
+            </defaultValue>
+        </string>
     </dict>
     <presentation defaultLocale="en-US">
         <fieldGroup>
@@ -74,6 +81,24 @@
                 </label>
                 <description>
                     <language value="en-US">This value specifies the host name of your Exchange server.</language>
+                </description>
+            </field>
+
+            <field keyName="com.microsoft.outlook.EmailProfile.AccountDomain" type="input">
+                <label>
+                    <language value="en-US">Account Domain</language>
+                </label>
+                <description>
+                    <language value="en-US">This value specifies the user's account domain.</language>
+                </description>
+            </field>
+
+            <field keyName="com.microsoft.outlook.EmailProfile.AccountType" type="input">
+                <label>
+                    <language value="en-US">Account Type</language>
+                </label>
+                <description>
+                    <language value="en-US">This value specifies the account type being configured based on the authentication model.</language>
                 </description>
             </field>
         </fieldGroup>
