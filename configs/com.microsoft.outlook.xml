@@ -4,45 +4,240 @@
     <bundleId>com.microsoft.Office.Outlook</bundleId>
     <dict>
         <!--
-         Configuration copied from here:
-         https://technet.microsoft.com/EN-US/library/mt829322(v=exchg.160).aspx#kvp
-         -->
-        <string keyName="com.microsoft.outlook.EmailProfile.EmailAccountName"/>
+        Account setup configuration
+
+        From: https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune#account-setup-configuration
+        -->
         <string keyName="com.microsoft.outlook.EmailProfile.EmailAddress"/>
         <string keyName="com.microsoft.outlook.EmailProfile.EmailUPN"/>
-        <string keyName="com.microsoft.outlook.EmailProfile.ServerAuthentication">
+        <string keyName="com.microsoft.outlook.EmailProfile.AccountType">
             <defaultValue>
-                <value>Username and Password</value>
+                <value>ModernAuth</value>
             </defaultValue>
             <constraint>
                 <values>
-                    <value>Username and Password</value>
-                    <value>Certificates</value>
+                    <value>ModernAuth</value>
                 </values>
             </constraint>
         </string>
-        <string keyName="com.microsoft.outlook.EmailProfile.ServerHostName"/>
-        <string keyName="com.microsoft.outlook.EmailProfile.ServerHostName"/>
-        <string keyName="com.microsoft.outlook.EmailProfile.AccountDomain"/>
-        <string keyName="com.microsoft.outlook.EmailProfile.AccountType">
+
+        <!--
+        Organization allowed accounts mode settings
+
+        From: https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune#organization-allowed-accounts-mode-settings-1
+        -->
+        <!-- iOS -->
+        <string keyName="IntuneMAMAllowedAccountsOnly">
             <defaultValue>
-                <value>BasicAuth</value>
+                <value>Enabled</value>
             </defaultValue>
+            <constraint>
+                <values>
+                    <value>Enabled</value>
+                    <value>Disabled</value>
+                </values>
+            </constraint>
         </string>
+
+        <!-- iOS -->
+        <string keyName="IntuneMAMUPN"/>
+
+        <!-- Android -->
+        <string keyName="com.microsoft.intune.mam.AllowedAccountUPNs"/>
+
+
+        <!--
+        General app configuration settings
+
+        From: https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune#general-app-configuration-settings
+        -->
+        <boolean keyName="com.microsoft.outlook.Mail.FocusedInbox">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.Auth.Biometric">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.Auth.Biometric.UserChangeAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.Contacts.LocalSyncEnabled">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.Contacts.LocalSyncEnabled.UserChangeAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.Mail.ExternalRecipientsToolTipEnabled">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.Mail.BlockExternalImagesEnabled">
+            <defaultValue>
+                <value>false</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.Mail.BlockExternalImagesEnabled.UserChangeAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.Mail.DefaultSignatureEnabled">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.Mail.SuggestedRepliesEnabled">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.Mail.SuggestedRepliesEnabled.UserChangeAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.Mail.officeFeedEnabled">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+
+        <!--
+        Data protection settings
+
+        From: https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune#data-protection-settings
+        -->
+        <boolean keyName="com.microsoft.intune.mam.areWearablesAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.Mail.NotificationsEnabled">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.Calendar.NotificationsEnabled">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.Calendar.NotificationsEnabled.UserChangeAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.ContactSync.AddressAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.ContactSync.BirthdayAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.ContactSync.CompanyAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.ContactSync.DepartmentAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.ContactSync.EmailAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.ContactSync.InstantMessageAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.ContactSync.JobTitleAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.ContactSync.NicknameAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.ContactSync.NotesAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.ContactSync.PhoneHomeAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.ContactSync.PhoneHomeFaxAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.ContactSync.PhoneMobileAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.ContactSync.PhoneOtherAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.ContactSync.PhonePagerAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.ContactSync.PhoneWorkAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.ContactSync.PhoneWorkFaxAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.ContactSync.PrefixAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
+        <boolean keyName="com.microsoft.outlook.ContactSync.SuffixAllowed">
+            <defaultValue>
+                <value>true</value>
+            </defaultValue>
+        </boolean>
     </dict>
     <presentation defaultLocale="en-US">
         <fieldGroup>
             <name>
-                <language value="en-US">Exchange Account</language>
+                <language value="en-US">Account Setup Configuration</language>
             </name>
-            <field keyName="com.microsoft.outlook.EmailProfile.EmailAccountName" type="input">
-                <label>
-                    <language value="en-US">Accout Name</language>
-                </label>
-                <description>
-                    <language value="en-US">This value specifies the display name email account as it will appear to users on their devices.</language>
-                </description>
-            </field>
             <field keyName="com.microsoft.outlook.EmailProfile.EmailAddress" type="input">
                 <label>
                     <language value="en-US">Email Address</language>
@@ -56,51 +251,427 @@
                     <language value="en-US">Email UPN</language>
                 </label>
                 <description>
-                    <language value="en-US">This value specifies the User Principal Name for the email profile that will be used to authenticate the account.</language>
+                    <language value="en-US">This key specifies the User Principal Name or username for the email profile that is used to authenticate the account.</language>
                 </description>
             </field>
-            <field keyName="com.microsoft.outlook.EmailProfile.ServerAuthentication" type="select">
-                <label>
-                    <language value="en-US">Server Authentication</language>
-                </label>
-                <description>
-                    <language value="en-US">This value specifies the authentication method for the user.</language>
-                </description>
-                <options>
-                    <option value="Username and Password">
-                        <language value="en-US">Username and Password</language>
-                    </option>
-                    <option value="Certificates">
-                        <language value="en-US">Certificates</language>
-                    </option>
-                </options>
-            </field>
-            <field keyName="com.microsoft.outlook.EmailProfile.ServerHostName" type="input">
-                <label>
-                    <language value="en-US">Server Hostname</language>
-                </label>
-                <description>
-                    <language value="en-US">This value specifies the host name of your Exchange server.</language>
-                </description>
-            </field>
-
-            <field keyName="com.microsoft.outlook.EmailProfile.AccountDomain" type="input">
-                <label>
-                    <language value="en-US">Account Domain</language>
-                </label>
-                <description>
-                    <language value="en-US">This value specifies the user's account domain.</language>
-                </description>
-            </field>
-
-            <field keyName="com.microsoft.outlook.EmailProfile.AccountType" type="input">
+            <field keyName="com.microsoft.outlook.EmailProfile.AccountType" type="select">
                 <label>
                     <language value="en-US">Account Type</language>
                 </label>
                 <description>
-                    <language value="en-US">This value specifies the account type being configured based on the authentication model.</language>
+                    <language value="en-US">This key specifies the account type being configured based on the authentication model.</language>
+                </description>
+                <!-- the docs for this field say that this is a string, but there's only one accepted value...
+
+                    Value type: String
+                    Accepted values: ModernAuth
+                    Required: Yes
+                    Example: ModernAuth
+                -->
+                <options>
+                    <option value="ModernAuth">
+                        <language value="en-US">ModernAuth</language>
+                    </option>
+                </options>
+            </field>
+        </fieldGroup>
+
+        <fieldGroup>
+            <name>
+                <language value="en-US">Organization Allowed Accounts Mode Settings</language>
+            </name>
+            <field keyName="IntuneMAMAllowedAccountsOnly" type="select">
+                <label>
+                    <language value="en-US">Allowed Accounts Only</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies whether organization allowed account mode is active.</language>
+                </description>
+                <options>
+                    <option value="Enabled">
+                        <language value="en-US">Enabled</language>
+                    </option>
+                    <option value="Disabled">
+                        <language value="en-US">Disabled</language>
+                    </option>
+                </options>
+            </field>
+            <field keyName="IntuneMAMUPN" type="input">
+                <label>
+                    <language value="en-US">Intune MAM UPN</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies the User Principal Name for the account.</language>
                 </description>
             </field>
+            <field keyName="com.microsoft.intune.mam.AllowedAccountUPNs" type="string">
+                <label>
+                    <language value="en-US">Allowed Account UPNs</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies the UPNs allowed for organization allowed account mode.</language>
+                </description>
+            </field>
+        </fieldGroup>
+
+        <fieldGroup>
+            <name>
+                <language value="en-US">General Configuration</language>
+            </name>
+            <field keyName="com.microsoft.outlook.Mail.FocusedInbox" type="checkbox">
+                <label>
+                    <language value="en-US">Focused Inbox Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies whether Focused Inbox is enabled. Setting the value to false will disable Focused Inbox.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.Auth.Biometric" type="checkbox">
+                <label>
+                    <language value="en-US">Biometrics Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies whether FaceID or TouchID is required to access the app. Setting the value to true will enable biometric access. This key is only supported with Outlook for iOS.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.Auth.Biometric.UserChangeAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">User Allowed to Change Biometrics</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies whether the biometric setting can be changed by the end user. This key is only supported with Outlook for iOS. </language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.Contacts.LocalSyncEnabled" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Outlook Contacts</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies whether the app should sync Outlook contacts to the native Contacts app. Setting the value to true will enable contact sync.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.Contacts.LocalSyncEnabled.UserChangeAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">User Allowed to Change Contact Sync</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies whether the contact sync setting can be changed by the end user.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.Mail.ExternalRecipientsToolTipEnabled" type="checkbox">
+                <label>
+                    <language value="en-US">External Recipients Tool Tip Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies whether the External Recipients MailTip is enabled. Setting the value to false will disable the MailTip.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.Mail.BlockExternalImagesEnabled" type="checkbox">
+                <label>
+                    <language value="en-US">Block External Images Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies whether external images are blocked by default. Setting the value to true will enable blocking external images.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.Mail.BlockExternalImagesEnabled.UserChangeAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">User Allowed to Change Blocking External Images</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies whether the Block External Images setting can be changed by the end user.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.Mail.DefaultSignatureEnabled" type="checkbox">
+                <label>
+                    <language value="en-US">Default Signature Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies whether the app uses its default signature. Setting the value to false will disable the app's default signature. </language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.Mail.SuggestedRepliesEnabled" type="checkbox">
+                <label>
+                    <language value="en-US">Suggested Replies Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies whether the app enables Suggested Replies. Setting the value to false will disable the app's ability to suggest replies. This key is only supported with Outlook for Android.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.Mail.SuggestedRepliesEnabled.UserChangeAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">User Allowed to Change Suggested Replies Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies whether the Suggested Replies setting can be changed by the end user. This key is only supported with Outlook for Android.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.Mail.officeFeedEnabled" type="checkbox">
+                <label>
+                    <language value="en-US">Office Feed Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies whether the app enables the Office Feed which shows the user's and the user's coworkers Office files. Setting the value to false will disable the Office Feed. This key is only supported with Outlook for iOS.</language>
+                </description>
+            </field>
+        </fieldGroup>
+
+        <fieldGroup>
+            <name>
+                <language value="en-US">Data Protection Settings</language>
+            </name>
+
+            <field keyName="com.microsoft.intune.mam.areWearablesAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">Wearables Allowed</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies if Outlook data can be synchronized to a wearable device. Setting the value to false disables wearable synchronization.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.Mail.NotificationsEnabled" type="checkbox">
+                <label>
+                    <language value="en-US">Mail Notifications Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies if Outlook allows mail notifications. Setting the value to false disables mail notifications.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">User Allowed to Change Mail Notifications Setting</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies if the user can adjust the mail notification setting within the app. Setting the value to false prevents the user from adjusting the mail notification setting.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.Calendar.NotificationsEnabled" type="checkbox">
+                <label>
+                    <language value="en-US">Calendar Notifications Enabled</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies if Outlook allows calendar reminder notifications. Setting the value to false disables calendar reminder notifications.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.Calendar.NotificationsEnabled.UserChangeAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">User Allowed to Change Calendar Notifications Setting</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies if the user can adjust the calendar reminder notification setting within the app. Setting the value to false prevents the user from adjusting the calendar reminder notification setting.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.ContactSync.AddressAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Contact's Address to Native Contacts</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies if the contact's address should be synchronized to native contacts.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.ContactSync.BirthdayAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Birthday to Native Contacts</language>
+                </label>
+                <description>
+                    <language value="en-US">This value specifies if the contact's birthday should be synchronized to native contacts.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.ContactSync.CompanyAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Contact's Company Name to Native Contacts</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies if the contact's company name should be synchronized to native contacts.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.ContactSync.DepartmentAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Contact's Department to Native Contacts</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies if the contact's department should be synchronized to native contacts.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.ContactSync.EmailAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Contact's Email Address to Native Contacts</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies if the contact's email address should be synchronized to native contacts.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.ContactSync.InstantMessageAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Contact's Instant Message Address to Native Contacts</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies if the contact's instant messaging address should be synchronized to native contacts.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.ContactSync.JobTitleAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Contact's Job Title to Native Contacts</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies if the contact's job title should be synchronized to native contacts.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.ContactSync.NicknameAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Contact's Nickname to Native Contacts</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies if the contact's nickname should be synchronized to native contacts.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.ContactSync.NotesAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Contact's Notes to Native Contacts</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies if the contact's notes should be synchronized to native contacts.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.ContactSync.PhoneHomeAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Contact's Home Phone to Native Contacts</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies if the contact's home phone number should be synchronized to native contacts.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.ContactSync.PhoneHomeFaxAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Contact's Home Fax to Native Contacts</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies if the contact's home fax number should be synchronized to native contacts.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.ContactSync.PhoneMobileAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Contact's Mobile Phone to Native Contacts</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies if the contact's mobile phone number should be synchronized to native contacts. </language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.ContactSync.PhoneOtherAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Contact's Other Phone Number to Native Contacts</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies if the contact's other phone number should be synchronized to native contacts.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.ContactSync.PhonePagerAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Contact's Pager Phone Number to Native Contacts</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies if the contact's pager phone number should be synchronized to native contacts.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.ContactSync.PhoneWorkAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Contact's Work Phone Number to Native Contacts</language>
+                </label>
+                <description>
+                    <language value="en-US">This value specifies if the work phone number should be synchronized to native contacts.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.ContactSync.PhoneWorkFaxAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Contact's Work Fax Number to Native Contacts</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies if the contact's work fax number should be synchronized to native contacts.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.ContactSync.PrefixAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Contact's Name Prefix to Native Contacts</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies if the contact's name prefix should be synchronized to native contacts.</language>
+                </description>
+            </field>
+
+
+            <field keyName="com.microsoft.outlook.ContactSync.SuffixAllowed" type="checkbox">
+                <label>
+                    <language value="en-US">Sync Contact's Name Suffix to Native Contacts</language>
+                </label>
+                <description>
+                    <language value="en-US">This key specifies if the contact's name suffix should be synchronized to native contacts. </language>
+                </description>
+            </field>
+
         </fieldGroup>
     </presentation>
 </managedAppConfiguration>
