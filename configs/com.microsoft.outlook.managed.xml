@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<managedAppConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <version>6</version>
+   <bundleId>com.microsoft.Office.Outlook</bundleId>
+   <dict>
+      <string keyName="com.microsoft.outlook.EmailProfile.AccountType">
+         <defaultValue>
+            <value>BasicAuth</value>
+         </defaultValue>
+         <constraint>
+            <values>
+               <value>BasicAuth</value>
+               <value>ModernAuth</value>
+            </values>
+         </constraint>
+      </string>
+      <string keyName="com.microsoft.outlook.EmailProfile.EmailAccountName" />
+      <string keyName="com.microsoft.outlook.EmailProfile.ServerHostName" />
+      <string keyName="com.microsoft.outlook.EmailProfile.EmailAddress">
+         <defaultValue>
+            <userVariable value="emailAddress" />
+         </defaultValue>
+      </string>
+      <string keyName="com.microsoft.outlook.EmailProfile.EmailUPN">
+         <defaultValue>
+            <userVariable value="upn" />
+         </defaultValue>
+      </string>
+      <string keyName="com.microsoft.outlook.EmailProfile.AccountDomain">
+         <constraint nullable="true" />
+      </string>
+      <string keyName="com.microsoft.outlook.EmailProfile.ServerAuthentication">
+         <defaultValue>
+            <value>Username and Password</value>
+         </defaultValue>
+	 <constraint>
+		 <values>
+               <value>Username and Password</value>
+               <value>Certificates</value>
+            </values>
+         </constraint>
+      </string>
+      <string keyName="IntuneMAMAllowedAccountsOnly">
+         <defaultValue>
+            <value>Disabled</value>
+         </defaultValue>
+         <constraint>
+            <values>
+               <value>Enabled</value>
+               <value>Disabled</value>
+            </values>
+         </constraint>
+      </string>
+      <string keyName="IntuneMAMUPN">
+         <defaultValue>
+            <userVariable value="upn" />
+         </defaultValue>
+      </string>
+   </dict>
+   <presentation defaultLocale="en-US">
+      <fieldGroup>
+         <name>
+            <language value="en-US">Account settings</language>
+         </name>
+         <field keyName="com.microsoft.outlook.EmailProfile.AccountType" type="select">
+            <label>
+               <language value="en-US">Account Type</language>
+            </label>
+            <description>
+               <language value="en-US">This value specifies the account type being configured based on the authentication model.</language>
+            </description>
+            <options>
+               <option selected="true" value="BasicAuth">
+                  <language value="en-US">Exchange on-premise (Basic Authentication)</language>
+               </option>
+               <option value="ModernAuth">
+                  <language value="en-US">Office 365 or Hybrid (Modern Authentication)</language>
+               </option>
+            </options>
+         </field>
+         <field keyName="com.microsoft.outlook.EmailProfile.EmailAccountName" type="input">
+            <label>
+               <language value="en-US">Account Display Name</language>
+            </label>
+            <description>
+               <language value="en-US">This value specifies the display name email account as it will appear to users on their devices .</language>
+            </description>
+         </field>
+         <field keyName="com.microsoft.outlook.EmailProfile.EmailAddress" type="input">
+            <label>
+               <language value="en-US">Email Address</language>
+            </label>
+            <description>
+               <language value="en-US">This value specifies the email address to be used for sending and receiving mail.</language>
+            </description>
+         </field>
+         <field keyName="com.microsoft.outlook.EmailProfile.EmailUPN" type="input">
+            <label>
+               <language value="en-US">User Logon Name</language>
+            </label>
+            <description>
+               <language value="en-US">This value specifies the User Principal Name for the email profile that will be used to authenticate the account.</language>
+            </description>
+         </field>
+	 <field keyName="com.microsoft.outlook.EmailProfile.ServerHostName" type="input">
+            <label>
+               <language value="en-US">Server Name (only for Exchange)</language>
+            </label>
+            <description>
+               <language value="en-US">This value specifies the host name of your Exchange server.</language>
+            </description>
+         </field>
+         <field keyName="com.microsoft.outlook.EmailProfile.AccountDomain" type="input">
+            <label>
+               <language value="en-US">Account Domain (only for Exchange, optional)</language>
+            </label>
+            <description>
+               <language value="en-US">This value specifies the user’s account domain.</language>
+            </description>
+         </field>
+         <field keyName="com.microsoft.outlook.EmailProfile.ServerAuthentication" type="select">
+            <label>
+               <language value="en-US">Authentication method (only for Exchange)</language>
+            </label>
+            <description>
+               <language value="en-US">This value specifies the authentication method for the user.</language>
+            </description>
+            <options>
+               <option selected="true" value="Username and Password">
+                  <language value="en-US">Username and Password</language>
+               </option>
+               <option value="Certificates">
+                  <language value="en-US">Client certificate</language>
+	       </option>
+	    </options>
+         </field>
+      </fieldGroup>
+      <fieldGroup>
+         <name>
+            <language value="en-US">Account restrictions</language>
+         </name>
+         <field keyName="IntuneMAMAllowedAccountsOnly" type="select">
+            <label>
+               <language value="en-US">Allowed accounts only</language>
+            </label>
+            <description>
+               <language value="en-US">This value specifies the whether organization allowed account mode is active.</language>
+            </description>
+            <options>
+               <option value="Enabled">
+                  <language value="en-US">Enabled</language>
+               </option>
+               <option selected="true" value="Disabled">
+                  <language value="en-US">Disabled</language>
+               </option>
+            </options>
+         </field>
+         <field keyName="IntuneMAMUPN" type="input">
+            <label>
+               <language value="en-US">UPN</language>
+            </label>
+            <description>
+               <language value="en-US">This value specifies the User Principal Name account allowed to open data from managed apps.</language>
+            </description>
+         </field>
+      </fieldGroup>
+   </presentation>
+</managedAppConfiguration>
+
